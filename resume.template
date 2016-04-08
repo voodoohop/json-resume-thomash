@@ -34,7 +34,7 @@
 			      <div class="header-content">
 			      	{{#if picture}}
 			        <div class="header-pic">
-			          <img src="{{picture}}" class="pic" alt="{{name}}"/>
+			          <img src="{{picture}}" class="pic" alt="{{name}}" onload="var pic = this; setTimeout(function(){pic.className+=' loaded';},100);"/>
 			        </div>
 			        {{/if}}
 			        <div class="header-text">

@@ -35,6 +35,10 @@ header p {
     width:4.2em;
 }
 
+.pic.loaded {
+  height: 4.2em;
+}
+
 .profiles {
   display:none;
 }
