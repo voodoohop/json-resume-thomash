@@ -12,12 +12,10 @@ body, html {
   top:10px;
   left:10px;
 
-  font-family: "Open Sans";
   font-size: 0.6em;
 }
 
 .summary p{
-  font-family: "Open Sans";
   font-size:0.7em;
   font-weight:400;
 
@@ -213,7 +211,6 @@ body > div > article > div > section:last-child {
 }
 
 .content-text ul li {
-  font-family: "Open Sans";
   font-size:0.7em;
 
   display:inline-block;
@@ -233,7 +230,6 @@ body > div > article > div > section:last-child {
 }
 
 .work-listing p {
-  font-family: "Open Sans";
   font-size:0.7em;
 
   color: #424242;
