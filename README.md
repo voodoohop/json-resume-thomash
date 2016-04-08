@@ -13,7 +13,7 @@ This is a theme for [JSON Resume](http://jsonresume.org/). It's a fork of [jsonr
 ![Desktop](http://i.imgur.com/YiVCi40.png)
 
 ### Print
-![Desktop](http://i.imgur.com/CkHExEu.png)
+![Desktop](http://i.imgur.com/2cnlNPO.png)
 
 ## License
 
