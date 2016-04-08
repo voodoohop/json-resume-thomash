@@ -1,23 +1,29 @@
 <!doctype html>
 <html>
 	<head>
-	
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
-	
-	<title>{{#resume.basics}}{{name}}{{/resume.basics}}</title>
+
+	<title>{{#resume.basics}}{{name}}'s Resume{{/resume.basics}}</title>
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
-	
+
+	<!-- TODO: Just use the icons needed -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<style>
-	{{{css}}}
+		{{{css}}}
+	</style>
+
+	<style media="screen">
+		{{{screen-css}}}
 	</style>
 
 	<style media="print">
-	{{{print}}}
+		{{{print}}}
 	</style>
-	
+
 	</head>
 	<body>
 
@@ -27,8 +33,8 @@
 			    <header>
 			      <div class="header-content">
 			      	{{#if picture}}
-			        <div class="header-pic" title="Wiggle Wiggle">
-			          <img src="{{picture}}" class="pic" />
+			        <div class="header-pic">
+			          <img src="{{picture}}" class="pic" alt="{{name}}"/>
 			        </div>
 			        {{/if}}
 			        <div class="header-text">
@@ -40,7 +46,7 @@
 			      </div>
 			    </header>
 			    <div class="content-wrapper">
-			    
+					<div>
 			      <!-- CONTACT -->
 			      <section class="content">
 			        <div class="row">
@@ -51,14 +57,14 @@
 			          	{{#if website}}
 				            <ul>
 				              <li>Website</li>
-				              <li>{{website}}</li>
+				              <li><a href="{{website}}">{{website}}</a></li>
 				            </ul>
 			            {{/if}}
 
 			            {{#if email}}
 				            <ul>
 				              <li>Email</li>
-				              <li>{{email}}</li>
+				              <li><a href="mailto:{{email}}">{{email}}</a></li>
 				            </ul>
 			            {{/if}}
 
@@ -89,13 +95,18 @@
 						            </ul>
 					            {{/if}}
 
+											{{#if country}}
+						            <ul>
+						              <li>Country</li>
+						              <li>{{country}}</li>
+						            </ul>
+					            {{/if}}
+
 					            {{#if city}}
-					            	{{#if postalCode}}
-							            <ul>
-							              <li>Postal Code & City</li>
-							              <li>{{postalCode}} {{city}}</li>
-							            </ul>
-						            {{/if}}
+						            <ul>
+						              <li>City</li>
+						              <li>{{city}}</li>
+						            </ul>
 					            {{/if}}
 
 					            {{#if region}}
@@ -112,7 +123,7 @@
 		      	{{/location}}
 		      {{/resume.basics}}
 
-						
+
 						<!-- LANGUAGE -->
 			      {{#if resume.languages.length}}
 			      <section class="content">
@@ -124,14 +135,14 @@
 
 			          	{{#each resume.languages}}
 				            <ul>
-											
+
 											{{#if language}}
 				              	<li>{{language}}</li>
-											{{/if}}	
+											{{/if}}
 
 											{{#if fluency}}
 				              <li>{{fluency}}</li>
-											{{/if}}	
+											{{/if}}
 
 				            </ul>
 			            {{/each}}
@@ -142,7 +153,7 @@
 			      {{/if}}
 
 					{{#resume.basics}}
-			      <!-- PROFILES -->
+			      <!-- PROFILES for website-->
 			      {{#if profiles.length}}
 				      <section class="content profiles">
 				        <div class="row">
@@ -155,8 +166,9 @@
 					            	{{#if network}}
 					              	<li>
 					              	<a href="{{url}}" target="_blank">
-							                	{{network}}
-							                </a>
+														<i class="fa fa-2x fa-{{fontAwsome network}}"></i>
+							            	<span class="network">{{network}}</span>
+													</a>
 							            </li>
 					              {{/if}}
 					            {{/each}}
@@ -165,6 +177,41 @@
 				        </div>
 				      </section>
 			      {{/if}}
+						<!-- PROFILES for print -->
+						{{#if profiles.length}}
+							<section class="content profiles-print">
+								<div class="row">
+									<div class="content-cat">
+									 Profiles
+									</div>
+									<div class="content-text">
+										{{#each profiles}}
+											{{#if network}}
+											<ul>
+												<li>{{network}}</li>
+												<li><a href="{{url}}">{{#no-http}}{{url}}{{/no-http}}</a></li>
+											</ul>
+											{{/if}}
+										{{/each}}
+									</div>
+								</div>
+							</section>
+						{{/if}}
+
+						{{#if summary}}
+							<section class="content summary">
+								<div class="row small-fullwidth-row">
+									<div class="content-cat">
+									 About Me
+									</div>
+									<div class="content-text work-content">
+										<p>
+											{{summary}}
+										</p>
+									</div>
+								</div>
+							</section>
+						{{/if}}
 					{{/resume.basics}}
 
 					{{#if resume.work.length}}
@@ -173,31 +220,83 @@
 								<section class="content">
 						{{else}}
 								<section class="content work-content">
-          	{{/if}}
-			        <div class="row">
-			          <div class="content-cat big-text">
-			          	{{#if $first}}
+						{{/if}}
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+									{{#if $first}}
 											Work	Experience
-			          	{{/if}}
-			          
+									{{/if}}
+
 								 {{#if startDate}}
 										{{#if endDate}}
-			            		<p>{{startDate}} till {{endDate}}</p>
+											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+										{{/if}}
+									{{/if}}
+
+								</div>
+								<div class="content-text work-listing education-listing">
+										{{#ifCond company '&&' position}}
+										{{#if $first}}
+											<p class="small-center first-listing">
+											{{else}}
+											<p class="small-center">
+										{{/if}}
+												{{#if website}}
+													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}:</a></strong>
+												{{else}}
+													<strong>{{position}}</strong> at <strong>{{company}}:</strong>
+												{{/if}}
+											</p>
+										{{/ifCond}}
+
+										{{#if summary}}
+											<p>{{summary}}</p>
+										{{/if}}
+
+										{{#if highlights.length}}
+											{{#each highlights}}
+												<p class="highlight">{{.}}</p>
+											{{/each}}
+										{{/if}}
+
+
+								</div>
+							</div>
+						</section>
+						{{/foreach}}
+					{{/if}}
+
+					{{#if resume.volunteer.length}}
+						{{#foreach resume.volunteer}}
+						{{#if $first}}
+								<section class="content">
+						{{else}}
+								<section class="content work-content">
+          	{{/if}}
+			        <div class="row small-fullwidth-row">
+			          <div class="content-cat big-text">
+			          	{{#if $first}}
+											Volunteer work
+			          	{{/if}}
+
+								 {{#if startDate}}
+										{{#if endDate}}
+			            		<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
 			            	{{/if}}
 									{{/if}}
 
 			          </div>
 			          <div class="content-text work-listing education-listing">
-										{{#ifCond company '&&' position}}
+										{{#ifCond organization '&&' position}}
 										{{#if $first}}
-					            <p style="margin-top:2.4em;">
+					            <p class="first-listing small-center">
 					            {{else}}
-					            <p>
+					            <p class="small-center">
 					          {{/if}}
 					            	{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}">{{company}}:</a></strong>
+													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}:</a></span></strong>
 												{{else}}
-					            		<strong>{{position}}</strong> at <strong>{{company}}:</strong>
+					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}:</strong></span>
 					            	{{/if}}
 					            </p>
 										{{/ifCond}}
@@ -212,48 +311,12 @@
 											{{/each}}
 										{{/if}}
 
-									
+
 			          </div>
 			        </div>
 			      </section>
 			      {{/foreach}}
 					{{/if}}
-
-					{{#if resume.volunteer.length}}
-						{{#each resume.volunteer}}
-				      <section class="content">
-				        <div class="row">
-				          <div class="content-cat big-text">
-				          {{#if organization}}
-				          	{{organization}}
-				          {{/if}}
-				          
-									{{#if startDate}}
-											{{#if endDate}}
-				            		<p>{{startDate}} till {{endDate}}</p>
-				            	{{/if}}
-										{{/if}}
-
-				          </div>
-				          <div class="content-text work-listing">
-										
-										{{#if summary}}
-					            <p>
-					            	{{summary}}
-					            </p>
-										{{/if}}
-
-										{{#if highlights.length}}
-											{{#each highlights}}
-												<p class="highlight">{{.}}</p>
-											{{/each}}
-										{{/if}}
-				          </div>
-				        </div>
-				      </section>
-			      {{/each}}
-					{{/if}}
-					
 
 					{{#if resume.education.length}}
 						{{#foreach resume.education}}
@@ -271,7 +334,7 @@
 
 										{{#if startDate}}
 											{{#if endDate}}
-				            		<p>{{startDate}} till {{endDate}}</p>
+				            		<p>{{startDate}} till <span class="no-nl">{{endDate}}</span></p>
 				            	{{/if}}
 										{{/if}}
 
@@ -279,21 +342,19 @@
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
 											{{#if $first}}
-						            <p class="heading" style="margin-top:2.35em;">{{institution}}</p>
+						            <p class="heading first-listing">{{institution}}</p>
 						            {{else}}
 						            <p class="heading">{{institution}}</p>
 						          {{/if}}
 										{{/if}}
 
 										{{#if area}}
-											{{#if gpa}}
-				            		<p class="highlight">
-				            		{{#if studyType}}
-													{{studyType}}:
-				            		{{/if}}
-				            		<i>{{area}} ({{gpa}})</i>
-				            		</p>
-				            	{{/if}}
+			            		<p class="highlight">
+			            		{{#if studyType}}
+												{{studyType}}:
+			            		{{/if}}
+			            		<i>{{area}}</i>
+			            		</p>
 										{{/if}}
 
 				          </div>
@@ -392,11 +453,11 @@
 			        </div>
 			      </section>
 		    	{{/if}}
+				</div>
+		  </div>
 
-		    </div>
-		      
 		  </article>
-		  
+
 		</div>
 	</body>
 </html>
