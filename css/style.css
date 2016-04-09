@@ -6,6 +6,16 @@ body, html {
   font-family: "Open Sans";
 }
 
+h2{
+  font-weight: normal;
+  margin: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+h3{
+  display:none;
+}
+
 .note {
   display:block;
   position: absolute;
@@ -38,7 +48,7 @@ header {
   width:100%;
   vertical-align: middle;
   text-align: center;
-
+  font-family: "Merriweather";
 }
 
 .header-content {
@@ -80,15 +90,8 @@ header {
   border: 4px solid #dddddd;
 }
 
-.header-text {
-  margin-top:0.5em;
-  margin-left:1em;
-  font-size:1.2em;
-}
-
 header p {
   text-align:center;
-  font-family: "Merriweather";
 
   margin:0;
 
@@ -101,8 +104,7 @@ header p {
 
 .subtitle {
   font-family: "Merriweather";
-  padding-top:.3em;
-  font-size:0.55em;
+  font-size:0.7em;
   font-weight:500;
   color: #424242;
 }

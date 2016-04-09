@@ -1,31 +1,28 @@
 <!doctype html>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+		<title>{{#resume.basics}}{{name}}'s Resume{{/resume.basics}}</title>
+		<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-	<title>{{#resume.basics}}{{name}}'s Resume{{/resume.basics}}</title>
-	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<style>
+			{{{standardCSS}}}
+		</style>
 
-	<style>
-		{{{standardCSS}}}
-	</style>
+		<style media="screen">
+			{{{screenCSS}}}
+		</style>
 
-	<style media="screen">
-		{{{screenCSS}}}
-	</style>
-
-	<style media="print">
-		{{{printCSS}}}
-	</style>
-
+		<style media="print">
+			{{{printCSS}}}
+		</style>
 	</head>
 	<body>
-
 		<div class="resume-wrapper">
 		  <article class="paper">
 		  	{{#resume.basics}}
@@ -37,17 +34,15 @@
 			        </div>
 			        {{/if}}
 			        <div class="header-text">
-			          <p>
-			            {{name}}
-			          </p>
+			          <h2>{{name}}</h2>
 			          <p class="subtitle">{{label}}</p>
 			        </div>
 			      </div>
 			    </header>
 			    <div class="content-wrapper">
-					<div>
 			      <!-- CONTACT -->
 			      <section class="content">
+							<h3>Contact</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
 			           Contact
@@ -81,6 +76,7 @@
 			      {{#location}}
 				      {{#ifCond address '||' city}}
 					      <section class="content">
+									<h3>Location</h3><!-- Invisible, for SEO / HTML validity -->
 					        <div class="row">
 					          <div class="content-cat">
 					           Location
@@ -126,6 +122,7 @@
 						<!-- LANGUAGE -->
 			      {{#if resume.languages.length}}
 			      <section class="content">
+							<h3>Languages</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
 			           Languages
@@ -155,6 +152,7 @@
 			      <!-- PROFILES for website-->
 			      {{#if profiles.length}}
 				      <section class="content profiles">
+								<h3>Profiles</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat">
 				           Profiles
@@ -179,6 +177,7 @@
 						<!-- PROFILES for print -->
 						{{#if profiles.length}}
 							<section class="content profiles-print">
+								<h3>Profiles</h3><!-- Invisible, for SEO / HTML validity -->
 								<div class="row">
 									<div class="content-cat">
 									 Profiles
@@ -199,6 +198,7 @@
 
 						{{#if summary}}
 							<section class="content summary">
+								<h3>About me</h3><!-- Invisible, for SEO / HTML validity -->
 								<div class="row small-fullwidth-row">
 									<div class="content-cat">
 									 About Me
@@ -220,6 +220,7 @@
 						{{else}}
 								<section class="content work-content">
 						{{/if}}
+							<h3>Work Experience</h3><!-- Invisible, for SEO / HTML validity -->
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if $first}}
@@ -272,6 +273,7 @@
 						{{else}}
 								<section class="content work-content">
           	{{/if}}
+							<h3>Volunteer work</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row small-fullwidth-row">
 			          <div class="content-cat big-text">
 			          	{{#if $first}}
@@ -293,7 +295,7 @@
 					            <p class="small-center">
 					          {{/if}}
 					            	{{#if website}}
-													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}</a></span></strong>
+													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}</a></strong></span>
 												{{else}}
 					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
 					            	{{/if}}
@@ -324,6 +326,7 @@
 							{{else}}
 								<section class="content education-content">
 							{{/if}}
+							<h3>Education</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat big-text">
 
@@ -365,6 +368,7 @@
 					{{#if resume.awards.length}}
 						{{#foreach resume.awards}}
 				      <section class="content">
+								<h3>Awards</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if $first}}
@@ -397,6 +401,7 @@
 
 					{{#if resume.skills.length}}
 			      <section class="content">
+							<h3>Skills</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
 			            Skills
@@ -429,6 +434,7 @@
 
 		    	{{#if resume.interests.length}}
 			      <section class="content">
+							<h3>Interests</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
 			            Interests
@@ -452,11 +458,8 @@
 			        </div>
 			      </section>
 		    	{{/if}}
-				</div>
-		  </div>
-
+		  	</div>
 		  </article>
-
 		</div>
 	</body>
 </html>
