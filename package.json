@@ -1,18 +1,18 @@
 {
-  "name": "jsonresume-theme-paper",
-  "version": "0.3.2",
+  "name": "jsonresume-theme-paper-plus-plus",
+  "version": "0.3.3",
   "description": "A theme for JSON Resume",
-  "author": "Tim Daubenschütz",
+  "author": "Johan Lindell",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TimDaub/jsonresume-theme-paper"
+    "url": "https://github.com/lindell/jsonresume-theme-paper"
   },
   "license": "MIT",
   "dependencies": {
     "country-codes": "0.0.3",
     "handlebars": "^2.0.0-alpha.4"
   },
-  "homepage": "https://github.com/TimDaub/jsonresume-theme-paper",
+  "homepage": "https://github.com/lindell/jsonresume-theme-paper",
   "main": "index.js",
   "scripts": {
     "start": "resume serve"
@@ -21,6 +21,9 @@
   "keywords": [
     "jsonresume",
     "json",
-    "resume"
+    "resume",
+    "paper",
+    "paper++",
+    "paper plus plus"
   ]
 }
