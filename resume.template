@@ -9,7 +9,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-	<!-- TODO: Just use the icons needed -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
 	<style>
@@ -166,7 +165,7 @@
 					            	{{#if network}}
 					              	<li>
 					              	<a href="{{url}}" target="_blank">
-														<i class="fa fa-2x fa-{{fontAwsome network}}"></i>
+														<i class="fa fa-2x {{fontAwesome network}}"></i>
 							            	<span class="network">{{network}}</span>
 													</a>
 							            </li>
@@ -242,9 +241,9 @@
 											<p class="small-center">
 										{{/if}}
 												{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}:</a></strong>
+													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
 												{{else}}
-													<strong>{{position}}</strong> at <strong>{{company}}:</strong>
+													<strong>{{position}}</strong> at <strong>{{company}}</strong>
 												{{/if}}
 											</p>
 										{{/ifCond}}
@@ -294,9 +293,9 @@
 					            <p class="small-center">
 					          {{/if}}
 					            	{{#if website}}
-													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}:</a></span></strong>
+													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}</a></span></strong>
 												{{else}}
-					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}:</strong></span>
+					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
 					            	{{/if}}
 					            </p>
 										{{/ifCond}}

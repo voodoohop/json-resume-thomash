@@ -3,16 +3,14 @@ var Handlebars = require("handlebars");
 var countries = require('country-data').countries;
 
 function render(resume) {
-
-	var css = fs.readFileSync(__dirname + "/css/style.css", "utf-8");
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
 
-  var print = fs.readFileSync(__dirname + "/css/print.css", "utf-8");
+  var printCSS = fs.readFileSync(__dirname + "/css/print.css", "utf-8");
+	var standardCSS = fs.readFileSync(__dirname + "/css/style.css", "utf-8");
 	var screenCSS = fs.readFileSync(__dirname + "/css/screen.css", "utf-8");
 
-
+	// Get a country from the country code
 	resume.basics.location.country = countries[resume.basics.location.countryCode].name;
-
 
   // http://stackoverflow.com/a/12002281/1263876
   Handlebars.registerHelper("foreach",function(arr,options) {
@@ -28,17 +26,15 @@ function render(resume) {
       }).join('');
   });
 
+	// Remove http and www from url
 	Handlebars.registerHelper('no-http', function(options) {
 		this.url = this.url.replace(/(https?:\/\/)?(www\.)?/, "");
 	  return options.fn(this);
 	});
 
-	var faNames = {
-		"facebook": "facebook-square",
-		"github": "github-square"
-	}
-	Handlebars.registerHelper('fontAwsome', function(str) {
-		return faNames[str.toLowerCase()];
+	// Get a font awsome class from a name
+	Handlebars.registerHelper('fontAwesome', function(str) {
+		return "fa-" + str.toLowerCase() + "-square";
 	});
 
   // http://stackoverflow.com/a/16315366
@@ -70,17 +66,12 @@ function render(resume) {
     return options.fn(items.join(', '));
   });
 
-  // return Handlebars.compile(template)({
-  //   css: css,
-  //   resume: resume
-  // });
-
   //Uncomment this for printing as .pdf
 	return Handlebars.compile(template)({
-		css: css,
-    print: print,
-		"screen-css": screenCSS,
-		resume: resume
+		resume: resume,
+		standardCSS: standardCSS,
+    printCSS: printCSS,
+		screenCSS: screenCSS
 	});
 }
 
