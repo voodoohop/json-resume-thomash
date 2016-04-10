@@ -13,6 +13,7 @@ function render(resume) {
 	resume.basics.location.country = countries[resume.basics.location.countryCode].name;
 
   // http://stackoverflow.com/a/12002281/1263876
+	// TODO
   Handlebars.registerHelper("foreach",function(arr,options) {
       if(options.inverse && !arr.length)
           return options.inverse(this);

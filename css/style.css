@@ -86,9 +86,9 @@ header {
   }
 }
 
-.pic:hover{
-  height: 12em;
-  margin-top: -4em;
+.pic:hover, .pic:active{
+  height: 14em;
+  margin-top: -5em;
   border: 4px solid #dddddd;
 }
 
@@ -310,7 +310,7 @@ a{
   margin-top: -0.7em;
 }
 
-@media(max-width:992px) {
+@media(max-width:1400px) {
   .paper {
     width:80%;
   }
