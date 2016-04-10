@@ -13,7 +13,9 @@ h2{
 }
 
 h3{
-  display:none;
+  font-weight:300;
+  font-size:1em;
+  margin: 0em;
 }
 
 .note {
@@ -164,17 +166,15 @@ body > div > article > div > section:last-child {
 }
 
 .content-cat {
-  font-family: "Merriweather";
+  text-align:center;
+  vertical-align:middle;
   font-variant:small-caps;
-  font-weight:300;
+
   letter-spacing: 1px;
 
   color: #212121;
 
-  font-size:0.975em;
-
-  text-align:center;
-  vertical-align:middle;
+  font-family: "Merriweather";
 
   padding-left:6.66%;
   width:30%;
@@ -280,10 +280,6 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
 
 .work-content, .education-content {
   padding-top: .75em;
-}
-
-section.content.education-content > div > div.content-cat {
-  vertical-align: top;
 }
 
 div.content-text.skills-listing > p {

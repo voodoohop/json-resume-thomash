@@ -42,10 +42,9 @@
 			    <div class="content-wrapper">
 			      <!-- CONTACT -->
 			      <section class="content">
-							<h3>Contact</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
-			           Contact
+			           <h3>Contact</h3>
 			          </div>
 			          <div class="content-text">
 			          	{{#if website}}
@@ -76,10 +75,9 @@
 			      {{#location}}
 				      {{#ifCond address '||' city}}
 					      <section class="content">
-									<h3>Location</h3><!-- Invisible, for SEO / HTML validity -->
 					        <div class="row">
 					          <div class="content-cat">
-					           Location
+					           <h3>Location</h3>
 					          </div>
 					          <div class="content-text">
 
@@ -122,10 +120,9 @@
 						<!-- LANGUAGE -->
 			      {{#if resume.languages.length}}
 			      <section class="content">
-							<h3>Languages</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
-			           Languages
+			           <h3>Languages</h3>
 			          </div>
 			          <div class="content-text">
 
@@ -152,10 +149,9 @@
 			      <!-- PROFILES for website-->
 			      {{#if profiles.length}}
 				      <section class="content profiles">
-								<h3>Profiles</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat">
-				           Profiles
+				           <h3>Profiles</h3>
 				          </div>
 				          <div class="content-text profiles-listing">
 				            <ul>
@@ -177,10 +173,9 @@
 						<!-- PROFILES for print -->
 						{{#if profiles.length}}
 							<section class="content profiles-print">
-								<h3>Profiles</h3><!-- Invisible, for SEO / HTML validity -->
 								<div class="row">
 									<div class="content-cat">
-									 Profiles
+									 <h3>Profiles</h3>
 									</div>
 									<div class="content-text">
 										{{#each profiles}}
@@ -198,10 +193,9 @@
 
 						{{#if summary}}
 							<section class="content summary">
-								<h3>About me</h3><!-- Invisible, for SEO / HTML validity -->
 								<div class="row small-fullwidth-row">
 									<div class="content-cat">
-									 About Me
+									 <h3>About Me</h3>
 									</div>
 									<div class="content-text work-content">
 										<p>
@@ -220,11 +214,10 @@
 						{{else}}
 								<section class="content work-content">
 						{{/if}}
-							<h3>Work Experience</h3><!-- Invisible, for SEO / HTML validity -->
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if $first}}
-											Work	Experience
+											<h3>Work	Experience</h3>
 									{{/if}}
 
 								 {{#if startDate}}
@@ -273,11 +266,10 @@
 						{{else}}
 								<section class="content work-content">
           	{{/if}}
-							<h3>Volunteer work</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row small-fullwidth-row">
 			          <div class="content-cat big-text">
 			          	{{#if $first}}
-											Volunteer work
+											<h3>Volunteer work</h3>
 			          	{{/if}}
 
 								 {{#if startDate}}
@@ -326,12 +318,11 @@
 							{{else}}
 								<section class="content education-content">
 							{{/if}}
-							<h3>Education</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat big-text">
 
 				          	{{#if $first}}
-				            	Education
+				            	<h3>Education</h3>
 										{{/if}}
 
 										{{#if startDate}}
@@ -368,11 +359,10 @@
 					{{#if resume.awards.length}}
 						{{#foreach resume.awards}}
 				      <section class="content">
-								<h3>Awards</h3><!-- Invisible, for SEO / HTML validity -->
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if $first}}
-				            	Awards
+				            	<h3>Awards</h3>
 										{{/if}}
 
 										{{#if title}}
@@ -401,10 +391,9 @@
 
 					{{#if resume.skills.length}}
 			      <section class="content">
-							<h3>Skills</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
-			            Skills
+			            <h3>Skills</h3>
 			          </div>
 			          <div class="content-text skills-listing">
 			          	{{#foreach resume.skills}}
@@ -434,10 +423,9 @@
 
 		    	{{#if resume.interests.length}}
 			      <section class="content">
-							<h3>Interests</h3><!-- Invisible, for SEO / HTML validity -->
 			        <div class="row">
 			          <div class="content-cat">
-			            Interests
+			            <h3>Interests</h3>
 			          </div>
 			          <div class="content-text skills-listing">
 			          	{{#foreach resume.interests}}
