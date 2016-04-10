@@ -7,13 +7,13 @@ This is a theme for [JSON Resume](http://jsonresume.org/). It's a fork of [jsonr
 
 ## Preview
 ### Desktop
-![Desktop](http://i.imgur.com/YIkqf3w.png)
+![Desktop](http://i.imgur.com/k9qpO6U.png)
 
 ### Phone
-![Desktop](http://i.imgur.com/YiVCi40.png)
+![Desktop](http://i.imgur.com/BBoDaI7.png)
 
 ### Print
-![Desktop](http://i.imgur.com/2cnlNPO.png)
+![Desktop](http://i.imgur.com/6Uh8mk7.png)
 
 ## License
 
