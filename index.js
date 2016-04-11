@@ -1,6 +1,6 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
-var countries = require('country-data').countries;
+var countries = require('./resources/countryCodes.js');
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
@@ -10,7 +10,7 @@ function render(resume) {
 	var screenCSS = fs.readFileSync(__dirname + "/css/screen.css", "utf-8");
 
 	// Get a country from the country code
-	resume.basics.location.country = countries[resume.basics.location.countryCode].name;
+	resume.basics.location.country = countries[resume.basics.location.countryCode];
 
   // http://stackoverflow.com/a/12002281/1263876
 	// TODO

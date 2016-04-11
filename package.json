@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "country-codes": "0.0.3",
     "handlebars": "^2.0.0-alpha.4"
   },
   "homepage": "https://github.com/lindell/jsonresume-theme-paper",
