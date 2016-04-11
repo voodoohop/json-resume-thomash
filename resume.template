@@ -73,7 +73,7 @@
 
 			      <!-- LOCATION -->
 			      {{#location}}
-				      {{#ifCond address '||' city}}
+				      {{#if (or address city)}}
 					      <section class="content">
 					        <div class="row">
 					          <div class="content-cat">
@@ -112,7 +112,7 @@
 					          </div>
 					        </div>
 					      </section>
-			      	{{/ifCond}}
+			      	{{/if}}
 		      	{{/location}}
 		      {{/resume.basics}}
 
@@ -208,15 +208,15 @@
 					{{/resume.basics}}
 
 					{{#if resume.work.length}}
-						{{#foreach resume.work}}
-						{{#if $first}}
+						{{#each resume.work}}
+						{{#if @first}}
 								<section class="content">
 						{{else}}
 								<section class="content work-content">
 						{{/if}}
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
-									{{#if $first}}
+									{{#if @first}}
 											<h3>Work	Experience</h3>
 									{{/if}}
 
@@ -228,8 +228,8 @@
 
 								</div>
 								<div class="content-text work-listing education-listing">
-										{{#ifCond company '&&' position}}
-										{{#if $first}}
+										{{#if (and company position)}}
+										{{#if @first}}
 											<p class="small-center first-listing">
 											{{else}}
 											<p class="small-center">
@@ -240,7 +240,7 @@
 													<strong>{{position}}</strong> at <strong>{{company}}</strong>
 												{{/if}}
 											</p>
-										{{/ifCond}}
+										{{/if}}
 
 										{{#if summary}}
 											<p>{{summary}}</p>
@@ -256,19 +256,19 @@
 								</div>
 							</div>
 						</section>
-						{{/foreach}}
+						{{/each}}
 					{{/if}}
 
 					{{#if resume.volunteer.length}}
-						{{#foreach resume.volunteer}}
-						{{#if $first}}
+						{{#each resume.volunteer}}
+						{{#if @first}}
 								<section class="content">
 						{{else}}
 								<section class="content work-content">
           	{{/if}}
 			        <div class="row small-fullwidth-row">
 			          <div class="content-cat big-text">
-			          	{{#if $first}}
+			          	{{#if @first}}
 											<h3>Volunteer work</h3>
 			          	{{/if}}
 
@@ -280,8 +280,8 @@
 
 			          </div>
 			          <div class="content-text work-listing education-listing">
-										{{#ifCond organization '&&' position}}
-										{{#if $first}}
+										{{#if (and organization position)}}
+										{{#if @first}}
 					            <p class="first-listing small-center">
 					            {{else}}
 					            <p class="small-center">
@@ -292,7 +292,7 @@
 					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
 					            	{{/if}}
 					            </p>
-										{{/ifCond}}
+										{{/if}}
 
 										{{#if summary}}
 											<p>{{summary}}</p>
@@ -308,12 +308,12 @@
 			          </div>
 			        </div>
 			      </section>
-			      {{/foreach}}
+			      {{/each}}
 					{{/if}}
 
 					{{#if resume.education.length}}
-						{{#foreach resume.education}}
-							{{#if $first}}
+						{{#each resume.education}}
+							{{#if @first}}
 								<section class="content">
 							{{else}}
 								<section class="content education-content">
@@ -321,7 +321,7 @@
 				        <div class="row">
 				          <div class="content-cat big-text">
 
-				          	{{#if $first}}
+				          	{{#if @first}}
 				            	<h3>Education</h3>
 										{{/if}}
 
@@ -334,7 +334,7 @@
 				          </div>
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
-											{{#if $first}}
+											{{#if @first}}
 						            <p class="heading first-listing">{{institution}}</p>
 						            {{else}}
 						            <p class="heading">{{institution}}</p>
@@ -353,15 +353,15 @@
 				          </div>
 				        </div>
 				      </section>
-			      {{/foreach}}
+			      {{/each}}
 		      {{/if}}
 
 					{{#if resume.awards.length}}
-						{{#foreach resume.awards}}
+						{{#each resume.awards}}
 				      <section class="content">
 				        <div class="row">
 				          <div class="content-cat big-text">
-				            {{#if $first}}
+				            {{#if @first}}
 				            	<h3>Awards</h3>
 										{{/if}}
 
@@ -386,7 +386,7 @@
 				          </div>
 				        </div>
 				      </section>
-			      {{/foreach}}
+			      {{/each}}
 		      {{/if}}
 
 					{{#if resume.skills.length}}
@@ -396,7 +396,7 @@
 			            <h3>Skills</h3>
 			          </div>
 			          <div class="content-text skills-listing">
-			          	{{#foreach resume.skills}}
+			          	{{#each resume.skills}}
 			            	<p>
 			            	<span class="name">
 			              {{#if name}}
@@ -415,7 +415,7 @@
 												{{#commalist keywords}}{{.}}{{/commalist}}
 											{{/if}}
 			            	</p>
-			            {{/foreach}}
+			            {{/each}}
 			          </div>
 			        </div>
 			      </section>
@@ -428,7 +428,7 @@
 			            <h3>Interests</h3>
 			          </div>
 			          <div class="content-text skills-listing">
-			          	{{#foreach resume.interests}}
+			          	{{#each resume.interests}}
 			            	<p>
 			            	<span class="name">
 			              {{#if name}}
@@ -441,7 +441,7 @@
 												{{#commalist keywords}}{{.}}{{/commalist}}
 											{{/if}}
 			            	</p>
-			            {{/foreach}}
+			            {{/each}}
 			          </div>
 			        </div>
 			      </section>
