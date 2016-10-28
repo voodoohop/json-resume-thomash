@@ -1,6 +1,6 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
-var countries = require('./resources/countryCodes.js');
+var countries = require('./resources/countryCodes.json');
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
