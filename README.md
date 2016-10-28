@@ -1,6 +1,6 @@
 # JSON Resume Paper++ theme
 
-This is a theme for [JSON Resume](http://jsonresume.org/). It's a fork of [jsonresume-theme-paper](https://github.com/TimDaub/jsonresume-theme-paper) but with smaller visual changes and support for proper responsive design for the web.
+This is a theme for [JSON Resume](http://jsonresume.org/). It's a fork of [jsonresume-theme-paper](https://github.com/TimDaub/jsonresume-theme-paper) but with smaller support for proper **responsive design** for the web and smaller visual changes.
 
 ## Demo
 #### [lindell.me](http://lindell.me)
