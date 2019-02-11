@@ -199,7 +199,7 @@
 									</div>
 									<div class="content-text work-content">
 										<p>
-											{{summary}}
+											{{breaklines summary}}
 										</p>
 									</div>
 								</div>
@@ -243,7 +243,7 @@
 										{{/if}}
 
 										{{#if summary}}
-											<p>{{summary}}</p>
+											<p>{{breaklines summary}}</p>
 										{{/if}}
 
 										{{#if highlights.length}}
@@ -298,7 +298,47 @@
 			            		<i>{{area}}</i>
 			            		</p>
 										{{/if}}
+ 										{{#if summary}}
+                        <p>{{breaklines summary}}</p>
+                      {{/if}}
+                      {{#if courses.length}}
+                        {{#each courses}}
+                          <p class="highlight">{{.}}</p>
+                        {{/each}}
+                      {{/if}}
+				          </div>
+				        </div>
+				      </section>
+			      {{/each}}
+		      {{/if}}
 
+					{{#if resume.publications.length}}
+						{{#each resume.publications}}
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            {{#if @first}}
+				            	<h3>Publications</h3>
+										{{/if}}
+
+										{{#if name}}
+				            	<p>{{name}}</p>
+										{{/if}}
+
+										{{#if date}}
+				            	<p style="margin-top:0.25em;">{{date}}</p>
+										{{/if}}
+
+				          </div>
+				          <div class="content-text work-listing">
+
+										{{#if publisher}}
+					         		<strong><p class="heading">{{publisher}}</p></strong>
+										{{/if}}
+
+										{{#if summary}}
+				            	<p class="highlight">{{breaklines summary}}</p>
+										{{/if}}
 				          </div>
 				        </div>
 				      </section>

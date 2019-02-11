@@ -36,8 +36,14 @@ function render(resume) {
   // http://stackoverflow.com/a/18831911
   Handlebars.registerHelper('commalist', function(items, options) {
     return options.fn(items.join(', '));
-  });
-
+	});
+	
+	Handlebars.registerHelper('breaklines', function(text) {
+		text = Handlebars.Utils.escapeExpression(text);
+		text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
+		return new Handlebars.SafeString(text);
+	});
+	
   // Send all necessary resources to the handlebars template and compile it
 	return Handlebars.compile(template)({
 		resume: resume,
