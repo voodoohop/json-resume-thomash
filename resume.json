@@ -12,8 +12,13 @@
        "summary":"After studying Computer Science & Artificial Intelligence at Edinburgh University, I spent 9 years in São Paulo creating an art collective that mixes alternative art and technology. Always keeping one foot in the technology sector, I conceived and implemented a variety of interactive installations, combining my passion for art, research, and technology.\n\nAfter settling back in Germany and I shifted my focus to research and technology again and recently completed a project which involved researching the future trends of Artificial Intelligence for the World Government summit in Dubai.  Having interned at Sun Microsystems and worked at Amazon after University, I have a strong background in Java and agile development practices. More recently, I have created artistic experiences involving a variety of technologies, including Node.js, Functional Reactive Programming, Python, machine learning, intelligent sensors, data visualization, distributed computing, physics engines, and spatialized sound. \n",
        "birthDate":"2018-06-30",
        "location":{
-          "address":"Berlin, Berlin, Germany"
+          "address": "Koepenicker Chaussee 26",
+          "postalCode": "10317",
+          "city": "Berlin",
+          "countryCode": "DE",
+          "region": "Berlin"
        },
+
        "category":"basics",
        "name":"Thomas Haferlach",
        "label":"Machine Learning, Interactive Installations, Computer Science, Event Production, Audio/visual"
