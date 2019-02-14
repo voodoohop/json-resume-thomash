@@ -1,0 +1,1027 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+		<title>Thomas Haferlach's Resume</title>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<style>
+			body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+  font-size: 13pt;
+  font-family: "Open Sans";
+}
+
+h2{
+  font-weight: normal;
+  margin: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+h3{
+  font-weight:300;
+  font-size:1em;
+  margin: 0em;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-size: 0.6em;
+}
+
+.summary p{
+  font-size:0.7em;
+  font-weight:400;
+
+  color: #424242;
+
+  margin-left:2em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Merriweather";
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin: 0 auto;
+  margin-top:-3em;
+
+  border-radius:10em;
+  height:0em;
+  width:auto;
+
+  border: 2px solid #dddddd;
+  cursor:pointer;
+
+  transition: height .6s, margin-top .6s, border 0.3s;
+}
+
+.pic.loaded {
+  height: 6em;
+}
+
+
+@keyframes intro {
+  from {
+    height:0em;
+  }
+
+  to {
+    height: 6em;
+  }
+}
+
+.pic:hover, .pic:active{
+  height: 14em;
+  margin-top: -5em;
+  border: 4px solid #dddddd;
+}
+
+header p {
+  text-align:center;
+
+  margin:0;
+
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  font-size:0.7em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+
+  background-color:white;
+  width:60%;
+
+  padding:0.5em 0 0.5em 0;
+
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-radius:3px;
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right:7.25%;
+}
+
+.content {
+  display:table;
+  width:100%;
+
+  padding-top:1.5em;
+
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+
+.work-listing .first-listing{
+  margin-top: 1.8em;
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  text-align:center;
+  vertical-align:middle;
+  font-variant:small-caps;
+
+  letter-spacing: 1px;
+
+  color: #212121;
+
+  font-family: "Merriweather";
+
+  padding-left:6.66%;
+  width:30%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #dddddd;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-size:0.7em;
+
+  display:inline-block;
+
+}
+
+.content-text ul li:first-child {
+  width:35%;
+
+  color: #424242;
+
+  font-weight:600;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-size:0.7em;
+
+  color: #424242;
+
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-size:0.7em;
+  font-weight:400;
+
+  color: #424242;
+
+  margin-left:3.25em;
+  padding-left:0.5em;
+
+  border-left:1px solid #dddddd;
+}
+
+.education-listing > .heading {
+  font-weight:600;
+
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-print{
+  display: none;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:24%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+div.content-text.skills-listing > p {
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+.no-nl{
+  display: inline-block;
+}
+
+a{
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.fa{
+  color: #000;
+}
+
+.network{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.7em;
+}
+
+@media(max-width:1400px) {
+  .paper {
+    width:80%;
+  }
+
+  .content-cat{
+    padding-left:2%;
+  }
+
+  .content-wrapper{
+    padding-right: 2%;
+  }
+}
+
+		</style>
+
+		<style media="screen">
+			@media(max-width:795px) {
+  .paper {
+    width:96%;
+  }
+
+  .pic{
+    cursor: auto;
+
+  }
+
+  .content-cat{
+    padding-left:1%;
+  }
+
+  .content-wrapper{
+    padding-right: 1%;
+  }
+
+  .profiles-listing ul li, .profiles-listing ul li:first-child{
+    width: 49%;
+  }
+
+  .small-fullwidth-row{
+    display: block;
+  }
+
+  .small-fullwidth-row div{
+    display: block;
+    width:100%;
+  }
+
+  .small-fullwidth-row .content-text{
+    border-left: 2px solid #dddddd;
+  }
+
+  .small-center{
+    text-align: center;
+  }
+
+  .work-listing .first-listing{
+    margin-top: 0.45em;
+  }
+}
+
+		</style>
+
+		<style media="print">
+			
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+  font-size:12pt;
+  font-family: "Merriweather";
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+h2{
+  margin-top:0em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.pic{
+    height:4.2em;
+    width:4.2em;
+}
+
+.pic.loaded {
+  height: 4.2em;
+}
+
+.profiles {
+  display:none;
+}
+
+.profiles-print{
+  display: table;
+}
+
+.content {
+  page-break-inside:avoid;
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:25%;
+  color:black;
+}
+
+.content-cat p {
+  font-size:0.5em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.summary p{
+  color: black;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="resume-wrapper">
+		  <article class="paper">
+			    <header>
+			      <div class="header-content">
+			        <div class="header-text">
+			          <h2>Thomas Haferlach</h2>
+			          <p class="subtitle">Machine Learning, Interactive Installations, Computer Science, Event Production, Audio/visual</p>
+			        </div>
+			      </div>
+			    </header>
+			    <div class="content-wrapper">
+			      <!-- CONTACT -->
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>Contact</h3>
+			          </div>
+			          <div class="content-text">
+				            <ul>
+				              <li>Email</li>
+				              <li><a href="mailto:t.haferlach@gmail.com">t.haferlach@gmail.com</a></li>
+				            </ul>
+
+				            <ul>
+				              <li>Phone</li>
+				              <li>+49 (0)176 58158410</li>
+				            </ul>
+
+			          </div>
+			        </div>
+			      </section>
+
+			      <!-- LOCATION -->
+					      <section class="content">
+					        <div class="row">
+					          <div class="content-cat">
+					           <h3>Location</h3>
+					          </div>
+					          <div class="content-text">
+
+						            <ul>
+						              <li>Address</li>
+						              <li>Berlin, Berlin, Germany</li>
+						            </ul>
+
+
+
+
+					          </div>
+					        </div>
+					      </section>
+
+
+						<!-- LANGUAGE -->
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>Languages</h3>
+			          </div>
+			          <div class="content-text">
+
+				            <ul>
+
+				              	<li>English</li>
+
+				              <li>Native speaker</li>
+
+				            </ul>
+				            <ul>
+
+				              	<li>Portuguese</li>
+
+				              <li>Full professional</li>
+
+				            </ul>
+				            <ul>
+
+				              	<li>French</li>
+
+				              <li>Limited working knowleedge</li>
+
+				            </ul>
+				            <ul>
+
+				              	<li>German</li>
+
+				              <li>Native speaker</li>
+
+				            </ul>
+
+			          </div>
+			        </div>
+			      </section>
+
+			      <!-- PROFILES for website-->
+				      <section class="content profiles">
+				        <div class="row">
+				          <div class="content-cat">
+				           <h3>Profiles</h3>
+				          </div>
+				          <div class="content-text profiles-listing">
+				            <ul>
+					              	<li>
+					              	<a href="https://instagram.com/thomash_voodoo/" target="_blank">
+														<i class="fa fa-2x fa-instagram-square"></i>
+							            	<span class="network">Instagram</span>
+													</a>
+							            </li>
+				            </ul>
+				          </div>
+				        </div>
+				      </section>
+						<!-- PROFILES for print -->
+							<section class="content profiles-print">
+								<div class="row">
+									<div class="content-cat">
+									 <h3>Profiles</h3>
+									</div>
+									<div class="content-text">
+											<ul>
+												<li>Instagram</li>
+												<li><a href="https://instagram.com/thomash_voodoo/">instagram.com/thomash_voodoo/</a></li>
+											</ul>
+									</div>
+								</div>
+							</section>
+
+							<section class="content summary">
+								<div class="row small-fullwidth-row">
+									<div class="content-cat">
+									 <h3>About Me</h3>
+									</div>
+									<div class="content-text work-content">
+										<p>
+											After studying Computer Science &amp; Artificial Intelligence at Edinburgh University, I spent 9 years in São Paulo creating an art collective that mixes alternative art and technology. Always keeping one foot in the technology sector, I conceived and implemented a variety of interactive installations, combining my passion for art, research, and technology.<br><br>After settling back in Germany and I shifted my focus to research and technology again and recently completed a project which involved researching the future trends of Artificial Intelligence for the World Government summit in Dubai.  Having interned at Sun Microsystems and worked at Amazon after University, I have a strong background in Java and agile development practices. More recently, I have created artistic experiences involving a variety of technologies, including Node.js, Functional Reactive Programming, Python, machine learning, intelligent sensors, data visualization, distributed computing, physics engines, and spatialized sound. <br>
+										</p>
+									</div>
+								</div>
+							</section>
+
+								<section class="content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+											<h3>Work	Experience</h3>
+
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center first-listing">
+													<strong>Foresight Researcher</strong> at <strong>Envisioning</strong>
+											</p>
+
+											<p>Currently researching technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2018-09-30</span> till <span class="no-nl">2018-11-30</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Foresight Researcher</strong> at <strong>Envisioning</strong>
+											</p>
+
+											<p>Researched future trends of Artificial Intelligence for the World Government Summit in Dubai.</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2018-05-31</span> till <span class="no-nl">2018-06-30</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Talk about Artificial Intelligence and Art at the Frontiere IA Conference</strong> at <strong>MUTEK</strong>
+											</p>
+
+											<p>Conceived the live visuals for the band &quot;Die Wilde Jagd&quot; by creating a system that visualizes audio using Deep Neural Networks. Subsequently got  invited to give a talk on applications of AI with art at the Frontiere IA conference in Montreal</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2018-03-31</span> till <span class="no-nl">2018-03-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Machine Learning and Music  - Limited Contract Project</strong> at <strong>transmediale - art &amp; digital culture</strong>
+											</p>
+
+											<p>Conceived and performed a musical piece which used the smartphones of the attendees to listen and react by generating sounds. This resulted in a form of musical swarm intelligence which blurs the border between performer and participant.<br><br>http://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2013-06-30</span> till <span class="no-nl">2016-06-30</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Curator and Event Production</strong> at <strong>Secretaria da Cultura</strong>
+											</p>
+
+											<p>Worked as a curator at the Virada Cultural, one of the world&#x27;s biggest free street festivals. I was involved in the creation of a culture of free events in the center of São Paulo. Additionally curated and produced an annual free street party called &quot;SP Na Rua&quot; which showcases São Paulo&#x27;s alternative art collectives.<br></p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2010-01-31</span> till <span class="no-nl">2018-12-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Artist and Organizer</strong> at <strong>Voodoohop</strong>
+											</p>
+
+											<p>As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by a hedonistic attitude that stimulates individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.<br><br>As a musician I perform live, mixing South American elements with contemporary electronica. I have created a unique live performance in which Software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2008-03-31</span> till <span class="no-nl">2016-03-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Freelance Developer</strong> at <strong>SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), City of São Paulo</strong>
+											</p>
+
+											<p>Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing and alternative controllers.<br><br>For ArtRio I developed an installation that let participants paint on a blank canvas using their voice and head movements with the help of camera tracking and a microphone. <br>https://vimeo.com/77349535<br><br>For TIM mobile I developed an OpenGL based mountain climbing game in which a user used both hands with a pair of Wii controllers. In an installation for the world cup people were able to take a selfie with the official mascot being superimposed onto the image using image recognition and processing.<br><br>For superuber I developed interactive installations such as letting users draw in simulated sand, create a song with their silhouette from loops by dancing in front of a camera<br><br>tech: javascript × groovy × java × actionscript × node.js × meteor × opengl ×  alternative controllers</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2007-06-30</span> till <span class="no-nl">2007-10-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Research and publication of my bachelor thesis </strong> at <strong>The University of Edinburgh</strong>
+											</p>
+
+											<p>Implementation of my thesis &quot;Evolving a Neural Model of Insect Path Integration&quot; on a physical robot and publication in the journal &quot;Adaptive Behavior&quot;.<br><br>http://journals.sagepub.com/doi/abs/10.1177/1059712307082080</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2006-10-31</span> till <span class="no-nl">2007-02-28</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Software Engineer</strong> at <strong>Amazon</strong>
+											</p>
+
+											<p>Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.<br><br>Tech: java × spring framework × test driven development × agile development × python × distributed computing</p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2004-08-31</span> till <span class="no-nl">2005-07-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Software Engineer</strong> at <strong>Sun Microsystems</strong>
+											</p>
+
+											<p>Worked as a team developer on several inner process projects.<br><br>Researched and developed a prototype failure analysis classification engine using technologies from the field of data mining and artificial intelligence.<br><br>Tech: java ×  spring framework ×  test driven development ×  agile development ×  python ×  distributed computing </p>
+
+
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2003-01-31</span> till <span class="no-nl">2005-01-31</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="small-center">
+													<strong>Pedicabbing (riding a cycle­taxi) in Edinburgh to help fund degree.</strong> at <strong>Edinburgh Pedicabs</strong>
+											</p>
+
+
+
+
+								</div>
+							</div>
+						</section>
+
+
+								<section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	<h3>Education</h3>
+
+				            		<p>2001-01-31 till <span class="no-nl">2006-01-31</span></p>
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading first-listing">The University of Edinburgh</p>
+
+			            		<p class="highlight">
+												Bachelor of Science - BS:
+			            		<i>Artificial Intelligence and Computer Science</i>
+			            		</p>
+                        <p><p>Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation</p>
+<p>Extra: French, Human Communication</p>
+</p>
+                          <p class="highlight">Did computer vision</p>
+				          </div>
+				        </div>
+				      </section>
+								<section class="content education-content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+
+				            		<p>1995-01-31 till <span class="no-nl">2001-01-31</span></p>
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+						            <p class="heading">Albert­ Schweitzer­ Gymnasium, Kassel</p>
+
+                        <p><p>Main subjects: Mathematics, Physics, History, English<br>
+Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
+<p>Awarded honorary membership of the German Physics Society</p>
+</p>
+                          <p class="highlight">Did computer vision</p>
+				          </div>
+				        </div>
+				      </section>
+
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            	<h3>Publications</h3>
+
+				            	<p>Low Level Approaches to Cognitive Control</p>
+
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Spatial Temporal Patterns for Action-Oriented Perception in Roving Robots</p></strong>
+
+				            	<p class="highlight">We describe several neural network implementions of insect based methods of navigation. We present the preliminary results of modelling associative learning capabilities based on the insect mushroom bodies.</p>
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	<p>The 2007 IEEE CEC simulated car racing competition</p>
+
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Genetic Programming and Evolvable Machines</p></strong>
+
+				            	<p class="highlight">With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task, as well as an example of one way of running a competition. In the process, we provide a set of reference results for those who wish to use the simplerace game to benchmark their own algorithms. <br></p>
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	<p>Evolving a Neural Model of Insect Path Integration</p>
+
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">Adaptive Behaviour 15(3)</p></strong>
+
+				            	<p class="highlight">We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent in a manner comparable to the polarization-sensitive interneurons found in insects. The home vector is encoded across a circular array of cells that integrate this input. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.</p>
+				          </div>
+				        </div>
+				      </section>
+
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            	<h3>Awards</h3>
+
+				            	<p>The 2007 IEEE CEC Simulated Car Racing Competition (2nd Place)</p>
+
+				            	<p style="margin-top:0.25em;">2007-06-30</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">IEEE Congress on Evolutionary Computation</p></strong>
+
+				            	<p class="highlight">Trained a neural network based agent to compete successfully in an online car racing competition.</p>
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				            	<p>Honorary Membership</p>
+
+				            	<p style="margin-top:0.25em;">2001-05-31</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+
+					         		<strong><p class="heading">German Physics Society</p></strong>
+
+				          </div>
+				        </div>
+				      </section>
+
+
+
+
+
+
+
+		  	</div>
+		  </article>
+		</div>
+	</body>
+</html>
