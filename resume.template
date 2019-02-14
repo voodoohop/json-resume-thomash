@@ -244,8 +244,8 @@
 				            	<p>{{name}}</p>
 										{{/if}}
 
-										{{#if date}}
-				            	<p style="margin-top:0.25em;">{{date}}</p>
+										{{#if releaseDate}}
+				            	<p style="margin-top:0.25em;">{{releaseDate}}</p>
 										{{/if}}
 
 				          </div>
