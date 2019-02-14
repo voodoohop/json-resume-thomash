@@ -1,7 +1,7 @@
 {   
     "basics":{
        "email":"t.haferlach@gmail.com",
-       "phone":"+49 (0)176 58158410",
+       "phone":"+49 (0)176 58158410",   
        "profiles":[
         {
             "network":"LinkedIn",
@@ -22,7 +22,7 @@
              "url":"http://soundcloud.com/thomash_voodoo"
           }
        ],
-       "summary":"After studying Computer Science & Artificial Intelligence at Edinburgh University, I spent 9 years in São Paulo creating an art collective that mixes alternative art and technology. Always keeping one foot in the technology sector, I conceived and implemented a variety of interactive installations, combining my passion for art, research, and technology.\n\nAfter settling back in Germany and I shifted my focus to research and technology again and recently completed a project which involved researching the future trends of Artificial Intelligence for the World Government summit in Dubai.  Having interned at Sun Microsystems and worked at Amazon after University, I have a strong background in Java and agile development practices. More recently, I have created artistic experiences involving a variety of technologies, including Node.js, Functional Reactive Programming, Python, machine learning, intelligent sensors, data visualization, distributed computing, physics engines, and spatialized sound. \n",
+       "summary":"From even before embarking upon my academic pursuits, I have had a passion about biologically inspired computation. Artificial neural networks, evolutionary computation and multi-agent systems that show emergent behavior fascinate me in their ability to come up with surprisingly creative solutions to a broad range of problems. Even when these algorithms fail, they tend to fail in a natural way, making mistakes that can seem eerily human. Apart from having a wide range of practical applications, these models may give us insights into human and animal intelligence. I enjoy exploring with generative models in an artistic context and integrating multidisciplinary ideas drawing from a variety of fields  such as game theory, computer science, foresight research, generative art, music, signal processing, and computer vision.",
        "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
@@ -33,7 +33,7 @@
 
        "category":"basics",
        "name":"Thomas Haferlach",
-       "label":"Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art"
+       "label_disabled":"Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art"
     },
     "publications":[
        {
@@ -66,82 +66,79 @@
     ],
     "work":[
        {
-          "locationName":"Berlin Area, Germany",
+          "location":"Berlin Area, Germany",
           "category":"work",
           "company":"Envisioning",
-          "summary":"Currently researching technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.",
+          "summary":"Researched [future trends of Artificial Intelligence](https://viz.envisioning.io/wgs-ai/?o=0)   for the World Government Summit in Dubai drawing on academic papers, news and science fiction.\n\nCurrently investigating technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.",
           "position":"Foresight Researcher",
-          "startDate":"2018-09-30"
+          "startDate":"2018-09-01",
+          "url":"https://envisioning.io/"
        },
        {
-          "locationName":"Berlin Area, Germany",
+          "location":"Montreal, Canada Area",
           "category":"work",
-          "company":"Envisioning",
-          "summary":"Researched future trends of Artificial Intelligence for the World Government Summit in Dubai.",
-          "position":"Foresight Researcher",
-          "startDate":"2018-09-30",
-          "endDate":"2018-11-30"
-       },
-       {
-          "locationName":"Montreal, Canada Area",
-          "category":"work",
-          "company":"MUTEK",
-          "summary":"Conceived the live visuals for the band \"Die Wilde Jagd\" by creating a system that visualizes audio using Deep Neural Networks. Subsequently got  invited to give a talk on applications of AI with art at the Frontiere IA conference in Montreal",
+          "company":"MUTEK & Frontière IA",
+          "summary":"Conceived the live visuals for the band \"Die Wilde Jagd\" by creating a system that visualizes audio using Deep Neural Networks. Subsequently got  invited to give a talk on applications of AI with art at the Frontière IA conference in Montreal",
           "position":"Talk about Artificial Intelligence and Art at the Frontiere IA Conference",
           "startDate":"2018-05-31",
-          "endDate":"2018-06-30"
+          "endDate":"2018-06-30",
+          "url":"http://www.printempsnumerique.ca/en/programming/event/frontiere-ia-night-conference-with-yoshua-bengio/"
        },
        {
-          "locationName":"Berlin Area, Germany",
+          "location":"Berlin Area, Germany",
           "category":"work",
           "company":"transmediale - art & digital culture",
-          "summary":"Conceived and performed a musical piece which used the smartphones of the attendees to listen and react by generating sounds. This resulted in a form of musical swarm intelligence which blurs the border between performer and participant.\n\nhttp://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/",
-          "position":"Machine Learning and Music  - Limited Contract Project",
+          "summary":"Conceived and performed a musical piece which used the smartphones of the attendees to listen and react by generating sounds. This resulted in a form of musical swarm intelligence which blurs the border between performer and participant.",
+          "position":"Machine Learning and Music Hacklab: Swarm Animism",
           "startDate":"2018-03-31",
-          "endDate":"2018-03-31"
+          "endDate":"2018-03-31",
+          "url":"http://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/"
        },
        {
-          "locationName":"São Paulo Area, Brazil",
+          "location":"São Paulo Area, Brazil",
           "category":"work",
           "company":"Voodoohop",
-          "summary":"As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by a hedonistic attitude that stimulates individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.\n\nAs a musician I perform live, mixing South American elements with contemporary electronica. I have created a unique live performance in which Software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.",
+          "summary":"As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by the principle of stimulating individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.\n\nAs a musician, I have created a unique live performance in which software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.",
           "position":"Artist and Organizer",
           "startDate":"2010-01-31",
-          "endDate":"2018-12-31"
+          "endDate":"2018-12-31",
+          "url":"http://voodoohop.com"
        },
        {
-          "locationName":"Brazil",
+          "location":"Brazil",
           "category":"work",
-          "company":"SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), City of São Paulo",
-          "summary":"Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing and alternative controllers.\n\nFor ArtRio I developed an installation that let participants paint on a blank canvas using their voice and head movements with the help of camera tracking and a microphone. \nhttps://vimeo.com/77349535\n\nFor TIM mobile I developed an OpenGL based mountain climbing game in which a user used both hands with a pair of Wii controllers. In an installation for the world cup people were able to take a selfie with the official mascot being superimposed onto the image using image recognition and processing.\n\nFor superuber I developed interactive installations such as letting users draw in simulated sand, create a song with their silhouette from loops by dancing in front of a camera\n\ntech: javascript × groovy × java × actionscript × node.js × meteor × opengl ×  alternative controllers",
-          "position":"Freelance Developer",
+          "company":"SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), ArtRio, City of São Paulo",
+          "summary":"Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing, controllers, sensors, embedded computing and data visualization.\n\n**Examples:**\n. With the help of facial tracking, a microphone and pitch analysis, participants could [paint on a blank canvas](https://vimeo.com/77349535) using their voice and head movements. \n. An OpenGL based climbing game in which [a user climbs a mountain](https://vimeo.com/20260318) using the movement of his own hands \n. For the 2014 FIFA World Cup, using computer vision and real-time image augmentation, participants [took selfies with the official mascot](https://vimeo.com/116658261) superimposed onto the image.\n. Visitors of a science museum could draw shapes into different types of simulated sand using a multi-touch screen",
+          "position":"Freelance Developer", 
           "startDate":"2008-03-31",
           "endDate":"2016-03-31"
        },
        {
-          "locationName":"Edinburgh, United Kingdom",
+          "location":"Edinburgh, United Kingdom",
           "category":"work",
           "company":"The University of Edinburgh",
-          "summary":"Implementation of my thesis \"Evolving a Neural Model of Insect Path Integration\" on a physical robot and publication in the journal \"Adaptive Behavior\".\n\nhttp://journals.sagepub.com/doi/abs/10.1177/1059712307082080",
-          "position":"Research and publication of my bachelor thesis ",
+          "summary":"Implementation of my thesis [Evolving a Neural Model of Insect Path Integration](https://journals.sagepub.com/doi/abs/10.1177/1059712307082080) on a physical robot and publication in the journal \"Adaptive Behavior\"",
+          "position":"Research and publication of my bachelor thesis",
           "startDate":"2007-06-30",
-          "endDate":"2007-10-31"
+          "endDate":"2007-10-31",
+          "url":"https://www.research.ed.ac.uk/portal/en/publications/evolving-a-neural-model-of-insect-path-integration(fcb76a91-125c-46d0-849d-efc06c944107).html"
        },
        {
-          "locationName":"Edinburgh, United Kingdom",
+          "location":"Edinburgh, United Kingdom",
           "category":"work",
-          "company":"Amazon",
-          "summary":"Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.\n\nTech: java × spring framework × test driven development × agile development × python × distributed computing",
+          "company":"Amazon Development Centre Scotland",
+          "summary":"Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing",
           "position":"Software Engineer",
           "startDate":"2006-10-31",
-          "endDate":"2007-02-28"
+          "endDate":"2007-09-28",
+          "url":"https://www.amazondc.com/"
        },
        {
-          "locationName":"Portland, Oregon Area",
+          "location":"Portland, Oregon Area",
           "category":"work",
           "company":"Sun Microsystems",
-          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.\n\nTech: java ×  spring framework ×  test driven development ×  agile development ×  python ×  distributed computing ",
-          "position":"Software Engineer",
+          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing ",
+          "position":"Software Engineering Internship",
           "startDate":"2004-08-31",
           "endDate":"2005-07-31"
        }
@@ -152,10 +149,10 @@
           "institution":"The University of Edinburgh",
           "studyType":"Bachelor of Science",
           "area":"Artificial Intelligence and Computer Science",
-          "summary":"Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation\n\nExtra: French, Human Communication\n\nThesis: Evolving Neural Models of Path Integration",
+          "summary":"Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation\n\nExtra: French, Human Communication\n\nThesis: [Evolving Neural Models of Path Integration](https://journals.sagepub.com/doi/abs/10.1177/1059712307082080)",
           "startDate":"2001-01-31",
           "endDate":"2006-01-31",
-          "gpa":"First class honors"
+          "gpa":"<i>First class honors</i>"
        },
        {
           "category":"education",
@@ -192,16 +189,23 @@
     "awards":[
        {
           "category":"awards",
-          "title":"The 2007 IEEE CEC Simulated Car Racing Competition (2nd Place)",
+          "title":"Simulated Car Racing Competition (2nd Place)",
           "date":"2007-06-30",
           "awarder":"IEEE Congress on Evolutionary Computation",
-          "summary":"Trained a neural network based agent to compete successfully in an online car racing competition."
+          "summary":"Trained a modular neural network architecture to control an agent that competed successfully in the IEEE CEC Simulated Car Racing Competition."
        },
        {
           "category":"awards",
           "title":"Honorary Membership",
           "date":"2001-05-31",
           "awarder":"German Physics Society"
-       }
+       },
+       {
+       "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: react - max/msp - ableton live - electron - node.js",
+       "date":"2007-06-30",
+       "title":"Harmonic Audio Mixing Visualization Tools",
+       "url":"https://medium.com/@thomashaferlach/voodoohop-harmony-and-tempo-tools-for-ableton-live-5eb8af96cb41",
+       "category":"awards"
+        }
     ]
  }

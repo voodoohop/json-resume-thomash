@@ -102,6 +102,7 @@ const format_employment = ({
   description,
   title,
   timePeriod,
+  locationName,
   ...rest
 }) => ({
     ...rest,
@@ -110,7 +111,7 @@ const format_employment = ({
     position:title,
     startDate: timePeriod.startDate,
     [timePeriod.endDate && 'endDate']: timePeriod.endDate,
-  
+    location:locationName
     // "highlights": [
     //   "Started the company","went to work"
     // ]

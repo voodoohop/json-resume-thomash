@@ -160,7 +160,7 @@ header p {
 
 
 .work-listing .first-listing{
-  margin-top: 1.8em;
+  margin-top: 1.8em !important;
 }
 
 .content:last-child {
@@ -369,6 +369,10 @@ a{
   content: "\e900";
 }
 
+
+.justified * {
+  text-align: justify;
+}
 		</style>
 
 		<style media="screen">
@@ -427,11 +431,6 @@ body, html {
   font-family: "Merriweather";
 }
 
-a{
-  text-decoration: none;
-  color: #000;
-}
-
 h2{
   margin-top:0em;
 }
@@ -443,128 +442,30 @@ h2{
   padding-top: 0;
 }
 
-header p {
-  font-size: 1.3em;
+.profiles-listing ul li, .profiles-listing ul li:first-child{
+  width: 49%;
 }
 
-.subtitle {
-  font-size: 0.7em;
+.small-fullwidth-row{
+  display: block;
 }
 
-.header-pic {
-  float:left;
+.small-fullwidth-row div{
+  display: block;
+  width:100%;
 }
 
-.pic{
-    height:4.2em;
-    width:4.2em;
+.small-fullwidth-row .content-text{
+  border-left: 2px solid #dddddd;
 }
 
-.pic.loaded {
-  height: 4.2em;
+.small-center{
+  text-align: center;
 }
 
-.profiles {
-  display:none;
+.work-listing .first-listing{
+  margin-top: 0.45em;
 }
-
-.profiles-print{
-  display: table;
-}
-
-.content {
-  page-break-inside:avoid;
-  page-break-after:auto;
-}
-
-.header-text {
-  float:left;
-  margin-top: -1.6em;
-}
-
-.content-wrapper > .content:first-child {
-  padding-top: 2em;
-}
-
-.content:last-child {
-  padding-bottom: 0;
-}
-
-.content-cat {
-  width:25%;
-  color:black;
-}
-
-.content-cat p {
-  font-size:0.5em;
-  font-weight: 600;
-}
-
-header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
-  color:black;
-}
-
-.content-text.skills-listing > ul > li span, .subtitle {
-  color:#212121;
-}
-
-.content-text ul:last-child {
-  margin-bottom: 0.25em;
-}
-
-.content-text ul li:first-child {
-  width:50%;
-}
-
-.profiles-listing ul li:first-child {
-  width:32%;
-}
-
-div.content-text.skills-listing > ul > li {
-  width:33%;
-}
-
-.work-listing p {
-  margin-bottom: 0.1em;
-}
-
-div.content-text.skills-listing > ul > li > p {
-  margin-top: 0.4em;
-  margin-bottom: 0.5em;
-}
-
-div.content-text.skills-listing > ul > li {
-  padding-left: 1.5em;
-}
-
-div.content-text.skills-listing > ul > li:first-child {
-  padding-left: 2em;
-}
-
-.note {
-  display:none;
-}
-
-.content-text:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.content-text ul li a:hover {
-  color:#4fc3f7;
-}
-
-.summary p{
-  color: black;
-}
-
-.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
-  border-left:1px solid #eeeeee;
-}
-
-.big-text {
-  padding-top: 0;
-}
-
 		</style>
 	</head>
 	<body>
@@ -574,7 +475,7 @@ div.content-text.skills-listing > ul > li:first-child {
 			      <div class="header-content">
 			        <div class="header-text">
 			          <h2>Thomas Haferlach</h2>
-			          <p class="subtitle">Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art</p>
+			          <p class="subtitle"></p>
 			        </div>
 			      </div>
 			    </header>
@@ -651,7 +552,7 @@ div.content-text.skills-listing > ul > li:first-child {
 					              	<li>
 					              	<a href="https://github.com/voodoohop" target="_blank">
 														<i class="fab fa-2x fa-github"></i>
-							            	<span class="network">Github</span>
+							            	<span class="network">GitHub</span>
 													</a>
 							            </li>
 					              	<li>
@@ -680,7 +581,7 @@ div.content-text.skills-listing > ul > li:first-child {
 												<li><a href="https://voodoohop.com/thomash">voodoohop.com/thomash</a></li>
 											</ul>
 											<ul>
-												<li>Github</li>
+												<li>GitHub</li>
 												<li><a href="https://github.com/voodoohop">github.com/voodoohop</a></li>
 											</ul>
 											<ul>
@@ -697,9 +598,10 @@ div.content-text.skills-listing > ul > li:first-child {
 									 <h3>Research Interests</h3>
 									</div>
 									<div class="content-text work-content">
-										<p>
-											After studying Computer Science &amp; Artificial Intelligence at Edinburgh University, I spent 9 years in São Paulo creating an art collective that mixes alternative art and technology. Always keeping one foot in the technology sector, I conceived and implemented a variety of interactive installations, combining my passion for art, research, and technology.<br><br>After settling back in Germany and I shifted my focus to research and technology again and recently completed a project which involved researching the future trends of Artificial Intelligence for the World Government summit in Dubai.  Having interned at Sun Microsystems and worked at Amazon after University, I have a strong background in Java and agile development practices. More recently, I have created artistic experiences involving a variety of technologies, including Node.js, Functional Reactive Programming, Python, machine learning, intelligent sensors, data visualization, distributed computing, physics engines, and spatialized sound. <br>
-										</p>
+										<div class="justified">
+											<p>From even before embarking upon my academic pursuits, I have been passionate about biologically inspired computation. Artificial neural networks, evolutionary computation and multi-agent systems that show emergent behavior fascinate me in their ability to come up with surprisingly creative solutions to a broad range of problems. Even when these algorithms fail, they tend to fail in a natural way, making mistakes that can seem eerily human. Apart from having a wide range of practical applications, these models may give us insights into human and animal intelligence. I enjoy exploring with generative models in an artistic context and integrating multidisciplinary ideas drawing from a variety of fields  such as game theory, computer science, foresight research, generative art, music, signal processing, and computer vision.</p>
+
+										</divs>
 									</div>
 								</div>
 							</section>
@@ -721,13 +623,13 @@ div.content-text.skills-listing > ul > li:first-child {
 												Bachelor of Science
 			            	 
 											with
-											 First class honors
+											 <i>First class honors</i>
 											</p>
 
-                        <p><p>Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation</p>
+                        <div class="justified"><p>Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation</p>
 <p>Extra: French, Human Communication</p>
-<p>Thesis: Evolving Neural Models of Path Integration</p>
-</p>
+<p>Thesis: <a href="https://journals.sagepub.com/doi/abs/10.1177/1059712307082080">Evolving Neural Models of Path Integration</a></p>
+</div>
 				          </div>
 				        </div>
 				      </section>
@@ -750,10 +652,10 @@ div.content-text.skills-listing > ul > li:first-child {
 											 grade 1.7
 											</p>
 
-                        <p><p>Main subjects: Mathematics, Physics, History, English<br>
+                        <div class="justified"><p>Main subjects: Mathematics, Physics, History, English<br>
 Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 <p>Awarded honorary membership of the German Physics Society</p>
-</p>
+</div>
 				          </div>
 				        </div>
 				      </section>
@@ -778,7 +680,8 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 			            		</p>
 
 
-				            	<p>We describe several neural network implementions of insect based methods of navigation. We present the preliminary results of modelling associative learning capabilities based on the insect mushroom bodies.</p>
+				            	<div class="justified"><p>We describe several neural network implementions of insect based methods of navigation. We present the preliminary results of modelling associative learning capabilities based on the insect mushroom bodies.</p>
+</div>
 				          </div>
 				        </div>
 				      </section>
@@ -801,7 +704,8 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 			            		</p>
 
 
-				            	<p>With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task, as well as an example of one way of running a competition. In the process, we provide a set of reference results for those who wish to use the simplerace game to benchmark their own algorithms. <br></p>
+				            	<div class="justified"><p>With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task, as well as an example of one way of running a competition. In the process, we provide a set of reference results for those who wish to use the simplerace game to benchmark their own algorithms.</p>
+</div>
 				          </div>
 				        </div>
 				      </section>
@@ -824,7 +728,8 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 			            		</p>
 
 
-				            	<p>We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent in a manner comparable to the polarization-sensitive interneurons found in insects. The home vector is encoded across a circular array of cells that integrate this input. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.</p>
+				            	<div class="justified"><p>We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent in a manner comparable to the polarization-sensitive interneurons found in insects. The home vector is encoded across a circular array of cells that integrate this input. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.</p>
+</div>
 				          </div>
 				        </div>
 				      </section>
@@ -834,16 +739,20 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 								<div class="content-cat big-text">
 											<h3>Work	Experience</h3>
 
-									
 										<p><span class="no-nl">2018-09</span>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center first-listing">
-													<strong>Foresight Researcher</strong> at <strong>Envisioning</strong>
+													<strong>Foresight Researcher</strong> at <strong><a href="https://viz.envisioning.io/wgs-ai/?o=0" class="no-nl">Envisioning</a></strong>
 											</p>
-
-											<p>Currently researching technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.</p>
+ 										<p class="highlight">
+	
+			            		Berlin Area, Germany
+			            		</p>
+											<div class="justified"><p>Researched <a href="https://viz.envisioning.io/wgs-ai/?o=0">future trends of Artificial Intelligence</a>   for the World Government Summit in Dubai drawing on academic papers, news and science fiction.</p>
+<p>Currently investigating technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.</p>
+</div>
 
 
 
@@ -854,38 +763,20 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
-										<p><span class="no-nl">2018-09</span>
-											 till <span class="no-nl">2018-11</span></p>
-
-								</div>
-								<div class="content-text work-listing education-listing">
-											<p class="small-center">
-													<strong>Foresight Researcher</strong> at <strong>Envisioning</strong>
-											</p>
-
-											<p>Researched future trends of Artificial Intelligence for the World Government Summit in Dubai.</p>
-
-
-
-								</div>
-							</div>
-						</section>
-								<section class="content work-content">
-							<div class="row small-fullwidth-row">
-								<div class="content-cat big-text">
-
-									
 										<p><span class="no-nl">2018-05</span>
 											 till <span class="no-nl">2018-06</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Talk about Artificial Intelligence and Art at the Frontiere IA Conference</strong> at <strong>MUTEK</strong>
+													<strong>Talk about Artificial Intelligence and Art at the Frontiere IA Conference</strong> at <strong><a href="http://www.printempsnumerique.ca/en/programming/event/frontiere-ia-night-conference-with-yoshua-bengio/" class="no-nl">MUTEK &amp; Frontière IA</a></strong>
 											</p>
-
-											<p>Conceived the live visuals for the band &quot;Die Wilde Jagd&quot; by creating a system that visualizes audio using Deep Neural Networks. Subsequently got  invited to give a talk on applications of AI with art at the Frontiere IA conference in Montreal</p>
+ 										<p class="highlight">
+	
+			            		Montreal, Canada Area
+			            		</p>
+											<div class="justified"><p>Conceived the live visuals for the band &quot;Die Wilde Jagd&quot; by creating a system that visualizes audio using Deep Neural Networks. Subsequently got  invited to give a talk on applications of AI with art at the Frontière IA conference in Montreal</p>
+</div>
 
 
 
@@ -896,17 +787,20 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2018-03</span>
 											 till <span class="no-nl">2018-03</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Machine Learning and Music  - Limited Contract Project</strong> at <strong>transmediale - art &amp; digital culture</strong>
+													<strong>Machine Learning and Music Hacklab: Swarm Animism</strong> at <strong><a href="http://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/" class="no-nl">transmediale - art &amp; digital culture</a></strong>
 											</p>
-
-											<p>Conceived and performed a musical piece which used the smartphones of the attendees to listen and react by generating sounds. This resulted in a form of musical swarm intelligence which blurs the border between performer and participant.<br><br>http://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/</p>
+ 										<p class="highlight">
+	
+			            		Berlin Area, Germany
+			            		</p>
+											<div class="justified"><p>Conceived and performed a musical piece which used the smartphones of the attendees to listen and react by generating sounds. This resulted in a form of musical swarm intelligence which blurs the border between performer and participant.</p>
+</div>
 
 
 
@@ -917,17 +811,21 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2010-01</span>
 											 till <span class="no-nl">2018-12</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Artist and Organizer</strong> at <strong>Voodoohop</strong>
+													<strong>Artist and Organizer</strong> at <strong><a href="http://voodoohop.com" class="no-nl">Voodoohop</a></strong>
 											</p>
-
-											<p>As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by a hedonistic attitude that stimulates individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.<br><br>As a musician I perform live, mixing South American elements with contemporary electronica. I have created a unique live performance in which Software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.</p>
+ 										<p class="highlight">
+	
+			            		São Paulo Area, Brazil
+			            		</p>
+											<div class="justified"><p>As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by the principle of stimulating individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.</p>
+<p>As a musician, I have created a unique live performance in which software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.</p>
+</div>
 
 
 
@@ -938,17 +836,25 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2008-03</span>
 											 till <span class="no-nl">2016-03</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Freelance Developer</strong> at <strong>SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), City of São Paulo</strong>
+													<strong>Freelance Developer</strong> at <strong>SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), ArtRio, City of São Paulo</strong>
 											</p>
-
-											<p>Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing and alternative controllers.<br><br>For ArtRio I developed an installation that let participants paint on a blank canvas using their voice and head movements with the help of camera tracking and a microphone. <br>https://vimeo.com/77349535<br><br>For TIM mobile I developed an OpenGL based mountain climbing game in which a user used both hands with a pair of Wii controllers. In an installation for the world cup people were able to take a selfie with the official mascot being superimposed onto the image using image recognition and processing.<br><br>For superuber I developed interactive installations such as letting users draw in simulated sand, create a song with their silhouette from loops by dancing in front of a camera<br><br>tech: javascript × groovy × java × actionscript × node.js × meteor × opengl ×  alternative controllers</p>
+ 										<p class="highlight">
+	
+			            		Brazil
+			            		</p>
+											<div class="justified"><p>Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing, controllers, sensors, embedded computing and data visualization.</p>
+<p><strong>Examples:</strong><br>
+. With the help of facial tracking, a microphone and pitch analysis, participants could <a href="https://vimeo.com/77349535">paint on a blank canvas</a> using their voice and head movements.<br>
+. An OpenGL based climbing game in which <a href="https://vimeo.com/20260318">a user climbs a mountain</a> using the movement of his own hands<br>
+. For the 2014 FIFA World Cup, using computer vision and real-time image augmentation, participants <a href="https://vimeo.com/116658261">took selfies with the official mascot</a> superimposed onto the image.<br>
+. Visitors of a science museum could draw shapes into different types of simulated sand using a multi-touch screen</p>
+</div>
 
 
 
@@ -959,17 +865,20 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2007-06</span>
 											 till <span class="no-nl">2007-10</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Research and publication of my bachelor thesis </strong> at <strong>The University of Edinburgh</strong>
+													<strong>Research and publication of my bachelor thesis</strong> at <strong><a href="https://www.research.ed.ac.uk/portal/en/publications/evolving-a-neural-model-of-insect-path-integration(fcb76a91-125c-46d0-849d-efc06c944107).html" class="no-nl">The University of Edinburgh</a></strong>
 											</p>
-
-											<p>Implementation of my thesis &quot;Evolving a Neural Model of Insect Path Integration&quot; on a physical robot and publication in the journal &quot;Adaptive Behavior&quot;.<br><br>http://journals.sagepub.com/doi/abs/10.1177/1059712307082080</p>
+ 										<p class="highlight">
+	
+			            		Edinburgh, United Kingdom
+			            		</p>
+											<div class="justified"><p>Implementation of my thesis <a href="https://journals.sagepub.com/doi/abs/10.1177/1059712307082080">Evolving a Neural Model of Insect Path Integration</a> on a physical robot and publication in the journal &quot;Adaptive Behavior&quot;</p>
+</div>
 
 
 
@@ -980,17 +889,21 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2006-10</span>
-											 till <span class="no-nl">2007-02</span></p>
+											 till <span class="no-nl">2007-09</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Software Engineer</strong> at <strong>Amazon</strong>
+													<strong>Software Engineer</strong> at <strong><a href="https://www.amazondc.com/" class="no-nl">Amazon Development Centre Scotland</a></strong>
 											</p>
-
-											<p>Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.<br><br>Tech: java × spring framework × test driven development × agile development × python × distributed computing</p>
+ 										<p class="highlight">
+	
+			            		Edinburgh, United Kingdom
+			            		</p>
+											<div class="justified"><p>Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.</p>
+<p>Technologies: java, spring framework, test driven development, agile development, python, distributed computing</p>
+</div>
 
 
 
@@ -1001,17 +914,22 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 
-									
 										<p><span class="no-nl">2004-08</span>
 											 till <span class="no-nl">2005-07</span></p>
 
 								</div>
 								<div class="content-text work-listing education-listing">
 											<p class="small-center">
-													<strong>Software Engineer</strong> at <strong>Sun Microsystems</strong>
+													<strong>Software Engineering Internship</strong> at <strong>Sun Microsystems</strong>
 											</p>
-
-											<p>Worked as a team developer on several inner process projects.<br><br>Researched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.<br><br>Tech: java ×  spring framework ×  test driven development ×  agile development ×  python ×  distributed computing </p>
+ 										<p class="highlight">
+	
+			            		Portland, Oregon Area
+			            		</p>
+											<div class="justified"><p>Worked as a team developer on several inner process projects.</p>
+<p>Researched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.</p>
+<p>Technologies: java, spring framework, test driven development, agile development, python, distributed computing</p>
+</div>
 
 
 
@@ -1023,18 +941,20 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 				      <section class="content">
 				        <div class="row">
 				          <div class="content-cat big-text">
-				            	<h3>Awards</h3>
+				            	<h3>Awards & Projects</h3>
 
-				            	<p>The 2007 IEEE CEC Simulated Car Racing Competition (2nd Place)</p>
+
 
 				            	<p style="margin-top:0.25em;">2007-06</p>
 
 				          </div>
 				          <div class="content-text work-listing">
-
-					         		<strong><p class="heading">IEEE Congress on Evolutionary Computation</p></strong>
-
-				            	<p class="highlight">Trained a neural network based agent to compete successfully in an online car racing competition.</p>
+											<p class="heading first-listing">
+										
+				            	Simulated Car Racing Competition (2nd Place)
+					         		<strong>IEEE Congress on Evolutionary Computation</strong>
+										</p>
+				            	<p class="highlight">Trained a modular neural network architecture to control an agent that competed successfully in the IEEE CEC Simulated Car Racing Competition.</p>
 				          </div>
 				        </div>
 				      </section>
@@ -1042,15 +962,37 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 				        <div class="row">
 				          <div class="content-cat big-text">
 
-				            	<p>Honorary Membership</p>
+
 
 				            	<p style="margin-top:0.25em;">2001-05</p>
 
 				          </div>
 				          <div class="content-text work-listing">
+											<p class="heading">
+										
+				            	Honorary Membership
+					         		<strong>German Physics Society</strong>
+										</p>
+				          </div>
+				        </div>
+				      </section>
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
 
-					         		<strong><p class="heading">German Physics Society</p></strong>
 
+
+				            	<p style="margin-top:0.25em;">2007-06</p>
+
+				          </div>
+				          <div class="content-text work-listing">
+											<p class="heading">
+										
+				            	Harmonic Audio Mixing Visualization Tools
+										</p>
+				            	<p class="highlight">Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. 
+
+Technologies: react - max/msp - ableton live - electron - node.js</p>
 				          </div>
 				        </div>
 				      </section>
@@ -1064,7 +1006,7 @@ Subsidiary subjects: Philosophy, Informatics, Social Science, Music</p>
 			          <div class="content-cat">
 			           <h3>Languages</h3>
 			          </div>
-			          <div class="content-text">
+			          <div class="content-text niceul">
 
 				            <ul>
 
