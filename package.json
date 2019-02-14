@@ -4,6 +4,8 @@
   "description": "",
   "main": "transform_linkedin_json.js",
   "dependencies": {
+    "helper-markdown": "^1.0.0",
+    "icon-convert": "^1.0.0",
     "jsonresume-theme-class": "^0.1.2",
     "jsonresume-theme-classy": "^1.0.9",
     "jsonresume-theme-elegant": "^1.12.1",

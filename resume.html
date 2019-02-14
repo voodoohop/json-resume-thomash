@@ -8,7 +8,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
 		<style>
 			body, html {
@@ -313,7 +314,7 @@ a{
   color: #0277bd;
 }
 
-.fa{
+.fas {
   color: #000;
 }
 
@@ -335,6 +336,37 @@ a{
   .content-wrapper{
     padding-right: 2%;
   }
+}
+
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?pro7pz');
+  src:  url('fonts/icomoon.eot?pro7pz#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pro7pz') format('truetype'),
+    url('fonts/icomoon.woff?pro7pz') format('woff'),
+    url('fonts/icomoon.svg?pro7pz#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="fa-artist"], [class*=" fa-artist"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-artist:before {
+  content: "\e900";
 }
 
 		</style>
@@ -542,7 +574,7 @@ div.content-text.skills-listing > ul > li:first-child {
 			      <div class="header-content">
 			        <div class="header-text">
 			          <h2>Thomas Haferlach</h2>
-			          <p class="subtitle">Machine Learning, Interactive Installations, Computer Science, Event Production, Audio/visual</p>
+			          <p class="subtitle">Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art</p>
 			        </div>
 			      </div>
 			    </header>
@@ -578,12 +610,19 @@ div.content-text.skills-listing > ul > li:first-child {
 
 						            <ul>
 						              <li>Address</li>
-						              <li>Berlin, Berlin, Germany</li>
+						              <li>Koepenicker Chaussee 26</li>
 						            </ul>
 
+						            <ul>
+						              <li>City</li>
+						              <li>10317 Berlin</li>
+						            </ul>
 
-
-
+											
+						            <ul>
+						              <li>Country</li>
+						              <li>Germany</li>
+						            </ul>
 					          </div>
 					        </div>
 					      </section>
@@ -598,9 +637,27 @@ div.content-text.skills-listing > ul > li:first-child {
 				          <div class="content-text profiles-listing">
 				            <ul>
 					              	<li>
-					              	<a href="https://instagram.com/thomash_voodoo/" target="_blank">
-														<i class="fa fa-2x fa-instagram-square"></i>
-							            	<span class="network">Instagram</span>
+					              	<a href="https://linkedin.com/in/thomashaferlach/h" target="_blank">
+														<i class="fab fa-2x fa-linkedin"></i>
+							            	<span class="network">LinkedIn</span>
+													</a>
+							            </li>
+					              	<li>
+					              	<a href="https://voodoohop.com/thomash" target="_blank">
+														<i class="fab fa-2x fa-artist page"></i>
+							            	<span class="network">Artist Page</span>
+													</a>
+							            </li>
+					              	<li>
+					              	<a href="https://github.com/voodoohop" target="_blank">
+														<i class="fab fa-2x fa-github"></i>
+							            	<span class="network">Github</span>
+													</a>
+							            </li>
+					              	<li>
+					              	<a href="http://soundcloud.com/thomash_voodoo" target="_blank">
+														<i class="fab fa-2x fa-soundcloud"></i>
+							            	<span class="network">SoundCloud</span>
 													</a>
 							            </li>
 				            </ul>
@@ -615,8 +672,20 @@ div.content-text.skills-listing > ul > li:first-child {
 									</div>
 									<div class="content-text">
 											<ul>
-												<li>Instagram</li>
-												<li><a href="https://instagram.com/thomash_voodoo/">instagram.com/thomash_voodoo/</a></li>
+												<li>LinkedIn</li>
+												<li><a href="https://linkedin.com/in/thomashaferlach/h">linkedin.com/in/thomashaferlach/h</a></li>
+											</ul>
+											<ul>
+												<li>Artist Page</li>
+												<li><a href="https://voodoohop.com/thomash">voodoohop.com/thomash</a></li>
+											</ul>
+											<ul>
+												<li>Github</li>
+												<li><a href="https://github.com/voodoohop">github.com/voodoohop</a></li>
+											</ul>
+											<ul>
+												<li>SoundCloud</li>
+												<li><a href="http://soundcloud.com/thomash_voodoo">soundcloud.com/thomash_voodoo</a></li>
 											</ul>
 									</div>
 								</div>
