@@ -8,7 +8,8 @@
 		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 
 		<style>
 			{{{standardCSS}}}
@@ -88,17 +89,10 @@
 						            </ul>
 					            {{/if}}
 
-											{{#if country}}
-						            <ul>
-						              <li>Country</li>
-						              <li>{{country}}</li>
-						            </ul>
-					            {{/if}}
-
 					            {{#if city}}
 						            <ul>
 						              <li>City</li>
-						              <li>{{city}}</li>
+						              <li>{{#if postalCode}}{{postalCode}} {{/if}}{{city}}</li>
 						            </ul>
 					            {{/if}}
 
@@ -108,7 +102,13 @@
 						              <li>{{region}}</li>
 						            </ul>
 											{{/if}}
-
+											
+											{{#if country}}
+						            <ul>
+						              <li>Country</li>
+						              <li>{{country}}</li>
+						            </ul>
+					            {{/if}}
 					          </div>
 					        </div>
 					      </section>
@@ -131,7 +131,7 @@
 					            	{{#if network}}
 					              	<li>
 					              	<a href="{{url}}" target="_blank">
-														<i class="fa fa-2x {{fontAwesome network}}"></i>
+														<i class="fab fa-2x {{fontAwesome network}}"></i>
 							            	<span class="network">{{network}}</span>
 													</a>
 							            </li>
@@ -170,9 +170,9 @@
 									 <h3>Research Interests</h3>
 									</div>
 									<div class="content-text work-content">
-										<p>
-											{{breaklines summary}}
-										</p>
+										<div class="justified">
+											{{{markdown summary}}}
+										</divs>
 									</div>
 								</div>
 							</section>
@@ -195,30 +195,34 @@
 
 										{{#if startDate}}
 											{{#if endDate}}
-				            		<p>{{startDate}} till <span class="no-nl">{{endDate}}</span></p>
+				            		<p>{{formatdate startDate}} till <span class="no-nl">{{formatdate endDate}}</span></p>
 				            	{{/if}}
-										{{/if}}
+										{{/if}}	
 
 				          </div>
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
 											{{#if @first}}
-						            <p class="heading first-listing">{{institution}}</p>
+						            <p class="heading first-listing">{{institution}}{{#if area}}: <strong>{{area}}</strong>	 {{/if}}</p>
 						            {{else}}
-						            <p class="heading">{{institution}}</p>
+						            <p class="heading">{{institution}}{{#if area}}: {{area}} {{/if}} </p>
 						          {{/if}}
 										{{/if}}
 
-										{{#if area}}
+
 			            		<p class="highlight">
 			            		{{#if studyType}}
-												{{studyType}}:
+												{{studyType}}
 			            		{{/if}}
-			            		<i>{{area}}</i>
-			            		</p>
-										{{/if}}
+			            	 
+			            		{{#if gpa}}
+											with
+											 {{{gpa}}}
+											{{/if}}
+											</p>
+
  										{{#if summary}}
-                        <p>{{{markdown summary}}}</p>
+                        <div class="justified">{{{markdown summary}}}</div>
                       {{/if}}
                       {{#if courses.length}}
                         {{#each courses}}
@@ -240,23 +244,29 @@
 				            	<h3>Publications</h3>
 										{{/if}}
 
-										{{#if name}}
-				            	<p>{{name}}</p>
-										{{/if}}
+
 
 										{{#if releaseDate}}
-				            	<p style="margin-top:0.25em;">{{releaseDate}}</p>
+				            	<p style="margin-top:0.25em;">{{formatdate releaseDate}}</p>
 										{{/if}}
 
 				          </div>
 				          <div class="content-text work-listing">
-
+										{{#if name}}
+				            	<p class="heading"><strong>{{name}}</strong>{{#if authors}} {{authors}}{{/if}}</p>
+										{{/if}}
+										
 										{{#if publisher}}
-					         		<strong><p class="heading">{{publisher}}</p></strong>
+
+			            		<p class="highlight">
+	
+			            		<a href="{{url}}">{{publisher}}</a>
+			            		</p>
+
 										{{/if}}
 
 										{{#if summary}}
-				            	<p class="highlight">{{breaklines summary}}</p>
+				            	<div class="justified">{{{markdown summary}}}</div>
 										{{/if}}
 				          </div>
 				        </div>
@@ -278,8 +288,9 @@
 									{{/if}}
 
 								 {{#if startDate}}
+										<p><span class="no-nl">{{formatdate startDate}}</span>
 										{{#if endDate}}
-											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+											 till <span class="no-nl">{{formatdate endDate}}</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -291,16 +302,21 @@
 											{{else}}
 											<p class="small-center">
 										{{/if}}
-												{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl">{{company}}</a></strong>
+												{{#if url}}
+													<strong>{{position}}</strong> at <strong><a href="{{url}}" class="no-nl">{{company}}</a></strong>
 												{{else}}
 													<strong>{{position}}</strong> at <strong>{{company}}</strong>
 												{{/if}}
 											</p>
 										{{/if}}
-
+										{{#if location}}
+ 										<p class="highlight">
+	
+			            		{{location}}
+			            		</p>
+										{{/if}}
 										{{#if summary}}
-											<p>{{breaklines summary}}</p>
+											<div class="justified">{{{markdown summary}}}</div>
 										{{/if}}
 
 										{{#if highlights.length}}
@@ -323,24 +339,30 @@
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if @first}}
-				            	<h3>Awards</h3>
+				            	<h3>Awards & Projects</h3>
 										{{/if}}
 
-										{{#if title}}
-				            	<p>{{title}}</p>
-										{{/if}}
+
 
 										{{#if date}}
-				            	<p style="margin-top:0.25em;">{{date}}</p>
+				            	<p style="margin-top:0.25em;">{{formatdate date}}</p>
 										{{/if}}
 
 				          </div>
 				          <div class="content-text work-listing">
-
-										{{#if awarder}}
-					         		<strong><p class="heading">{{awarder}}</p></strong>
+			{{#if @first}}
+											<p class="heading first-listing">
+											{{else}}
+											<p class="heading">
+										{{/if}}						
+										
+										{{#if title}}
+				            	{{title}}
 										{{/if}}
-
+										{{#if awarder}}
+					         		<strong>{{awarder}}</strong>
+										{{/if}}
+										</p>
 										{{#if summary}}
 				            	<p class="highlight">{{summary}}</p>
 										{{/if}}
@@ -366,9 +388,9 @@
 
 									{{#if startDate}}
 										{{#if endDate}}
-											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+											<p><span class="no-nl">{{formatdate startDate}}</span> till <span class="no-nl">{{formatdate endDate}}</span></p>
 										{{else}}
-											<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">Ongoing</span></p>
+											<p><span class="no-nl">{{formatdate startDate}}</span> till <span class="no-nl">Ongoing</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -380,8 +402,8 @@
 												{{else}}
 												<p class="small-center">
 											{{/if}}
-											{{#if website}}
-												<strong>{{role}}</strong> <span class="no-nl">of <strong><a href="{{website}}">{{name}}</a></strong></span>
+											{{#if url}}
+												<strong>{{role}}</strong> <span class="no-nl">of <strong><a href="{{url}}">{{name}}</a></strong></span>
 											{{else}}
 												<strong>{{role}}</strong> <span class="no-nl">of <strong>{{name}}</strong></span>
 											{{/if}}
@@ -413,7 +435,7 @@
 			          <div class="content-cat">
 			           <h3>Languages</h3>
 			          </div>
-			          <div class="content-text">
+			          <div class="content-text niceul">
 
 			          	{{#each resume.languages}}
 				            <ul>
@@ -450,8 +472,8 @@
 
 								 {{#if startDate}}
 										
-			            		<p><span class="no-nl">{{startDate}}</span> 
-										{{#if endDate}} till <span class="no-nl">{{endDate}}</span></p>
+			            		<p><span class="no-nl">{{formatdate startDate}}</span> 
+										{{#if endDate}} till <span class="no-nl">{{formatdate endDate}}</span></p>
 			            	{{/if}}
 									{{/if}}
 
@@ -463,8 +485,8 @@
 					            {{else}}
 					            <p class="small-center">
 					          {{/if}}
-					            	{{#if website}}
-													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{website}}">{{organization}}</a></strong></span>
+					            	{{#if url}}
+													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{url}}">{{organization}}</a></strong></span>
 												{{else}}
 					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
 					            	{{/if}}

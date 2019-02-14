@@ -20,7 +20,7 @@ function render(resume) {
 
 	// Get a font awsome class from a name
 	Handlebars.registerHelper('fontAwesome', function(str) {
-		return "fa-" + str.toLowerCase() + "-square";
+		return "fa-" + str.toLowerCase();
 	});
 
   // http://stackoverflow.com/a/31632215/838789
@@ -36,6 +36,10 @@ function render(resume) {
   // http://stackoverflow.com/a/18831911
   Handlebars.registerHelper('commalist', function(items, options) {
     return options.fn(items.join(', '));
+	});
+
+	Handlebars.registerHelper('formatdate', function(text) {
+		return new Handlebars.SafeString(text.slice(0,7));
 	});
 	
 	Handlebars.registerHelper('breaklines', function(text) {
