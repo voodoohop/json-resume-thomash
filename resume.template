@@ -117,34 +117,6 @@
 		      {{/resume.basics}}
 
 
-						<!-- LANGUAGE -->
-			      {{#if resume.languages.length}}
-			      <section class="content">
-			        <div class="row">
-			          <div class="content-cat">
-			           <h3>Languages</h3>
-			          </div>
-			          <div class="content-text">
-
-			          	{{#each resume.languages}}
-				            <ul>
-
-											{{#if language}}
-				              	<li>{{language}}</li>
-											{{/if}}
-
-											{{#if fluency}}
-				              <li>{{fluency}}</li>
-											{{/if}}
-
-				            </ul>
-			            {{/each}}
-
-			          </div>
-			        </div>
-			      </section>
-			      {{/if}}
-
 					{{#resume.basics}}
 			      <!-- PROFILES for website-->
 			      {{#if profiles.length}}
@@ -195,7 +167,7 @@
 							<section class="content summary">
 								<div class="row small-fullwidth-row">
 									<div class="content-cat">
-									 <h3>About Me</h3>
+									 <h3>Research Interests</h3>
 									</div>
 									<div class="content-text work-content">
 										<p>
@@ -206,6 +178,91 @@
 							</section>
 						{{/if}}
 					{{/resume.basics}}
+
+					{{#if resume.education.length}}
+						{{#each resume.education}}
+							{{#if @first}}
+								<section class="content">
+							{{else}}
+								<section class="content education-content">
+							{{/if}}
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				          	{{#if @first}}
+				            	<h3>Education</h3>
+										{{/if}}
+
+										{{#if startDate}}
+											{{#if endDate}}
+				            		<p>{{startDate}} till <span class="no-nl">{{endDate}}</span></p>
+				            	{{/if}}
+										{{/if}}
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+										{{#if institution}}
+											{{#if @first}}
+						            <p class="heading first-listing">{{institution}}</p>
+						            {{else}}
+						            <p class="heading">{{institution}}</p>
+						          {{/if}}
+										{{/if}}
+
+										{{#if area}}
+			            		<p class="highlight">
+			            		{{#if studyType}}
+												{{studyType}}:
+			            		{{/if}}
+			            		<i>{{area}}</i>
+			            		</p>
+										{{/if}}
+ 										{{#if summary}}
+                        <p>{{{markdown summary}}}</p>
+                      {{/if}}
+                      {{#if courses.length}}
+                        {{#each courses}}
+                          <p class="highlight">{{.}}</p>
+                        {{/each}}
+                      {{/if}}
+				          </div>
+				        </div>
+				      </section>
+			      {{/each}}
+		      {{/if}}
+
+					{{#if resume.publications.length}}
+						{{#each resume.publications}}
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            {{#if @first}}
+				            	<h3>Publications</h3>
+										{{/if}}
+
+										{{#if name}}
+				            	<p>{{name}}</p>
+										{{/if}}
+
+										{{#if date}}
+				            	<p style="margin-top:0.25em;">{{date}}</p>
+										{{/if}}
+
+				          </div>
+				          <div class="content-text work-listing">
+
+										{{#if publisher}}
+					         		<strong><p class="heading">{{publisher}}</p></strong>
+										{{/if}}
+
+										{{#if summary}}
+				            	<p class="highlight">{{breaklines summary}}</p>
+										{{/if}}
+				          </div>
+				        </div>
+				      </section>
+			      {{/each}}
+		      {{/if}}
 
 					{{#if resume.work.length}}
 						{{#each resume.work}}
@@ -259,91 +316,6 @@
 						{{/each}}
 					{{/if}}
 
-
-					{{#if resume.education.length}}
-						{{#each resume.education}}
-							{{#if @first}}
-								<section class="content">
-							{{else}}
-								<section class="content education-content">
-							{{/if}}
-				        <div class="row">
-				          <div class="content-cat big-text">
-
-				          	{{#if @first}}
-				            	<h3>Education</h3>
-										{{/if}}
-
-										{{#if startDate}}
-											{{#if endDate}}
-				            		<p>{{startDate}} till <span class="no-nl">{{endDate}}</span></p>
-				            	{{/if}}
-										{{/if}}
-
-				          </div>
-				          <div class="content-text work-listing education-listing">
-										{{#if institution}}
-											{{#if @first}}
-						            <p class="heading first-listing">{{institution}}</p>
-						            {{else}}
-						            <p class="heading">{{institution}}</p>
-						          {{/if}}
-										{{/if}}
-
-										{{#if area}}
-			            		<p class="highlight">
-			            		{{#if studyType}}
-												{{studyType}}:
-			            		{{/if}}
-			            		<i>{{area}}</i>
-			            		</p>
-										{{/if}}
- 										{{#if summary}}
-                        <p>{{breaklines summary}}</p>
-                      {{/if}}
-                      {{#if courses.length}}
-                        {{#each courses}}
-                          <p class="highlight">{{.}}</p>
-                        {{/each}}
-                      {{/if}}
-				          </div>
-				        </div>
-				      </section>
-			      {{/each}}
-		      {{/if}}
-
-					{{#if resume.publications.length}}
-						{{#each resume.publications}}
-				      <section class="content">
-				        <div class="row">
-				          <div class="content-cat big-text">
-				            {{#if @first}}
-				            	<h3>Publications</h3>
-										{{/if}}
-
-										{{#if name}}
-				            	<p>{{name}}</p>
-										{{/if}}
-
-										{{#if date}}
-				            	<p style="margin-top:0.25em;">{{date}}</p>
-										{{/if}}
-
-				          </div>
-				          <div class="content-text work-listing">
-
-										{{#if publisher}}
-					         		<strong><p class="heading">{{publisher}}</p></strong>
-										{{/if}}
-
-										{{#if summary}}
-				            	<p class="highlight">{{breaklines summary}}</p>
-										{{/if}}
-				          </div>
-				        </div>
-				      </section>
-			      {{/each}}
-		      {{/if}}
 
 					{{#if resume.awards.length}}
 						{{#each resume.awards}}
@@ -434,6 +406,35 @@
 					{{/if}}
 
 
+						<!-- LANGUAGE -->
+			      {{#if resume.languages.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>Languages</h3>
+			          </div>
+			          <div class="content-text">
+
+			          	{{#each resume.languages}}
+				            <ul>
+
+											{{#if language}}
+				              	<li>{{language}}</li>
+											{{/if}}
+
+											{{#if fluency}}
+				              <li>{{fluency}}</li>
+											{{/if}}
+
+				            </ul>
+			            {{/each}}
+
+			          </div>
+			        </div>
+			      </section>
+			      {{/if}}
+						
+
 					{{#if resume.volunteer.length}}
 						{{#each resume.volunteer}}
 						{{#if @first}}
@@ -448,8 +449,9 @@
 			          	{{/if}}
 
 								 {{#if startDate}}
-										{{#if endDate}}
-			            		<p><span class="no-nl">{{startDate}}</span> till <span class="no-nl">{{endDate}}</span></p>
+										
+			            		<p><span class="no-nl">{{startDate}}</span> 
+										{{#if endDate}} till <span class="no-nl">{{endDate}}</span></p>
 			            	{{/if}}
 									{{/if}}
 
@@ -485,7 +487,6 @@
 			      </section>
 			      {{/each}}
 					{{/if}}
-
 
 					{{#if resume.skills.length}}
 			      <section class="content">

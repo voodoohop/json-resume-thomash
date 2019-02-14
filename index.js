@@ -43,6 +43,8 @@ function render(resume) {
 		text = text.replace(/(\r\n|\n|\r)/gm, '<br>');
 		return new Handlebars.SafeString(text);
 	});
+
+	Handlebars.registerHelper('markdown', require('helper-markdown'));
 	
   // Send all necessary resources to the handlebars template and compile it
 	return Handlebars.compile(template)({
