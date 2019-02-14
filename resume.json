@@ -83,15 +83,6 @@
        {
           "locationName":"São Paulo Area, Brazil",
           "category":"work",
-          "company":"Secretaria da Cultura",
-          "summary":"Worked as a curator at the Virada Cultural, one of the world's biggest free street festivals. I was involved in the creation of a culture of free events in the center of São Paulo. Additionally curated and produced an annual free street party called \"SP Na Rua\" which showcases São Paulo's alternative art collectives.\n",
-          "position":"Curator and Event Production",
-          "startDate":"2013-06-30",
-          "endDate":"2016-06-30"
-       },
-       {
-          "locationName":"São Paulo Area, Brazil",
-          "category":"work",
           "company":"Voodoohop",
           "summary":"As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by a hedonistic attitude that stimulates individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.\n\nAs a musician I perform live, mixing South American elements with contemporary electronica. I have created a unique live performance in which Software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.",
           "position":"Artist and Organizer",
@@ -129,18 +120,10 @@
           "locationName":"Portland, Oregon Area",
           "category":"work",
           "company":"Sun Microsystems",
-          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and artificial intelligence.\n\nTech: java ×  spring framework ×  test driven development ×  agile development ×  python ×  distributed computing ",
+          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.\n\nTech: java ×  spring framework ×  test driven development ×  agile development ×  python ×  distributed computing ",
           "position":"Software Engineer",
           "startDate":"2004-08-31",
           "endDate":"2005-07-31"
-       },
-       {
-          "locationName":"Edinburgh, United Kingdom",
-          "category":"work",
-          "company":"Edinburgh Pedicabs",
-          "position":"Pedicabbing (riding a cycle­taxi) in Edinburgh to help fund degree.",
-          "startDate":"2003-01-31",
-          "endDate":"2005-01-31"
        }
     ],
     "education":[

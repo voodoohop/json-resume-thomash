@@ -1,0 +1,1 @@
+node transform_linkedin_json.js && node_modules/.bin/resume export resume.html --theme paper-plus-plus && open resume.html
