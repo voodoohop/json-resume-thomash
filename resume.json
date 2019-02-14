@@ -25,7 +25,8 @@
           "name":"Low Level Approaches to Cognitive Control",
           "summary":"We describe several neural network implementions of insect based methods of navigation. We present the preliminary results of modelling associative learning capabilities based on the insect mushroom bodies.",
           "publisher":"Spatial Temporal Patterns for Action-Oriented Perception in Roving Robots",
-          "releaseDate":"2009-01-31"
+          "releaseDate":"2009-01-31",
+          "authors":"B. Webb, J. Wessnitzer, H. Rosano, M. Szenher, M. Zampoglou, T. Haferlach, P. Russo"
        },
        {
           "url":"https://link.springer.com/article/10.1007/s10710-008-9063-0",
@@ -33,11 +34,13 @@
           "name":"The 2007 IEEE CEC simulated car racing competition",
           "summary":"With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task, as well as an example of one way of running a competition. In the process, we provide a set of reference results for those who wish to use the simplerace game to benchmark their own algorithms. \n",
           "publisher":"Genetic Programming and Evolvable Machines",
-          "releaseDate":"2008-03-31"
+          "releaseDate":"2008-03-31",
+          "authors":"J. Togelius, S. Lucas, T.Haferlach, ..."
        },
        {
           "url":"http://journals.sagepub.com/doi/abs/10.1177/1059712307082080",
           "category":"publications",
+          "authors":"T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",
           "name":"Evolving a Neural Model of Insect Path Integration",
           "summary":"We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent in a manner comparable to the polarization-sensitive interneurons found in insects. The home vector is encoded across a circular array of cells that integrate this input. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.",
           "publisher":"Adaptive Behaviour 15(3)",
@@ -130,15 +133,12 @@
        {
           "category":"education",
           "institution":"The University of Edinburgh",
-          "studyType":"Bachelor of Science - BS",
+          "studyType":"Bachelor of Science",
           "area":"Artificial Intelligence and Computer Science",
-          "summary":"Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation\n\nExtra: French, Human Communication",
+          "summary":"Modules: Artificial Intelligence, Computer Science, Mathematics, Physics, Advanced Vision, Computational Complexity, Intelligent Autonomous Robotics, Modelling and Simulation, Visualization, Neural Computation\n\nExtra: French, Human Communication\n\nThesis: Evolving Neural Models of Path Integration",
           "startDate":"2001-01-31",
           "endDate":"2006-01-31",
-          "gpa":"First-class honors",
-          "courses":[
-             "Did computer vision"
-          ]
+          "gpa":"First class honors"
        },
        {
           "category":"education",
@@ -147,10 +147,7 @@
           "summary":"Main subjects: Mathematics, Physics, History, English \nSubsidiary subjects: Philosophy, Informatics, Social Science, Music\n\nAwarded honorary membership of the German Physics Society",
           "startDate":"1995-01-31",
           "endDate":"2001-01-31",
-          "gpa":"grade: 1.7",
-          "courses":[
-             "Did computer vision"
-          ]
+          "gpa":"grade 1.7"
        }
     ],
     "languages":[
