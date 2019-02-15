@@ -19,10 +19,10 @@
          {
              "network":"SoundCloud",
              "username":"thomash_voodoo",
-             "url":"http://soundcloud.com/thomash_voodoo"
+             "url":"http://soundcloud.com/thomash_voodoohop"
           }
        ],
-       "summary":"From even before embarking upon my academic pursuits, I have had a passion about biologically inspired computation. Artificial neural networks, evolutionary computation and multi-agent systems that show emergent behavior fascinate me in their ability to come up with surprisingly creative solutions to a broad range of problems. Even when these algorithms fail, they tend to fail in a natural way, making mistakes that can seem eerily human. Apart from having a wide range of practical applications, these models may give us insights into human and animal intelligence. I enjoy exploring with generative models in an artistic context and integrating multidisciplinary ideas drawing from a variety of fields  such as game theory, computer science, foresight research, generative art, music, signal processing, and computer vision.",
+       "summary":"Even before embarking on my academic pursuits, I have held a more than casual interest in biologically inspired computation. Artificial neural networks, evolutionary computation and multi-agent systems that show emergent behavior fascinate me in their ability to come up with surprisingly creative solutions to a broad range of problems. Even when these algorithms fail, they tend to fail in a natural way, making mistakes that can seem eerily human. Apart from having a wide range of practical applications, these models may provide us with insights into human and animal intelligence. I enjoy exploring generative models in an artistic context and integrating multidisciplinary ideas drawing from a variety of fields  such as game theory, computer science, foresight research, generative art, music, signal processing, and computer vision.",
        "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
@@ -41,15 +41,15 @@
           "category":"publications",
           "name":"Low Level Approaches to Cognitive Control",
           "summary":"We describe several neural network implementions of insect based methods of navigation. We present the preliminary results of modelling associative learning capabilities based on the insect mushroom bodies.",
-          "publisher":"Spatial Temporal Patterns for Action-Oriented Perception in Roving Robots",
+          "publisher":"Spatial Temporal Patterns for Action-Oriented Perception in Roving Robots (book)",
           "releaseDate":"2009-01-31",
           "authors":"B. Webb, J. Wessnitzer, H. Rosano, M. Szenher, M. Zampoglou, T. Haferlach, P. Russo"
        },
-       {
+        {
           "url":"https://link.springer.com/article/10.1007/s10710-008-9063-0",
           "category":"publications",
           "name":"The 2007 IEEE CEC simulated car racing competition",
-          "summary":"With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task, as well as an example of one way of running a competition. In the process, we provide a set of reference results for those who wish to use the simplerace game to benchmark their own algorithms. \n",
+          "summary":"With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task.",
           "publisher":"Genetic Programming and Evolvable Machines",
           "releaseDate":"2008-03-31",
           "authors":"J. Togelius, S. Lucas, T.Haferlach, ..."
@@ -127,7 +127,7 @@
           "location":"Edinburgh, United Kingdom",
           "category":"work",
           "company":"Amazon Development Centre Scotland",
-          "summary":"Agile development of backend tooling. A/b testing of data mining technologies for sales optimization.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing",
+          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing",
           "position":"Software Engineer",
           "startDate":"2006-10-31",
           "endDate":"2007-09-28",
@@ -187,6 +187,13 @@
        }
     ],
     "awards":[
+        {
+            "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: react - max/msp - ableton live - electron - node.js",
+            "date":"2017-01-01",
+            "title":"Harmonic Audio Mixing Visualization Tools",
+            "url":"https://medium.com/@thomashaferlach/voodoohop-harmony-and-tempo-tools-for-ableton-live-5eb8af96cb41",
+            "category":"awards"
+             },
        {
           "category":"awards",
           "title":"Simulated Car Racing Competition (2nd Place)",
@@ -199,13 +206,20 @@
           "title":"Honorary Membership",
           "date":"2001-05-31",
           "awarder":"German Physics Society"
-       },
-       {
-       "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: react - max/msp - ableton live - electron - node.js",
-       "date":"2007-06-30",
-       "title":"Harmonic Audio Mixing Visualization Tools",
-       "url":"https://medium.com/@thomashaferlach/voodoohop-harmony-and-tempo-tools-for-ableton-live-5eb8af96cb41",
-       "category":"awards"
-        }
+       }
+     
+    ],
+    "references": [
+        {
+            "name": "Jan Wessnitzer\nPostdoc at the *Institute of Perception, Action and Behaviour, University of Edinburgh*",
+            "reference": "**Phone**:+44 7910328724\n **E-Mail**: jan.wessnitzer@me.com"
+        },
+        {
+            "name": "Thiara Cadavadas\nHead of Research at *[Envisioning](http://envisioning.io)*",
+            "reference": "**Phone**:+55 11 992234994\n **E-Mail**: thiara@envisioning.io "
+        },
+        {"name": "Murray Cole\nDirector Of Studies at the *University of Edinburgh*",
+        "reference": "**Phone**: +44 131 6505154\n**E-Mail**: mic@inf.ed.ac.uk"}    
+        
     ]
  }
