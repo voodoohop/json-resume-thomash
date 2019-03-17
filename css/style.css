@@ -139,14 +139,14 @@ header p {
   display:table;
   width:100%;
 
-  padding-top:1.5em;
+  padding-top:1em;
 
   /*border-top: 1px solid #eeeeee;*/
 }
 
 
 .work-listing .first-listing{
-  margin-top: 1.8em !important;
+  margin-top: 1.3em !important;
 }
 
 .content:last-child {
@@ -240,6 +240,18 @@ body > div > article > div > section:last-child {
   margin-bottom: 0.45em;
 }
 
+.work-listing div ol li {
+  font-size:0.7em;
+
+  color: #424242;
+
+
+}
+
+.work-listing div ol {
+margin-block-start: 0em;
+}
+
 div.content-text.work-listing.education-listing > p:nth-child(2) {
   margin-top:0.25em;
 }
@@ -276,6 +288,11 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
 }
 
 .profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:24%;
+  font-weight: normal;
+}
+
+.languages-listing ul li, .languages-listing ul li:first-child {
   width:24%;
   font-weight: normal;
 }
@@ -364,4 +381,8 @@ a{
 
 .extratopmargin {
   margin-top: 6em !important;
+}
+
+span.padspan {
+  margin-right: 1em;
 }
