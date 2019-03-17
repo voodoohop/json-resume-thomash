@@ -253,7 +253,12 @@
 				          </div>
 				          <div class="content-text work-listing">
 										{{#if name}}
-				            	<p class="heading"><strong>{{name}}</strong>{{#if authors}} {{authors}}{{/if}}</p>
+				            	{{#if @first}}
+											<p class="heading first-listing">
+											{{else}}
+											<p class="heading">
+											{{/if}}
+											<strong>{{name}}</strong>{{#if authors}} {{authors}}{{/if}}</p>
 										{{/if}}
 										
 										{{#if publisher}}
@@ -284,7 +289,7 @@
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if @first}}
-											<h3>Work	Experience</h3>
+											<h3>Work & Research Experience</h3>
 									{{/if}}
 
 								 {{#if startDate}}
@@ -335,7 +340,11 @@
 
 					{{#if resume.awards.length}}
 						{{#each resume.awards}}
+							{{#if @first}}
+							<section class="content extratopmargin">
+							{{else}}
 				      <section class="content">
+							{{/if}}
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if @first}}
@@ -360,7 +369,7 @@
 				            	{{title}}
 										{{/if}}
 										{{#if awarder}}
-					         		<strong>{{awarder}}</strong>
+					         		/ <strong>{{awarder}}</strong>
 										{{/if}}
 										</p>
 										{{#if summary}}
@@ -455,7 +464,34 @@
 			        </div>
 			      </section>
 			      {{/if}}
-						
+
+						<!-- REFERENCES -->
+			      {{#if resume.references.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>References</h3>
+			          </div>
+			          <div class="content-text niceul">
+
+			          	{{#each resume.references}}	
+				            <ul>
+
+											{{#if name}}
+				              	<li>{{{markdown name}}}</li>
+											{{/if}}
+
+											{{#if reference}}
+				              <li>{{{markdown reference}}}</li>
+											{{/if}}
+
+				            </ul>
+			            {{/each}}
+
+			          </div>
+			        </div>
+			      </section>
+			      {{/if}}						
 
 					{{#if resume.volunteer.length}}
 						{{#each resume.volunteer}}

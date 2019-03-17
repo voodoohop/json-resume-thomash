@@ -176,8 +176,8 @@ body > div > article > div > section:last-child {
 
   font-family: "Merriweather";
 
-  padding-left:6.66%;
-  width:30%;
+  /* padding-left:6.66%; */
+  width:22%;
 }
 
 .content-cat p {
@@ -212,7 +212,9 @@ body > div > article > div > section:last-child {
 .content-text ul li {
   font-size:0.7em;
 
-  display:inline-block;
+  display:inline-block; 
+
+  vertical-align: top;
 
 }
 
@@ -316,7 +318,7 @@ a{
   }
 
   .content-cat{
-    padding-left:2%;
+    padding-left:0%;
   }
 
   .content-wrapper{
@@ -358,4 +360,8 @@ a{
 
 .justified * {
   text-align: justify;
+}
+
+.extratopmargin {
+  margin-top: 6em !important;
 }
