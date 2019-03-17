@@ -304,10 +304,11 @@ div.content-text.work-listing.education-listing > p:nth-child(2) {
 div.content-text.skills-listing > p {
   font-size:0.7em;
   font-weight:400;
-
+  color: #424242;
   margin-left: 2em;
   margin-top: 0.45em;
   margin-bottom: 0.45em;
+  text-align: justify;
 }
 
 .no-nl{
