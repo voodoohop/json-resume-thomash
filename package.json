@@ -1,8 +1,7 @@
 {
-  "name": "linkedin-json-transformer",
+  "name": "json-resume-thomash",
   "version": "1.0.0",
-  "description": "",
-  "main": "transform_linkedin_json.js",
+  "description": "Thomas Haferlach's Programmatic Resume",
   "dependencies": {
     "helper-markdown": "^1.0.0",
     "icon-convert": "^1.0.0",
