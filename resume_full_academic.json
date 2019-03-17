@@ -22,7 +22,7 @@
              "url":"http://soundcloud.com/thomash_voodoohop"
           }
        ],
-       "summary":"I am passionate about multidisciplinary research and development involving machine learning, audio processing, distributed systems, art, and data visualization. By combining pragmatic problem-solving skills with a strong background in software engineering, I am able to apply cutting edge academic research in practice.",
+       "summary":"Artificial neural networks, evolutionary computation and multi-agent systems that show emergent behavior fascinate me in their ability to come up with surprisingly creative solutions to a broad range of problems. Even when these algorithms fail, they tend to fail in a natural way, making mistakes that can seem eerily human. Apart from having a wide range of practical applications, these models may provide us with insights into human and animal intelligence. I enjoy exploring generative models in an artistic context and integrating multidisciplinary ideas drawing from a variety of fields  such as game theory, computer science, foresight research, generative art, music, signal processing, and computer vision.",
        "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
@@ -45,10 +45,19 @@
           "releaseDate":"2009-01-31",
           "authors":"B. Webb, J. Wessnitzer, H. Rosano, M. Szenher, M. Zampoglou, T. Haferlach, P. Russo"
        },
+        {
+          "url":"https://link.springer.com/article/10.1007/s10710-008-9063-0",
+          "category":"publications",
+          "name":"The 2007 IEEE CEC simulated car racing competition",
+          "summary":"With this paper, we hope to provide some insight into the efficacy of various computational intelligence methods on a well-defined game task.",
+          "publisher":"Genetic Programming and Evolvable Machines",
+          "releaseDate":"2008-03-31",
+          "authors":"J. Togelius, S. Lucas, T.Haferlach, ..."
+       },
        {
           "url":"http://journals.sagepub.com/doi/abs/10.1177/1059712307082080",
           "category":"publications",
-          "authors":"T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",     
+          "authors":"T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",
           "name":"Evolving a Neural Model of Insect Path Integration",
           "summary":"We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent in a manner comparable to the polarization-sensitive interneurons found in insects. The home vector is encoded across a circular array of cells that integrate this input. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.",
           "publisher":"Adaptive Behaviour 15(3)",
@@ -99,7 +108,7 @@
           "location":"Brazil",
           "category":"work",
           "company":"SuperUber (Rio de Janeiro), Conception (Rio de Janeiro), TIM (São Paulo), ArtRio, City of São Paulo",
-          "summary":"Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing, controllers, sensors, embedded computing and data visualization.\n\n**Examples:**\n1. With the help of facial tracking, a microphone and pitch analysis, participants could [paint on a blank canvas](https://vimeo.com/77349535) using their voice and head movements. \n2. An OpenGL based climbing game in which [a user climbs a mountain](https://vimeo.com/20260318) using the movement of his own hands \n3. For the 2014 FIFA World Cup, using computer vision and real-time image augmentation, participants [took selfies with the official mascot](https://vimeo.com/116658261) superimposed onto the image.",
+          "summary":"Conceived and developed a range of interactive installations using technologies including machine learning, computer vision, distributed computing, controllers, sensors, embedded computing and data visualization.\n\n**Examples:**\n. With the help of facial tracking, a microphone and pitch analysis, participants could [paint on a blank canvas](https://vimeo.com/77349535) using their voice and head movements. \n. An OpenGL based climbing game in which [a user climbs a mountain](https://vimeo.com/20260318) using the movement of his own hands \n. For the 2014 FIFA World Cup, using computer vision and real-time image augmentation, participants [took selfies with the official mascot](https://vimeo.com/116658261) superimposed onto the image.\n. Visitors of a science museum could draw shapes into different types of simulated sand using a multi-touch screen",
           "position":"Freelance Developer", 
           "startDate":"2008-03-31",
           "endDate":"2016-03-31"
@@ -118,17 +127,17 @@
           "location":"Edinburgh, United Kingdom",
           "category":"work",
           "company":"Amazon Development Centre Scotland",
-          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.\n\nTechnologies: Java, Spring Framework, Test-Driven Development, Agile Development, Python, Distributed Computing",
+          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing",
           "position":"Software Engineer",
           "startDate":"2006-10-31",
-          "endDate":"2007-02-28",
+          "endDate":"2007-09-28",
           "url":"https://www.amazondc.com/"
        },
        {
           "location":"Portland, Oregon Area",
           "category":"work",
           "company":"Sun Microsystems",
-          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.\n\nTechnologies: Java, Text Classification, Agile Development ",
+          "summary":"Worked as a team developer on several inner process projects.\n\nResearched and developed a prototype failure analysis classification engine using technologies from the field of data mining and machine learning.\n\nTechnologies: java, spring framework, test driven development, agile development, python, distributed computing ",
           "position":"Software Engineering Internship",
           "startDate":"2004-08-31",
           "endDate":"2005-07-31"
@@ -149,6 +158,7 @@
           "category":"education",
           "institution":"Albert­ Schweitzer­ Gymnasium, Kassel",
           "studyType":"Abitur",
+          "summary":"Main subjects: Mathematics, Physics, History, English \nSubsidiary subjects: Philosophy, Informatics, Social Science, Music\n\nAwarded honorary membership of the German Physics Society",
           "startDate":"1995-01-31",
           "endDate":"2001-01-31",
           "gpa":"grade 1.7"
@@ -162,23 +172,23 @@
        },
        {
           "category":"languages",
-          "language":"German",
-          "fluency":"Native speaker"
-       },
-       {
-          "category":"languages",
           "language":"Portuguese",
           "fluency":"Full professional"
        },
        {
           "category":"languages",
           "language":"French",
-          "fluency":"Basic conversational"
+          "fluency":"Limited working knowleedge"
+       },
+       {
+          "category":"languages",
+          "language":"German",
+          "fluency":"Native speaker"
        }
     ],
     "awards":[
         {
-            "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: React - Max/MSP - Ableton Live - Electron - Node.js",
+            "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: react - max/msp - ableton live - electron - node.js",
             "date":"2017-01-01",
             "title":"Harmonic Audio Mixing Visualization Tools",
             "url":"https://medium.com/@thomashaferlach/voodoohop-harmony-and-tempo-tools-for-ableton-live-5eb8af96cb41",
@@ -201,26 +211,15 @@
     ],
     "references": [
         {
-            "name": "Dr Jan Wessnitzer\nFounder & Head of Research at *[Machines with Vision Ltd](https://www.machineswithvision.com/)*",
-            "reference": "**Phone**:+44 7481 245 147\n **E-Mail**: jan.wessnitzer@machineswithvision.com"
+            "name": "Jan Wessnitzer\nPostdoc at the *Institute of Perception, Action and Behaviour, University of Edinburgh*",
+            "reference": "**Phone**:+44 7910328724\n **E-Mail**: jan.wessnitzer@me.com"
         },
         {
             "name": "Thiara Cadavadas\nHead of Research at *[Envisioning](http://envisioning.io)*",
             "reference": "**Phone**:+55 11 992234994\n **E-Mail**: thiara@envisioning.io "
-        }  
-    ],
-    "skills":[
-        { 
-            "name" : "Software Engineering",
-            "keywords": ["Agile Development", "Object-Oriented Programming", "Functional Programming", "Distributed Computing", "Full Stack Programming", "Java", "Javascript", "Typescript", "Python", "SQL", "NoSQL", "Git", "Node.js"]
         },
-        { 
-            "name" : "Machine Learning",
-            "keywords": ["Artificial Neural Networks", "Generative Models", "Computer Vision", "PyTorch (basic)", "Tensorflow (basic)", "Max/MSP", "Audio Classification", "Digital Signal Processing", "Web Crawling", "Data Processing Pipelines", "Data Visualization", "Applying academic research in practice"]
-        },
-        { 
-            "name" : "Soft Skills",
-            "keywords": ["Working independently","Conveying technical information to a non-technical Audience",  "Logical thinking and problem solving", "Excellent written and oral communication skills"]
-        }
+        {"name": "Murray Cole\nDirector Of Studies at the *University of Edinburgh*",
+        "reference": "**Phone**: +44 131 6505154\n**E-Mail**: mic@inf.ed.ac.uk"}    
+        
     ]
  }
