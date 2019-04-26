@@ -1,6 +1,14 @@
 var fs = require("fs");
 var Handlebars = require("handlebars");
 var countries = require('./resources/countryCodes.json');
+var HandlebarsIntl = require('handlebars-intl');
+
+var i18n = require("i18n");
+
+i18n.configure({
+	locales:['en', 'de'],
+	directory: __dirname + '/locales'
+});
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
@@ -38,9 +46,9 @@ function render(resume) {
     return options.fn(items.join(', '));
 	});
 
-	Handlebars.registerHelper('formatdate', function(text) {
-		return new Handlebars.SafeString(text.slice(0,7));
-	});
+	// Handlebars.registerHelper('formatdate', function(text) {
+	// 	return new Handlebars.SafeString(text.slice(0,7));
+	// });
 	
 	Handlebars.registerHelper('breaklines', function(text) {
 		text = Handlebars.Utils.escapeExpression(text);
@@ -48,17 +56,34 @@ function render(resume) {
 		return new Handlebars.SafeString(text);
 	});
 
+	var intlData = {
+		locales: 'de-DE','en-US'],
+		messages: {
+			'de': {
+				'email':'eMail'
+					},
+			'en': {
+				'email':'E-mail'
+			}
+		}
+  }
+
+
 	Handlebars.registerHelper('markdown', require('helper-markdown'));
-	
+	HandlebarsIntl.registerWith(Handlebars);
   // Send all necessary resources to the handlebars template and compile it
 	return Handlebars.compile(template)({
 		resume: resume,
 		standardCSS: standardCSS,
     printCSS: printCSS,
 		screenCSS: screenCSS
+	}, {
+    data: {intl: intlData}
 	});
 }
 
 module.exports = {
 	render: render
 };
+// console.log("greeting")
+// var greeting = i18n.__('Hello');

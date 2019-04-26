@@ -50,7 +50,7 @@
 			          <div class="content-text">
 			            {{#if email}}
 				            <ul>
-				              <li>Email</li>
+				              <li>{{intlGet "messages.email"}}</li>
 				              <li><a href="mailto:{{email}}">{{email}}</a></li>
 				            </ul>
 			            {{/if}}
@@ -181,9 +181,9 @@
 									{{/if}}
 
 								 {{#if startDate}}
-										<p><span class="no-nl">{{formatdate startDate}}</span>
+										<p><span class="no-nl">{{formatDate startDate}}</span>
 										{{#if endDate}}
-											 till <span class="no-nl">{{formatdate endDate}}</span></p>
+											 till <span class="no-nl">{{formatDate endDate}}</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -241,7 +241,7 @@
 
 										{{#if startDate}}
 											{{#if endDate}}
-				            		<p>{{formatdate startDate}} till <span class="no-nl">{{formatdate endDate}}</span></p>
+				            		<p>{{formatDate startDate}} till <span class="no-nl">{{formatDate endDate}}</span></p>
 				            	{{/if}}
 										{{/if}}	
 
@@ -293,7 +293,7 @@
 
 
 										{{#if releaseDate}}
-				            	<p style="margin-top:0.25em;">{{formatdate releaseDate}}</p>
+				            	<p style="margin-top:0.25em;">{{formatDate releaseDate}}</p>
 										{{/if}}
 
 				          </div>
@@ -341,7 +341,7 @@
 
 
 										{{#if date}}
-				            	<p style="margin-top:0.25em;">{{formatdate date}}</p>
+				            	<p style="margin-top:0.25em;">{{formatDate date}}</p>
 										{{/if}}
 
 				          </div>
@@ -384,9 +384,9 @@
 
 									{{#if startDate}}
 										{{#if endDate}}
-											<p><span class="no-nl">{{formatdate startDate}}</span> till <span class="no-nl">{{formatdate endDate}}</span></p>
+											<p><span class="no-nl">{{formatDate startDate}}</span> till <span class="no-nl">{{formatDate endDate}}</span></p>
 										{{else}}
-											<p><span class="no-nl">{{formatdate startDate}}</span> till <span class="no-nl">Ongoing</span></p>
+											<p><span class="no-nl">{{formatDate startDate}}</span> till <span class="no-nl">Ongoing</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -495,8 +495,8 @@
 
 								 {{#if startDate}}
 										
-			            		<p><span class="no-nl">{{formatdate startDate}}</span> 
-										{{#if endDate}} till <span class="no-nl">{{formatdate endDate}}</span></p>
+			            		<p><span class="no-nl">{{formatDate startDate}}</span> 
+										{{#if endDate}} till <span class="no-nl">{{formatDate endDate}}</span></p>
 			            	{{/if}}
 									{{/if}}
 
