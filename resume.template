@@ -120,7 +120,7 @@
 					              	<li>
 					              	<a href="{{url}}" target="_blank">
 														<i class="fab fa-2x {{fontAwesome network}}"></i>
-							            	<span class="network">{{network}}</span>
+							            	<span class="network">{{t network}}</span>
 													</a>
 							            </li>
 					              {{/if}}
