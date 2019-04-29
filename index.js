@@ -10,7 +10,7 @@ i18n.configure({
 	directory: __dirname + '/locales'
 });
 
-i18n.setLocale('en');
+i18n.setLocale('de');
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
