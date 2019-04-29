@@ -36,7 +36,7 @@
 			        {{/if}}
 			        <div class="header-text">
 			          <h2>{{name}}</h2>
-			          <p class="subtitle">{{label}}</p>
+			          <p class="subtitle">{{t label}}</p>
 			        </div>
 			      </div>
 			    </header>
@@ -45,26 +45,26 @@
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
-			           <h3>Contact</h3>
+			           <h3>{{t "Contact"}}</h3>
 			          </div>
 			          <div class="content-text">
 			            {{#if email}}
 				            <ul>
-				              <li>{{intlGet "messages.email"}}</li>
+				              <li>{{t "Email"}}</li>
 				              <li><a href="mailto:{{email}}">{{email}}</a></li>
 				            </ul>
 			            {{/if}}
 
 			            {{#if phone}}
 				            <ul>
-				              <li>Phone</li>
+				              <li>{{t "Phone"}}</li>
 				              <li>{{phone}}</li>
 				            </ul>
 			            {{/if}}
 
 									{{#if website}}
 										<ul>
-											<li>Website</li>
+											<li>{{t "Website"}}</li>
 											<li><a href="{{website}}">{{website}}</a></li>
 										</ul>
 									{{/if}}
@@ -72,29 +72,29 @@
 				      {{#if (or address city)}}
 							   	{{#if address}}
 						            <ul>
-						              <li>Address</li>
+						              <li>{{t "Address"}}</li>
 						              <li>{{address}}</li>
 						            </ul>
 					            {{/if}}
 
 					            {{#if city}}
 						            <ul>
-						              <li>City</li>
-						              <li>{{#if postalCode}}{{postalCode}} {{/if}}{{city}}</li>
+						              <li>{{t "City"}}</li>
+						              <li>{{#if postalCode}}{{postalCode}} {{/if}}{{t city}}</li>
 						            </ul>
 					            {{/if}}
 
 					            {{#if region}}
 						            <ul>
-						              <li>Region</li>
-						              <li>{{region}}</li>
+						              <li>{{t "Region"}}</li>
+						              <li>{{t region}}</li>
 						            </ul>
 											{{/if}}
 											
 											{{#if country}}
 						            <ul>
-						              <li>Country</li>
-						              <li>{{country}}</li>
+						              <li>{{t "Country"}}</li>
+						              <li>{{t country}}</li>
 						            </ul>
 					            {{/if}}
 			      	{{/if}}
@@ -111,7 +111,7 @@
 				      <section class="content profiles">
 				        <div class="row">
 				          <div class="content-cat">
-				           <h3>Profiles</h3>
+				           <h3>{{t "Profiles"}}</h3>
 				          </div>
 				          <div class="content-text profiles-listing">
 				            <ul>
@@ -135,7 +135,7 @@
 							<section class="content profiles-print">
 								<div class="row">
 									<div class="content-cat">
-									 <h3>Profiles</h3>
+									 <h3>{{t "Profiles"}}</h3>
 									</div>
 									<div class="content-text">
 										{{#each profiles}}
@@ -155,11 +155,11 @@
 							<section class="content summary">
 								<div class="row small-fullwidth-row">
 									<div class="content-cat">
-									 <h3>Summary</h3>
+									 <h3>{{t "Summary"}}</h3>
 									</div>
 									<div class="content-text">
 										<div class="justified">
-											{{{markdown summary}}}
+											{{{markdown (t summary)}}}
 										</divs>
 									</div>
 								</div>
@@ -177,13 +177,13 @@
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if @first}}
-											<h3>Work & Research Experience</h3>
+											<h3>{{t "Work & Research Experience"}}</h3>
 									{{/if}}
 
 								 {{#if startDate}}
-										<p><span class="no-nl">{{formatDate startDate}}</span>
+										<p><span class="no-nl">{{formatDate startDate "short"}}</span>
 										{{#if endDate}}
-											 till <span class="no-nl">{{formatDate endDate}}</span></p>
+											 {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -196,25 +196,24 @@
 											<p class="small-center">
 										{{/if}}
 												{{#if url}}
-													<strong>{{position}}</strong> at <strong><a href="{{url}}" class="no-nl">{{company}}</a></strong>
+													<strong>{{t position}}</strong> {{t "at"}} <strong><a href="{{url}}" class="no-nl">{{company}}</a></strong>
 												{{else}}
-													<strong>{{position}}</strong> at <strong>{{company}}</strong>
+													<strong>{{t position}}</strong> {{t "at"}} <strong>{{company}}</strong>
 												{{/if}}
 											</p>
 										{{/if}}
 											{{#if location}}
 											<p class="highlight">
-		
-												{{location}}
+												{{t location}}
 												</p>
 											{{/if}}
 										{{#if summary}}
-											<div class="justified">{{{markdown summary}}}</div>
+											<div class="justified">{{{markdown (t summary)}}}</div>
 										{{/if}}
 
 										{{#if highlights.length}}
 											{{#each highlights}}
-												<p class="highlight">{{.}}</p>
+												<p class="highlight">{{t .}}</p>
 											{{/each}}
 										{{/if}}
 
@@ -236,12 +235,12 @@
 				          <div class="content-cat big-text">
 
 				          	{{#if @first}}
-				            	<h3>Education</h3>
+				            	<h3>{{t "Education"}}</h3>
 										{{/if}}
 
 										{{#if startDate}}
 											{{#if endDate}}
-				            		<p>{{formatDate startDate}} till <span class="no-nl">{{formatDate endDate}}</span></p>
+				            		<p>{{formatDate startDate "short"}} {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
 				            	{{/if}}
 										{{/if}}	
 
@@ -249,30 +248,30 @@
 				          <div class="content-text work-listing education-listing">
 										{{#if institution}}
 											{{#if @first}}
-						            <p class="heading first-listing">{{institution}}{{#if area}}: <strong>{{area}}</strong>	 {{/if}}</p>
+						            <p class="heading first-listing">{{institution}}{{#if area}}: <strong>{{t area}}</strong>	 {{/if}}</p>
 						            {{else}}
-						            <p class="heading">{{institution}}{{#if area}}: {{area}} {{/if}} </p>
+						            <p class="heading">{{institution}}{{#if area}}: {{t area}} {{/if}} </p>
 						          {{/if}}
 										{{/if}}
 
 
 			            		<p class="highlight">
 			            		{{#if studyType}}
-												{{studyType}}
+												{{t studyType}}
 			            		{{/if}}
 			            	 
 			            		{{#if gpa}}
-											with
-											 {{{gpa}}}
+											{{t "with"}}
+											 {{{t gpa}}}
 											{{/if}}
 											</p>
 
  										{{#if summary}}
-                        <div class="justified">{{{markdown summary}}}</div>
+                        <div class="justified">{{{markdown (t summary)}}}</div>
                       {{/if}}
                       {{#if courses.length}}
                         {{#each courses}}
-                          <p class="highlight">{{.}}</p>
+                          <p class="highlight">{{t .}}</p>
                         {{/each}}
                       {{/if}}
 				          </div>
@@ -287,13 +286,13 @@
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if @first}}
-				            	<h3>Publications</h3>
+				            	<h3>{{t "Publications"}}</h3>
 										{{/if}}
 
 
 
 										{{#if releaseDate}}
-				            	<p style="margin-top:0.25em;">{{formatDate releaseDate}}</p>
+				            	<p style="margin-top:0.25em;">{{formatDate releaseDate "short"}}</p>
 										{{/if}}
 
 				          </div>
@@ -317,7 +316,7 @@
 										{{/if}}
 
 										{{#if summary}}
-				            	<div class="justified">{{{markdown summary}}}</div>
+				            	<div class="justified">{{{markdown (t summary)}}}</div>
 										{{/if}}
 				          </div>
 				        </div>
@@ -335,13 +334,13 @@
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if @first}}
-				            	<h3>Awards & Projects</h3>
+				            	<h3>{{t "Awards & Projects"}}</h3>
 										{{/if}}
 
 
 
 										{{#if date}}
-				            	<p style="margin-top:0.25em;">{{formatDate date}}</p>
+				            	<p style="margin-top:0.25em;">{{formatDate date "short"}}</p>
 										{{/if}}
 
 				          </div>
@@ -353,14 +352,14 @@
 										{{/if}}						
 										
 										{{#if title}}
-				            	{{title}}
+				            	{{t title}}
 										{{/if}}
 										{{#if awarder}}
-					         		/ <strong>{{awarder}}</strong>
+					         		/ <strong>{{t awarder}}</strong>
 										{{/if}}
 										</p>
 										{{#if summary}}
-				            	<p class="highlight">{{summary}}</p>
+				            	<p class="highlight">{{t summary}}</p>
 										{{/if}}
 				          </div>
 				        </div>
@@ -379,14 +378,14 @@
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if @first}}
-											<h3>Open Source</h3>
+											<h3>{{t "Open Source"}}</h3>
 									{{/if}}
 
 									{{#if startDate}}
 										{{#if endDate}}
-											<p><span class="no-nl">{{formatDate startDate}}</span> till <span class="no-nl">{{formatDate endDate}}</span></p>
+											<p><span class="no-nl">{{formatDate startDate "short"}}</span> {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
 										{{else}}
-											<p><span class="no-nl">{{formatDate startDate}}</span> till <span class="no-nl">Ongoing</span></p>
+											<p><span class="no-nl">{{formatDate startDate "short"}}</span> {{t "till"}} <span class="no-nl">{{t "Ongoing"}}</span></p>
 										{{/if}}
 									{{/if}}
 
@@ -399,20 +398,20 @@
 												<p class="small-center">
 											{{/if}}
 											{{#if url}}
-												<strong>{{role}}</strong> <span class="no-nl">of <strong><a href="{{url}}">{{name}}</a></strong></span>
+												<strong>{{t role}}</strong> <span class="no-nl">{{t "of"}} <strong><a href="{{url}}">{{name}}</a></strong></span>
 											{{else}}
-												<strong>{{role}}</strong> <span class="no-nl">of <strong>{{name}}</strong></span>
+												<strong>{{t role}}</strong> <span class="no-nl">{{t "of"}} <strong>{{name}}</strong></span>
 											{{/if}}
 											</p>
 										{{/if}}
 
 										{{#if summary}}
-											<p>{{summary}}</p>
+											<p>{{t summary}}</p>
 										{{/if}}
 
 										{{#if highlights.length}}
 											{{#each highlights}}
-												<p class="highlight">{{.}}</p>
+												<p class="highlight">{{t .}}</p>
 											{{/each}}
 										{{/if}}
 
@@ -429,7 +428,7 @@
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
-			           <h3>Languages</h3>
+			           <h3>{{t "Languages"}}</h3>
 			          </div>
 			          <div class="content-text work-listing">
 									<p class="heading">
@@ -437,11 +436,11 @@
 			          	{{#each resume.languages}}
 										<span class="padspan">
 											{{#if language}}
-				              	<b>{{language}}	</b>	
+				              	<b>{{t language}}	</b>	
 											{{/if}}
 
 											{{#if fluency}}
-				             ({{fluency}})
+				             ({{t fluency}})
 											{{/if}}	
 										</span>
 			            {{/each}}
@@ -457,7 +456,7 @@
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
-			           <h3>References</h3>
+			           <h3>{{t "References"}}</h3>
 			          </div>
 			          <div class="content-text niceul">
 
@@ -490,13 +489,13 @@
 			        <div class="row small-fullwidth-row">
 			          <div class="content-cat big-text">
 			          	{{#if @first}}
-											<h3>Volunteer work</h3>
+											<h3>{{t "Volunteer work"}}</h3>
 			          	{{/if}}
 
 								 {{#if startDate}}
 										
-			            		<p><span class="no-nl">{{formatDate startDate}}</span> 
-										{{#if endDate}} till <span class="no-nl">{{formatDate endDate}}</span></p>
+			            		<p><span class="no-nl">{{formatDate startDate "short"}}</span> 
+										{{#if endDate}} {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
 			            	{{/if}}
 									{{/if}}
 
@@ -509,20 +508,20 @@
 					            <p class="small-center">
 					          {{/if}}
 					            	{{#if url}}
-													<strong>{{position}}</strong> <span class="no-nl">at <strong><a href="{{url}}">{{organization}}</a></strong></span>
+													<strong>{{t position}}</strong> <span class="no-nl">at <strong><a href="{{url}}">{{organization}}</a></strong></span>
 												{{else}}
-					            		<strong>{{position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
+					            		<strong>{{t position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
 					            	{{/if}}
 					            </p>
 										{{/if}}
 
 										{{#if summary}}
-											<p>{{summary}}</p>
+											<p>{{t summary}}</p>
 										{{/if}}
 
 										{{#if highlights.length}}
 											{{#each highlights}}
-												<p class="highlight">{{.}}</p>
+												<p class="highlight">{{t .}}</p>
 											{{/each}}
 										{{/if}}
 
@@ -537,7 +536,7 @@
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
-			            <h3>Skills</h3>
+			            <h3>{{t "Skills"}}</h3>
 			          </div>
 			          <div class="content-text skills-listing">
 			          	{{#each resume.skills}}
@@ -545,18 +544,18 @@
 			            	<span class="name">
 			              {{#if name}}
 											<strong>
-											{{name}}{{#if level}}{{else}}:{{/if}}
+											{{t name}}{{#if level}}{{else}}:{{/if}}
 
 											</strong>
 			            	{{/if}}
 			            	</span>
 
 										{{#if level}}
-		                	<span>({{level}}):</span>
+		                	<span>({{t level}}):</span>
 		                {{/if}}
 
 											{{#if keywords.length}}
-												{{#commalist keywords}}{{.}}{{/commalist}}
+												{{#commalist keywords}}{{t .}}{{/commalist}}
 											{{/if}}
 			            	</p>
 			            {{/each}}
@@ -569,7 +568,7 @@
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
-			            <h3>Interests</h3>
+			            <h3>{{t "Interests"}}</h3>
 			          </div>
 			          <div class="content-text skills-listing">
 			          	{{#each resume.interests}}
@@ -577,12 +576,12 @@
 			            	<span class="name">
 			              {{#if name}}
 											<strong>
-												{{name}}:
+												{{t name}}:
 											</strong>
 			            	{{/if}}
 			            	</span>
 											{{#if keywords.length}}
-												{{#commalist keywords}}{{.}}{{/commalist}}
+												{{#commalist keywords}}{{t .}}{{/commalist}}
 											{{/if}}
 			            	</p>
 			            {{/each}}

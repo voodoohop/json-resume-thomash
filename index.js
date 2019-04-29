@@ -10,6 +10,8 @@ i18n.configure({
 	directory: __dirname + '/locales'
 });
 
+i18n.setLocale('de');
+
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
 
@@ -57,20 +59,27 @@ function render(resume) {
 	});
 
 	var intlData = {
-		locales: 'de-DE','en-US'],
-		messages: {
-			'de': {
-				'email':'eMail'
-					},
-			'en': {
-				'email':'E-mail'
+		"locales": 'en-US',
+		"formats": {
+			"date": {
+					"short": {
+							"month": "numeric",
+							"year": "numeric"
+					}
 			}
 		}
   }
 
 
 	Handlebars.registerHelper('markdown', require('helper-markdown'));
+	Handlebars.registerHelper('t', function(text) {
+		if (!text)
+			return text;
+		return i18n.__(text);
+	});
+	
 	HandlebarsIntl.registerWith(Handlebars);
+	// Handlebars.registerHelper("date")
   // Send all necessary resources to the handlebars template and compile it
 	return Handlebars.compile(template)({
 		resume: resume,
@@ -86,4 +95,4 @@ module.exports = {
 	render: render
 };
 // console.log("greeting")
-// var greeting = i18n.__('Hello');
+// var greeting = i18n._s_('Hello');
