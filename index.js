@@ -5,12 +5,14 @@ var HandlebarsIntl = require('handlebars-intl');
 
 var i18n = require("i18n");
 
+var currentLocale="de-DE"
+
 i18n.configure({
 	locales:['en', 'de'],
 	directory: __dirname + '/locales'
 });
 
-i18n.setLocale('de');
+i18n.setLocale(currentLocale.split("-")[0]);
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
@@ -59,7 +61,7 @@ function render(resume) {
 	});
 
 	var intlData = {
-		"locales": "de-DE",
+		"locales": currentLocale,
 		"formats": {
 			"date": {
 					"short": {
