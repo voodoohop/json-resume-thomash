@@ -13,6 +13,7 @@ i18n.configure({
 });
 
 i18n.setLocale(currentLocale.split("-")[0]);
+console.log("locale",currentLocale);
 
 function render(resume) {
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
