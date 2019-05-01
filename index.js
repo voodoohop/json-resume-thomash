@@ -5,7 +5,7 @@ var HandlebarsIntl = require('handlebars-intl');
 
 var i18n = require("i18n");
 
-var currentLocale="de-DE"
+var currentLocale="en-US"
 
 i18n.configure({
 	locales:['en', 'de'],

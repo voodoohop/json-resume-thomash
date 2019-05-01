@@ -81,5 +81,7 @@
 	"Montreal, Canada": "Montreal, Canada",
 	"Berlin, Germany": "Berlin, Germany",
 	"São Paulo, Brazil": "São Paulo, Brazil",
-	"Portland, Oregon": "Portland, Oregon"
+	"Portland, Oregon": "Portland, Oregon",
+	"Agile Development, Object-Oriented Programming, Functional Programming, Distributed Computing, Full Stack Programming, Java, Javascript, Typescript, Python, SQL, NoSQL, Git, Node.js, Max/MSP, Audio Classification, Digital Signal Processing, Web Crawling, Digital Audio Workstations": "Agile Development, Object-Oriented Programming, Functional Programming, Distributed Computing, Full Stack Programming, Java, Javascript, Typescript, Python, SQL, NoSQL, Git, Node.js, Max/MSP, Audio Classification, Digital Signal Processing, Web Crawling, Digital Audio Workstations",
+	"Artificial Neural Networks, Generative Models, Computer Vision, PyTorch (basic), Tensorflow (basic), Data Processing Pipelines, Data Visualization, Applying academic research in practice": "Artificial Neural Networks, Generative Models, Computer Vision, PyTorch (basic), Tensorflow (basic), Data Processing Pipelines, Data Visualization, Applying academic research in practice"
 }
