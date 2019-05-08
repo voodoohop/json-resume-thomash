@@ -177,7 +177,7 @@
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
 									{{#if @first}}
-											<h3>{{t "Work & Research Experience"}}</h3>
+											<h3>{{t "Work Experience"}}</h3>
 									{{/if}}
 
 								 {{#if startDate}}
