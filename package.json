@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "description": "Thomas Haferlach's Programmatic Resume",
   "dependencies": {
+    "full-icu": "^1.2.1",
     "helper-markdown": "^1.0.0",
     "icon-convert": "^1.0.0",
     "jsonresume-theme-class": "^0.1.2",
     "jsonresume-theme-classy": "^1.0.9",
     "jsonresume-theme-elegant": "^1.12.1",
     "jsonresume-theme-paper": "^0.3.5",
-    "jsonresume-theme-paper-plus-plus": "github:voodoohop/Paper-Plus-Plus",
+    "jsonresume-theme-paper-plus-plus": "git+https://github.com/voodoohop/jsonresume-theme-thomash.git",
     "jsonresume-theme-slick": "^0.1.16",
     "jsonresume-theme-spartan": "^0.2.1",
+    "jsonresume-theme-thomash": "file:./jsonresume-theme-thomash",
     "lodash": "^4.17.11",
     "partial.lenses": "^14.17.0",
     "puppeteer": "^1.12.2",
@@ -19,13 +21,14 @@
     "ramda": "^0.26.1",
     "ramda-mapobjdeep": "^1.0.1",
     "resume-cli": "^1.1.2",
-    "resume-schema": "0.0.16"
+    "resume-schema": "0.0.16",
+    "translate-markdown": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compileResume": "NODE_ICU_DATA=\"node_modules/full-icu\" node_modules/.bin/resume export resume.html --theme thomash && open resume.html"
   },
   "author": "",
   "license": "ISC"
 }
-  
