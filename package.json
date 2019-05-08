@@ -12,7 +12,8 @@
     "handlebars": ">=4.0.0",
     "handlebars-intl": "^1.1.2",
     "helper-markdown": "^1.0.0",
-    "i18n": "^0.8.3"
+    "i18n": "^0.8.3",
+    "underscore": "^1.9.1"
   },
   "homepage": "https://github.com/voodoohop/jsonresume-theme-thomash",
   "main": "index.js",

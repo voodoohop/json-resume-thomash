@@ -178,6 +178,8 @@ body > div > article > div > section:last-child {
 
   /* padding-left:6.66%; */
   width:22%;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content-cat p {

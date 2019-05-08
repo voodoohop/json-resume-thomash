@@ -8,7 +8,12 @@ const oldTranslations = require(oldTranslationFilename);
 
 const newTranslations = require(newTranslationFilename);
 
-const mergedTranslations = {...newTranslations, ...oldTranslations};
+const {mapObject} = require("underscore");
+
+const annotatedNewTranslations = mapObject(newTranslations,(t) => `[autotranslate] ${t}`);
+
+
+const mergedTranslations = {...annotatedNewTranslations, ...oldTranslations};
 
 var fs = require('fs');
 

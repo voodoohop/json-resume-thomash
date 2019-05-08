@@ -331,6 +331,8 @@
 							{{else}}
 				      <section class="content">
 							{{/if}}
+							{{#if hidden}}
+							{{else}}
 				        <div class="row">
 				          <div class="content-cat big-text">
 				            {{#if @first}}
@@ -363,6 +365,7 @@
 										{{/if}}
 				          </div>
 				        </div>
+								{{/if}}
 				      </section>
 			      {{/each}}
 		      {{/if}}

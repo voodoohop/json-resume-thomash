@@ -1,3 +1,3 @@
 cp locales/de.json /tmp
-i18n-translate-json AIzaSyBVCxqKpbtFGk_rTfR3kgtIuzP1xBNuHAs locales/ en de
+i18n-translate-json AIzaSyBVCxqKpbtFGk_rTfR3kgtIuzP1xBNuHAs locales/ en de,ja
 node mergeTranslations.js /tmp/de.json ./locales/de.json
