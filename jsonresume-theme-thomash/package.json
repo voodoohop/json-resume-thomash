@@ -1,0 +1,32 @@
+{
+  "name": "jsonresume-theme-thomash",
+  "version": "0.4.1",
+  "description": "A theme for JSON Resume",
+  "author": "Johan Lindell modified by Thomash",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/voodoohop/jsonresume-theme-thomash"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": ">=4.0.0",
+    "handlebars-intl": "^1.1.2",
+    "helper-markdown": "^1.0.0",
+    "i18n": "^0.8.3",
+    "underscore": "^1.9.1"
+  },
+  "homepage": "https://github.com/voodoohop/jsonresume-theme-thomash",
+  "main": "index.js",
+  "scripts": {
+    "start": "resume serve"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "jsonresume",
+    "json",
+    "resume",
+    "paper",
+    "paper++",
+    "paper plus plus"
+  ]
+}

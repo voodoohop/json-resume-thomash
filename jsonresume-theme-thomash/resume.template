@@ -1,0 +1,599 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+		<title>{{#resume.basics}}{{name}}'s Resume{{/resume.basics}}</title>
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+		<style>
+			{{{standardCSS}}}
+		</style>
+
+		<style media="screen">
+			{{{screenCSS}}}
+		</style>
+
+		<style media="print">
+			{{{printCSS}}}
+		</style>
+	</head>
+	<body>
+		<div class="resume-wrapper">
+		  <article class="paper">
+		  	{{#resume.basics}}
+			    <header>
+			      <div class="header-content">
+			      	{{#if picture}}
+			        <div class="header-pic">
+			          <img src="{{picture}}" class="pic" alt="{{name}}" onload="var pic = this; setTimeout(function(){pic.className+=' loaded';},100);"/>
+			        </div>
+			        {{/if}}
+			        <div class="header-text">
+			          <h2>{{name}}</h2>
+			          <p class="subtitle">{{t label}}</p>
+			        </div>
+			      </div>
+			    </header>
+			    <div class="content-wrapper">
+			      <!-- CONTACT -->
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>{{t "Contact"}}</h3>
+			          </div>
+			          <div class="content-text">
+			            {{#if email}}
+				            <ul>
+				              <li>{{t "Email"}}</li>
+				              <li><a href="mailto:{{email}}">{{email}}</a></li>
+				            </ul>
+			            {{/if}}
+
+			            {{#if phone}}
+				            <ul>
+				              <li>{{t "Phone"}}</li>
+				              <li>{{phone}}</li>
+				            </ul>
+			            {{/if}}
+
+									{{#if website}}
+										<ul>
+											<li>{{t "Website"}}</li>
+											<li><a href="{{website}}">{{website}}</a></li>
+										</ul>
+									{{/if}}
+			      {{#location}}
+				      {{#if (or address city)}}
+							   	{{#if address}}
+						            <ul>
+						              <li>{{t "Address"}}</li>
+						              <li>{{address}}</li>
+						            </ul>
+					            {{/if}}
+
+					            {{#if city}}
+						            <ul>
+						              <li>{{t "City"}}</li>
+						              <li>{{#if postalCode}}{{postalCode}} {{/if}}{{t city}}</li>
+						            </ul>
+					            {{/if}}
+
+					            {{#if region}}
+						            <ul>
+						              <li>{{t "Region"}}</li>
+						              <li>{{t region}}</li>
+						            </ul>
+											{{/if}}
+											
+											{{#if country}}
+						            <ul>
+						              <li>{{t "Country"}}</li>
+						              <li>{{t country}}</li>
+						            </ul>
+					            {{/if}}
+			      	{{/if}}
+		      	{{/location}}
+			          </div>
+			        </div>
+			      </section>
+		      {{/resume.basics}}
+
+
+					{{#resume.basics}}
+			      <!-- PROFILES for website-->
+			      {{#if profiles.length}}
+				      <section class="content profiles">
+				        <div class="row">
+				          <div class="content-cat">
+				           <h3>{{t "Profiles"}}</h3>
+				          </div>
+				          <div class="content-text profiles-listing">
+				            <ul>
+					            {{#each profiles}}
+					            	{{#if network}}
+					              	<li>
+					              	<a href="{{url}}" target="_blank">
+														<i class="fab fa-2x {{fontAwesome network}}"></i>
+							            	<span class="network">{{t network}}</span>
+													</a>
+							            </li>
+					              {{/if}}
+					            {{/each}}
+				            </ul>
+				          </div>
+				        </div>
+				      </section>
+			      {{/if}}
+						<!-- PROFILES for print -->
+						{{#if profiles.length}}
+							<section class="content profiles-print">
+								<div class="row">
+									<div class="content-cat">
+									 <h3>{{t "Profiles"}}</h3>
+									</div>
+									<div class="content-text">
+										{{#each profiles}}
+											{{#if network}}
+											<ul>
+												<li>{{network}}</li>
+												<li><a href="{{url}}">{{#no-http}}{{url}}{{/no-http}}</a></li>
+											</ul>
+											{{/if}}
+										{{/each}}
+									</div>
+								</div>
+							</section>
+						{{/if}}
+
+						{{#if summary}}
+							<section class="content summary">
+								<div class="row small-fullwidth-row">
+									<div class="content-cat">
+									 <h3>{{t "Summary"}}</h3>
+									</div>
+									<div class="content-text">
+										<div class="justified">
+											{{{markdown (t summary)}}}
+										</divs>
+									</div>
+								</div>
+							</section>
+						{{/if}}
+					{{/resume.basics}}
+					{{#if resume.education.length}}
+						{{#each resume.education}}
+							{{#if @first}}
+								<section class="content">
+							{{else}}
+								<section class="content education-content">
+							{{/if}}
+				        <div class="row">
+				          <div class="content-cat big-text">
+
+				          	{{#if @first}}
+				            	<h3>{{t "Education"}}</h3>
+										{{/if}}
+
+										{{#if startDate}}
+											{{#if endDate}}
+				            		<p>{{formatDate startDate "short"}} {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
+				            	{{/if}}
+										{{/if}}	
+
+				          </div>
+				          <div class="content-text work-listing education-listing">
+										{{#if institution}}
+											{{#if @first}}
+						            <p class="heading first-listing">{{institution}}{{#if area}}: <strong>{{t area}}</strong>	 {{/if}}</p>
+						            {{else}}
+						            <p class="heading">{{institution}}{{#if area}}: {{t area}} {{/if}} </p>
+						          {{/if}}
+										{{/if}}
+
+
+			            		<p class="highlight">
+			            		{{#if studyType}}
+												{{t studyType}}
+			            		{{/if}}
+			            	 
+			            		{{#if gpa}}
+											{{t "with"}}
+											 {{{t gpa}}}
+											{{/if}}
+											</p>
+
+ 										{{#if summary}}
+                        <div class="justified">{{{markdown (t summary)}}}</div>
+                      {{/if}}
+                      {{#if courses.length}}
+                        {{#each courses}}
+                          <p class="highlight">{{t .}}</p>
+                        {{/each}}
+                      {{/if}}
+				          </div>
+				        </div>
+				      </section>
+			      {{/each}}
+		      {{/if}}
+
+					{{#if resume.publications.length}}
+						{{#each resume.publications}}
+				      <section class="content">
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            {{#if @first}}
+				            	<h3>{{t "Publications"}}</h3>
+										{{/if}}
+
+
+
+										{{#if releaseDate}}
+				            	<p style="margin-top:0.25em;">{{formatDate releaseDate "short"}}</p>
+										{{/if}}
+
+				          </div>
+				          <div class="content-text work-listing">
+										{{#if name}}
+				            	{{#if @first}}
+											<p class="heading first-listing">
+											{{else}}
+											<p class="heading">
+											{{/if}}
+											<strong>{{name}}</strong>{{#if authors}} {{authors}}{{/if}}</p>
+										{{/if}}
+										
+										{{#if publisher}}
+
+			            		<p class="highlight">
+	
+			            		<a href="{{url}}">{{publisher}}</a>
+			            		</p>
+
+										{{/if}}
+
+										{{#if summary}}
+				            	<div class="justified">{{{markdown (t summary)}}}</div>
+										{{/if}}
+				          </div>
+				        </div>
+				      </section>
+			      {{/each}}
+		      {{/if}}
+
+					{{#if resume.work.length}}
+						{{#each resume.work}}
+						{{#if @first}}
+								<section class="content">
+						{{else}}
+								<section class="content work-content">
+						{{/if}}
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+									{{#if @first}}
+											<h3>{{t "Work & Research Experience"}}</h3>
+									{{/if}}
+
+								 {{#if startDate}}
+										<p><span class="no-nl">{{formatDate startDate "short"}}</span>
+										{{#if endDate}}
+											 {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
+										{{/if}}
+									{{/if}}
+
+								</div>
+								<div class="content-text work-listing education-listing">
+										{{#if (and company position)}}
+										{{#if @first}}
+											<p class="small-center first-listing">
+											{{else}}
+											<p class="small-center">
+										{{/if}}
+												{{#if url}}
+													<strong>{{t position}}</strong> {{t "at"}} <strong><a href="{{url}}" class="no-nl">{{company}}</a></strong>
+												{{else}}
+													<strong>{{t position}}</strong> {{t "at"}} <strong>{{company}}</strong>
+												{{/if}}
+											</p>
+										{{/if}}
+											{{#if location}}
+											<p class="highlight">
+												{{t location}}
+												</p>
+											{{/if}}
+										{{#if summary}}
+											<div class="justified">{{{markdown (t summary)}}}</div>
+										{{/if}}
+
+										{{#if highlights.length}}
+											{{#each highlights}}
+												<p class="highlight">{{t .}}</p>
+											{{/each}}
+										{{/if}}
+
+
+								</div>
+							</div>
+						</section>
+						{{/each}}
+					{{/if}}
+
+					
+					{{#if resume.awards.length}}
+						{{#each resume.awards}}
+							{{#if @first}}
+							<section class="content">
+							{{else}}
+				      <section class="content">
+							{{/if}}
+							{{#if hidden}}
+							{{else}}
+				        <div class="row">
+				          <div class="content-cat big-text">
+				            {{#if @first}}
+				            	<h3>{{t "Awards & Projects"}}</h3>
+										{{/if}}
+
+
+
+										{{#if date}}
+				            	<p style="margin-top:0.25em;">{{formatDate date "short"}}</p>
+										{{/if}}
+
+				          </div>
+				          <div class="content-text work-listing">
+			{{#if @first}}
+											<p class="heading first-listing">
+											{{else}}
+											<p class="heading">
+										{{/if}}						
+										
+										{{#if title}}
+				            	{{t title}}
+										{{/if}}
+										{{#if awarder}}
+					         		/ <strong>{{t awarder}}</strong>
+										{{/if}}
+										</p>
+										{{#if summary}}
+				            	<p class="highlight">{{t summary}}</p>
+										{{/if}}
+				          </div>
+				        </div>
+								{{/if}}
+				      </section>
+			      {{/each}}
+		      {{/if}}
+
+
+					{{#if resume.opensource.length}}
+						{{#each resume.opensource}}
+						{{#if @first}}
+								<section class="content">
+						{{else}}
+								<section class="content work-content">
+						{{/if}}
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+									{{#if @first}}
+											<h3>{{t "Open Source"}}</h3>
+									{{/if}}
+
+									{{#if startDate}}
+										{{#if endDate}}
+											<p><span class="no-nl">{{formatDate startDate "short"}}</span> {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
+										{{else}}
+											<p><span class="no-nl">{{formatDate startDate "short"}}</span> {{t "till"}} <span class="no-nl">{{t "Ongoing"}}</span></p>
+										{{/if}}
+									{{/if}}
+
+								</div>
+								<div class="content-text work-listing education-listing">
+										{{#if (and name role)}}
+											{{#if @first}}
+												<p class="first-listing small-center">
+												{{else}}
+												<p class="small-center">
+											{{/if}}
+											{{#if url}}
+												<strong>{{t role}}</strong> <span class="no-nl">{{t "of"}} <strong><a href="{{url}}">{{name}}</a></strong></span>
+											{{else}}
+												<strong>{{t role}}</strong> <span class="no-nl">{{t "of"}} <strong>{{name}}</strong></span>
+											{{/if}}
+											</p>
+										{{/if}}
+
+										{{#if summary}}
+											<p>{{t summary}}</p>
+										{{/if}}
+
+										{{#if highlights.length}}
+											{{#each highlights}}
+												<p class="highlight">{{t .}}</p>
+											{{/each}}
+										{{/if}}
+
+
+								</div>
+							</div>
+						</section>
+						{{/each}}
+					{{/if}}
+
+
+						<!-- LANGUAGE -->
+			      {{#if resume.languages.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>{{t "Languages"}}</h3>
+			          </div>
+			          <div class="content-text work-listing">
+									<p class="heading">
+
+			          	{{#each resume.languages}}
+										<span class="padspan">
+											{{#if language}}
+				              	<b>{{t language}}	</b>	
+											{{/if}}
+
+											{{#if fluency}}
+				             ({{t fluency}})
+											{{/if}}	
+										</span>
+			            {{/each}}
+				           </p>
+			          </div>
+			        </div>
+			      </section>
+			      {{/if}}
+
+						<!-- REFERENCES -->
+			      
+						{{#if resume.references.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			           <h3>{{t "References"}}</h3>
+			          </div>
+			          <div class="content-text niceul">
+
+			          	{{#each resume.references}}	
+				            <ul>
+
+											{{#if name}}
+				              	<li>{{{markdown name}}}</li>
+											{{/if}}
+
+											{{#if reference}}
+				              <li>{{{markdown reference}}}</li>
+											{{/if}}
+
+				            </ul>
+			            {{/each}}
+
+			          </div>
+			        </div>
+			      </section>
+			      {{/if}}						
+
+					{{#if resume.volunteer.length}}
+						{{#each resume.volunteer}}
+						{{#if @first}}
+								<section class="content">
+						{{else}}
+								<section class="content work-content">
+          	{{/if}}
+			        <div class="row small-fullwidth-row">
+			          <div class="content-cat big-text">
+			          	{{#if @first}}
+											<h3>{{t "Volunteer work"}}</h3>
+			          	{{/if}}
+
+								 {{#if startDate}}
+										
+			            		<p><span class="no-nl">{{formatDate startDate "short"}}</span> 
+										{{#if endDate}} {{t "till"}} <span class="no-nl">{{formatDate endDate "short"}}</span></p>
+			            	{{/if}}
+									{{/if}}
+
+			          </div>
+			          <div class="content-text work-listing education-listing">
+										{{#if (and organization position)}}
+										{{#if @first}}
+					            <p class="first-listing small-center">
+					            {{else}}
+					            <p class="small-center">
+					          {{/if}}
+					            	{{#if url}}
+													<strong>{{t position}}</strong> <span class="no-nl">at <strong><a href="{{url}}">{{organization}}</a></strong></span>
+												{{else}}
+					            		<strong>{{t position}}</strong> <span class="no-nl">at <strong>{{organization}}</strong></span>
+					            	{{/if}}
+					            </p>
+										{{/if}}
+
+										{{#if summary}}
+											<p>{{t summary}}</p>
+										{{/if}}
+
+										{{#if highlights.length}}
+											{{#each highlights}}
+												<p class="highlight">{{t .}}</p>
+											{{/each}}
+										{{/if}}
+
+
+			          </div>
+			        </div>
+			      </section>
+			      {{/each}}
+					{{/if}}
+  <!--
+					{{#if resume.skills.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			            <h3>{{t "Skills"}}</h3>
+			          </div>
+			          <div class="content-text skills-listing">
+			          	{{#each resume.skills}}
+			            	<p>
+			            	<span class="name">
+			              {{#if name}}
+											<strong>
+											{{t name}}{{#if level}}{{else}}:{{/if}}
+
+											</strong>
+			            	{{/if}}
+			            	</span>
+
+										{{#if level}}
+		                	<span>({{t level}}):</span>
+		                {{/if}}
+
+											{{#if keywords.length}}
+												{{#commalist keywords}}{{t .}}{{/commalist}}
+											{{/if}}
+			            	</p>
+			            {{/each}}
+			          </div>
+			        </div>
+			      </section>
+		    	{{/if}}
+-->
+		    	{{#if resume.interests.length}}
+			      <section class="content">
+			        <div class="row">
+			          <div class="content-cat">
+			            <h3>{{t "Interests"}}</h3>
+			          </div>
+			          <div class="content-text skills-listing">
+			          	{{#each resume.interests}}
+			            	<p>
+			            	<span class="name">
+			              {{#if name}}
+											<strong>
+												{{t name}}:
+											</strong>
+			            	{{/if}}
+			            	</span>
+											{{#if keywords.length}}
+												{{#commalist keywords}}{{t .}}{{/commalist}}
+											{{/if}}
+			            	</p>
+			            {{/each}}
+			          </div>
+			        </div>
+			      </section>
+		    	{{/if}}
+		  	</div>
+		  </article>
+		</div>
+	</body>
+</html>

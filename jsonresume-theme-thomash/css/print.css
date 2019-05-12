@@ -1,0 +1,43 @@
+
+body, html {
+  background-color: white;
+  padding-top: 0.5em;
+  font-size:12pt;
+  font-family: "Merriweather";
+}
+
+h2{
+  margin-top:0em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+/* 
+.profiles-listing ul li, .profiles-listing ul li:first-child{
+  width: 49%;
+}
+
+.small-fullwidth-row{
+  display: block;
+}
+
+.small-fullwidth-row div{
+  display: block;
+  width:100%;
+}
+
+.small-fullwidth-row .content-text{
+  border-left: 2px solid #dddddd;
+}
+
+.small-center{
+  text-align: center;
+}
+
+.work-listing .first-listing{
+  margin-top: 0.45em;
+} */
