@@ -534,8 +534,9 @@
 			      </section>
 			      {{/each}}
 					{{/if}}
-  <!--
+
 					{{#if resume.skills.length}}
+					<h3>skills</h3>
 			      <section class="content">
 			        <div class="row">
 			          <div class="content-cat">
@@ -566,7 +567,7 @@
 			        </div>
 			      </section>
 		    	{{/if}}
--->
+
 		    	{{#if resume.interests.length}}
 			      <section class="content">
 			        <div class="row">
