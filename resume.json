@@ -21,7 +21,7 @@
             "url":"https://voodoohop.com/thomash"
          }
        ],
-       "summary_disabled":"I am passionate about multidisciplinary research and development involving machine learning, distributed systems, art, and data visualization. By combining pragmatic problem-solving skills with a strong background in software engineering, I am able to apply cutting edge academic research in practice.",
+       "summary":"I am passionate about multidisciplinary research and development involving machine learning, distributed systems, art, and data visualization. By combining pragmatic problem-solving skills with a strong background in software engineering, I am able to apply cutting edge academic research in practice.",
        "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
@@ -201,13 +201,17 @@
     ],
     "references": [
         {
-            "name": "Dr Jan Wessnitzer\nFounder & Head of Research at *[Machines with Vision Ltd](https://www.machineswithvision.com/)*",
-            "reference": "**Phone**:+44 7481 245 147\n **E-Mail**: jan.wessnitzer@machineswithvision.com"
+            "name": "Dr Jan Wessnitzer\nFounder & Head of Research\n*[Machines with Vision Ltd](https://www.machineswithvision.com/)*",
+            "reference": "**Phone**: +44 7481 245 147\n **E-Mail**: jan.wessnitzer@machineswithvision.com"
         },
         {
-            "name": "Thiara Cadavadas\nHead of Research at *[Envisioning](http://envisioning.io)*",
-            "reference": "**Phone**:+55 11 992234994\n **E-Mail**: thiara@envisioning.io "
-        }  
+            "name": "Thiara Cadavadas\nHead of Research\n*[Envisioning](http://envisioning.io)*",
+            "reference": "**Phone**: +55 11 992234994\n**E-Mail**: thiara@envisioning.io "
+        },
+        {
+            "name": "Murray Cole\nDirector Of Studies\n*The University of Edinburgh*",
+            "reference": "**Phone**: +44 131 6505154\n**E-Mail**: mic@inf.ed.ac.uk"
+        }    
     ],
     "skills":[
         { 
