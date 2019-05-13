@@ -21,7 +21,7 @@
             "url":"https://voodoohop.com/thomash"
          }
        ],
-       "summary":"I am passionate about multidisciplinary research and development involving machine learning, distributed systems, art, and data visualization. By combining pragmatic problem-solving skills with a strong background in software engineering, I am able to apply cutting edge academic research in practice.",
+       "summary_disabled":"I am passionate about multidisciplinary research and development involving machine learning, distributed systems, art, and data visualization. By combining pragmatic problem-solving skills with a strong background in software engineering, I am able to apply cutting edge academic research in practice.",
        "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
@@ -177,20 +177,26 @@
     ],
     "awards":[
         {
+            "summary":"Designed the spatialized soundscape and musical score for the \"Traverse\" VR experience funded by Google Jump Start.",
+            "date":"2018-11-01",
+            "title":"Traverse - A Virtual Reality Journey through the Origins of Language - Spatialized Sound Design",
+            "url":"https://www.fifergarbesi.com/work/traverse",
+            "category":"awards"
+        },
+        {
             "summary":"Open-source project: An innovative way of analyzing and visualizing musical harmony using colors, waveforms and the harmonic circle. \n\nTechnologies: React - Max/MSP - Ableton Live - Electron - Node.js",
             "date":"2017-01-01",
             "title":"Harmonic Audio Mixing Visualization Tools",
             "url":"https://medium.com/@thomashaferlach/voodoohop-harmony-and-tempo-tools-for-ableton-live-5eb8af96cb41",
             "category":"awards"
              },
-       {
-          "category":"awards",
-          "title":"Simulated Car Racing Competition (2nd Place)",
-          "date":"2007-06-30",
-          "awarder":"IEEE Congress on Evolutionary Computation",
-          "summary":"Trained a modular neural network architecture to control an agent that competed successfully in the IEEE CEC Simulated Car Racing Competition.",
-          "hidden": true
-        },
+             {
+                "category":"awards",
+                "title":"Simulated Car Racing Competition (2nd Place)",
+                "date":"2007-06-30",
+                "awarder":"IEEE Congress on Evolutionary Computation",
+                "summary":"Trained a modular neural network architecture to control an agent that competed successfully in the IEEE CEC Simulated Car Racing Competition."
+              },
        {
           "category":"awards",
           "title":"Honorary Membership",
