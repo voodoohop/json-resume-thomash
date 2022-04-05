@@ -16,6 +16,7 @@ i18n.setLocale(currentLocale.split("-")[0]);
 console.log("locale",currentLocale);
 
 function render(resume) {
+	console.log("rendering", resume)
 	var template = fs.readFileSync(__dirname + "/resume.template", "utf-8");
 
   var printCSS = fs.readFileSync(__dirname + "/css/print.css", "utf-8");

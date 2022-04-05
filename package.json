@@ -28,7 +28,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compileResume": "NODE_ICU_DATA=\"node_modules/full-icu\" node_modules/.bin/resume export resume.html --theme thomash && open resume.html"
+    "compileResume": "NODE_ICU_DATA=\"node_modules/full-icu\" node_modules/.bin/resume export resume.html --theme thomash -r /Users/thomash/Documents/GitHub/json-resume-thomash/resume.json && open resume.html"
   },
   "author": "",
   "license": "ISC"

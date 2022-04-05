@@ -55,13 +55,24 @@
        }
     ],
     "work":[
-       {
+      {
+         "location":"Berlin, Germany",
+         "category":"work",
+         "company":"Pixtunes",
+         "summary":"Machine Learning Lead responsible for the development of the Pixtunes orchestra, an AI-based music production system. Secured over €1 million funding from the EU Pro FIT innovatin fund.",
+         "position":"Machine Learning Specialist",
+         "startDate":"2019-06-01",
+         "endDate":"2022-01-31",
+         "url":"https://pixtunes.com/"
+      },
+      {
           "location":"Remote",
           "category":"work",
           "company":"Envisioning",
           "summary":"Researched [future trends of Artificial Intelligence](https://viz.envisioning.io/wgs-ai/?o=0) for the World Government Summit in Dubai drawing on academic papers, news and science fiction.\n\nCurrently investigating technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.",
           "position":"Foresight Researcher",
           "startDate":"2018-09-01",
+          "endDate":"2019-05-30",
           "url":"https://envisioning.io/"
        },
        {
