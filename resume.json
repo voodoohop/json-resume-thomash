@@ -1,6 +1,6 @@
 {   
     "basics":{
-       "email":"t.haferlach@gmail.com",
+       "email":"thomash@pollinations.ai",
        "phone":"+49 (0)175 4863246",   
        "profiles":[
         {
@@ -10,7 +10,7 @@
          },
          {
            "network":"GitHub",
-           "url":"https://github.com/voodoohop"
+           "url":"https://github.com/pollinations"
         },
          {
              "network":"SoundCloud",
@@ -58,11 +58,21 @@
       {
          "location":"Berlin, Germany",
          "category":"work",
-         "company":"Pollinations.ai",
-         "summary":"Founded the experimental generative AI art platform Pollinations.ai",
+         "company":"Pollinations.AI",
+         "summary":"Founded the open-source generative AI art platform Pollinations.ai, which has over 100k monthly users and is integrated into a variety of AI tools.",
          "position":"Founder & Machine Learning Specialist",
          "startDate":"2022-01-01",
          "url":"https://pollinations.ai/"
+      },
+      {
+         "location":"Berlin, Germany · Remote",
+         "category":"work",
+         "company":"PIXELYNX",
+         "summary":"Leading the development of the generative AI platform Korus. Implemented the application programming interface for the audio engine and video generation pipeline.",
+         "position":"Senior Machine Learning Specialist",
+         "startDate":"2023-03-01",
+         "endDate":"2024-08-28",
+         "url":"https://pixelynx.io/"
       },
       {
          "location":"Berlin, Germany",
@@ -103,16 +113,6 @@
           "startDate":"2018-03-31",
           "endDate":"2018-03-31",
           "url":"http://www.ctm-festival.de/festival-2018/transfer/musicmakers-hacklab/"
-       },
-       {
-          "location":"São Paulo, Brazil",
-          "category":"work",
-          "company":"Voodoohop",
-          "summary":"As one of the founders of the multidisciplinary art collective Voodoohop, I became deeply involved with the art and music scene of São Paulo and Brazil. Guided by the principle of stimulating individual and joint freedom of expression, Voodoohop is enjoying international success with performances at events all over Europe, the USA, South America and a sold out physical release in Japan.\n\nAs a musician, I have created a unique live performance in which software I developed is responsible for generating harmony, melody and modifying the musical arrangements in real time.",
-          "position":"Artist and Organizer",
-          "startDate":"2010-01-31",
-          "endDate":"2018-12-31",
-          "url":"http://voodoohop.com"
        },
        {
           "location":"Brazil",
@@ -260,7 +260,11 @@
         },
         { 
             "name" : "Machine Learning",
-            "keywords": ["Neural Computation", "Generative Models", "Modelling and Simulation", "Computer Vision", "PyTorch (basic)", "Tensorflow (basic)", "Data Processing Pipelines", "Data Visualization","Applying academic research in practice"]
+            "keywords": ["Neural Computation", "Generative Models", "Modelling and Simulation", "Computer Vision", "PyTorch", "Tensorflow", "Data Processing Pipelines", "Data Visualization","Applying academic research in practice", "Large Language Models (LLMs)", "OpenAI", "Prompt Engineering"]
+        },
+        { 
+            "name" : "Cloud Computing",
+            "keywords": ["AWS", "Google Cloud", "Microsoft Azure", "OpenAI", "Anthropic", "Hugging Face", "Replicate"]
         },
         { 
             "name" : "Soft Skills",
