@@ -10,13 +10,8 @@
          },
          {
            "network":"GitHub",
-           "url":"https://github.com/pollinations"
-        },
-         {
-             "network":"SoundCloud",
-             "username":"thomash_voodoo",
-             "url":"http://soundcloud.com/thomash_voodoohop"
-          },          
+           "url":"https://github.com/pollinations/pollinations"
+        },    
           {
             "network":"Artist Page",
             "url":"https://voodoohop.com/thomash"
