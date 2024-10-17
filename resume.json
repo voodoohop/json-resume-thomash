@@ -22,7 +22,7 @@
             "url":"https://voodoohop.com/thomash"
          }
        ],
-       "summary":"Innovative AI researcher and entrepreneur with expertise in generative models, large language models (LLMs), and AI assistants. Founder of Pollinations.AI, an open-source platform democratizing access to generative AI. Experienced in developing and scaling AI platforms, with a focus on API development, model serving, and community building. Passionate about applying cutting-edge academic research to practical, user-friendly applications in machine learning and creative technologies.",
+       "summary":"AI researcher and entrepreneur with expertise in generative AI and LLMs, including developing and training models. Founder of Pollinations.AI, an open-source platform for generative AI. Experienced in developing and scaling AI platforms, APIs, and community building.",
        "location":{
           "address": "Koepenicker Chaussee 26",
           "postalCode": "10317",
@@ -39,7 +39,7 @@
           "category":"publications",
           "authors":"T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",     
           "name":"Evolving a Neural Model of Insect Path Integration",
-          "summary":"We use a genetic algorithm to evolve a novel neural model of path integration, based on input from cells that encode the heading of the agent. We demonstrate the capabilities of the network under noisy conditions in simulation and on a robot.",
+          "summary":"Developed a neural model of insect path integration using a genetic algorithm, and implemented it on a robot.",
           "publisher":"Adaptive Behaviour 15(3)",
           "releaseDate":"2007-03-31"
        }
@@ -49,7 +49,7 @@
          "location":"Berlin, Germany",
          "category":"work",
          "company":"Pollinations.AI",
-         "summary":"Founded and developed the open-source generative AI platform Pollinations.ai, serving over 100,000 monthly active users. Led the development of various AI models including image generation, text-to-image, and large language models. Implemented APIs for model serving and seamless integration with other AI tools. Built a thriving community of over 12,000 Discord members. Focused on making advanced AI models accessible to a wide audience through user-friendly interfaces and robust documentation.",
+         "summary":"Founded and developed Pollinations.ai, an open-source generative AI platform serving 70,000+ monthly users. Led development of AI models, APIs, and a 12,000+ member discord community.",
          "position":"Founder & Machine Learning Specialist",
          "startDate":"2022-01-01",
          "url":"https://pollinations.ai/"
@@ -58,7 +58,7 @@
          "location":"Berlin, Germany · Remote",
          "category":"work",
          "company":"PIXELYNX",
-         "summary":"Led the development of the generative AI platform Korus, focusing on audio and video generation. Implemented APIs for the audio engine and video generation pipeline. Optimized machine learning models for real-time performance, including work on efficient inference and model compression techniques. Collaborated with cross-functional teams to integrate AI capabilities into music production tools, bridging the gap between research and practical applications.",
+         "summary":"Led development of the generative AI platform Korus, focusing on audio and video. Implemented APIs and optimized machine learning models for real-time performance, including efficient inference.",
          "position":"Senior Machine Learning Specialist",
          "startDate":"2023-03-01",
          "endDate":"2024-08-28",
@@ -68,7 +68,7 @@
          "location":"Berlin, Germany",
          "category":"work",
          "company":"Pixtunes",
-         "summary":"Machine Learning Lead responsible for the development of the Pixtunes orchestra, an AI-based music production system. Secured €1.2 million funding from the EU Pro FIT innovation grant.",
+         "summary":"Machine Learning Lead for the Pixtunes orchestra, an AI-based music production system. Secured €1.2 million in EU research funding.",
          "position":"Machine Learning Specialist",
          "startDate":"2019-06-01",
          "endDate":"2022-01-31",
@@ -78,7 +78,7 @@
           "location":"Remote",
           "category":"work",
           "company":"Envisioning",
-          "summary":"Researched [future trends of Artificial Intelligence](https://viz.envisioning.io/wgs-ai/?o=0) for the World Government Summit in Dubai drawing on academic papers, news and science fiction. Investigated technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany. Led the development of AI-driven future visualization projects for prestigious institutions including the Humboldt Forum (Berlin) and Amsterdam Dance Event, leveraging advanced machine learning techniques to create interactive, data-driven visualizations of potential future scenarios.",
+          "summary":"Researched future trends of AI and technologies impacting sustainability. Led development of AI-driven future visualization projects.",
           "position":"Foresight Researcher & AI Visualization Specialist",
           "startDate":"2018-09-01",
           "url":"https://envisioning.io/"
@@ -87,7 +87,7 @@
           "location":"Berlin, Germany & Amsterdam, Netherlands",
           "category":"work",
           "company":"Cultural Institutions",
-          "summary":"Developed AI-driven future visualization projects for prestigious institutions including the Humboldt Forum and Amsterdam Dance Event. Leveraged advanced machine learning techniques to create interactive, data-driven visualizations of potential future scenarios.",
+          "summary":"Developed AI-driven future visualization projects for the Humboldt Forum and Amsterdam Dance Event.",
           "position":"AI Visualization Specialist",
           "startDate":"2020-01-01",
           "endDate":"2022-12-31"
@@ -96,7 +96,7 @@
           "location":"Montreal, Canada & Berlin, Germany",
           "category":"work",
           "company":"MUTEK, Frontière IA & transmediale",
-          "summary":"Gave a talk on applications of AI in art at the Frontière IA conference in Montreal. Conceived and performed a musical piece using smartphones of attendees to create a form of musical swarm intelligence at transmediale festival in Berlin.",
+          "summary":"Presented on AI in art and performed a musical piece using smartphones to create musical swarm intelligence.",
           "position":"AI and Art Presenter & Performer",
           "startDate":"2018-03-31",
           "endDate":"2018-06-30"
@@ -105,7 +105,7 @@
           "location":"Brazil",
           "category":"work",
           "company":"Various Companies",
-          "summary":"Conceived and developed interactive installations using machine learning, computer vision, distributed computing, and data visualization for clients including SuperUber, TIM, and ArtRio.",
+          "summary":"Developed interactive installations using machine learning, computer vision, and data visualization.",
           "position":"Freelance Developer", 
           "startDate":"2008-03-31",
           "endDate":"2016-03-31"
@@ -114,7 +114,7 @@
           "location":"Edinburgh, United Kingdom",
           "category":"work",
           "company":"Amazon Development Centre Scotland",
-          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.\n\nTechnologies: Java, Spring Framework, Test-Driven Development, Agile Development, Python, Distributed Computing",
+          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.",
           "position":"Software Engineer",
           "startDate":"2006-10-31",
           "endDate":"2007-02-28",
@@ -158,7 +158,7 @@
     "awards":[
       {
         "title": "AI-Generated Art and Music Installations",
-        "summary": "Led several innovative AI-driven art and music projects, including 'Marvin's Dream' (AI-generated narrative with spatial sound design), 'Cohabitation' (AI-enhanced urban planning visualization), and 'Traverse' (VR experience with AI-generated soundscape). These projects showcase the application of advanced AI techniques in creative contexts."
+        "summary": "Led several AI-driven art and music projects showcasing advanced AI techniques in creative contexts, including 'Marvin's Dream' (AI-generated narrative with spatial sound design), 'Cohabitation' (AI-enhanced urban planning visualization), and 'Traverse' (VR experience with AI-generated soundscape)."
       }
     ],
     "references": [
