@@ -16,13 +16,13 @@
              "network":"SoundCloud",
              "username":"thomash_voodoo",
              "url":"http://soundcloud.com/thomash_voodoohop"
-          },          {
+          },          
+          {
             "network":"Artist Page",
             "url":"https://voodoohop.com/thomash"
          }
        ],
        "summary":"Innovative AI researcher and entrepreneur with expertise in generative models, large language models (LLMs), and AI assistants. Founder of Pollinations.AI, an open-source platform democratizing access to generative AI. Experienced in developing and scaling AI platforms, with a focus on API development, model serving, and community building. Passionate about applying cutting-edge academic research to practical, user-friendly applications in machine learning and creative technologies.",
-       "birthDate":"2018-06-30",
        "location":{
           "address": "Koepenicker Chaussee 26",
           "postalCode": "10317",
@@ -78,11 +78,19 @@
           "location":"Remote",
           "category":"work",
           "company":"Envisioning",
-          "summary":"Researched [future trends of Artificial Intelligence](https://viz.envisioning.io/wgs-ai/?o=0) for the World Government Summit in Dubai drawing on academic papers, news and science fiction.\n\nCurrently investigating technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany.",
-          "position":"Foresight Researcher",
+          "summary":"Researched [future trends of Artificial Intelligence](https://viz.envisioning.io/wgs-ai/?o=0) for the World Government Summit in Dubai drawing on academic papers, news and science fiction. Investigated technologies that will impact sustainability in the medium- and long-term future for the GIZ (Deutsche Gesellschaft fuer Internationale Zusammenarbeit) in Germany. Led the development of AI-driven future visualization projects for prestigious institutions including the Humboldt Forum (Berlin) and Amsterdam Dance Event, leveraging advanced machine learning techniques to create interactive, data-driven visualizations of potential future scenarios.",
+          "position":"Foresight Researcher & AI Visualization Specialist",
           "startDate":"2018-09-01",
-          "endDate":"2019-05-30",
           "url":"https://envisioning.io/"
+       },
+       {
+          "location":"Berlin, Germany & Amsterdam, Netherlands",
+          "category":"work",
+          "company":"Cultural Institutions",
+          "summary":"Developed AI-driven future visualization projects for prestigious institutions including the Humboldt Forum and Amsterdam Dance Event. Leveraged advanced machine learning techniques to create interactive, data-driven visualizations of potential future scenarios.",
+          "position":"AI Visualization Specialist",
+          "startDate":"2020-01-01",
+          "endDate":"2022-12-31"
        },
        {
           "location":"Montreal, Canada & Berlin, Germany",
@@ -150,7 +158,6 @@
     "awards":[
       {
         "title": "AI-Generated Art and Music Installations",
-        "date": "2018-2021",
         "summary": "Led several innovative AI-driven art and music projects, including 'Marvin's Dream' (AI-generated narrative with spatial sound design), 'Cohabitation' (AI-enhanced urban planning visualization), and 'Traverse' (VR experience with AI-generated soundscape). These projects showcase the application of advanced AI techniques in creative contexts."
       }
     ],
@@ -171,7 +178,7 @@
         },
         { 
             "name" : "Machine Learning",
-            "keywords": ["Neural Computation", "Generative Models", "Large Language Models (LLMs)", "Transformer Architectures", "Diffusion Models", "Computer Vision", "Natural Language Processing", "PyTorch", "TensorFlow", "Prompt Engineering", "Fine-tuning", "Model Serving", "API Development", "Data Processing Pipelines", "Data Visualization"]
+            "keywords": ["Deep Learning", "Generative AI", "Large Language Models (LLMs)", "Diffusion Models", "Computer Vision", "Natural Language Processing", "PyTorch", "TensorFlow", "Prompt Engineering", "Fine-tuning", "Model Serving", "API Development", "Data Processing Pipelines", "Data Visualization"]
         },
         { 
             "name" : "Cloud Computing & AI Platforms",
