@@ -10,6 +10,11 @@ h2{
   margin-top:0em;
 }
 
+.content {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
 .paper {
   width:100%;
   border: 0;

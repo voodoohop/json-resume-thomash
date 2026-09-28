@@ -44,10 +44,18 @@
          "location": "Berlin, Germany",
          "category": "work",
          "company": "Pollinations.AI",
-         "summary": "Founded the open generative AI platform, serving 3M+ monthly users. Recent highlights include:\n- Keynote speaker at ai/teens worldwide conference (March 2025)\n- Launched new LLM fine-tuning service\n- Grew community to 50k+ members",
+         "summary": "Founded and developed an open-source generative AI platform. Built text and image APIs, model integrations and developer tooling, and supported the project's open-source community.",
          "position": "Founder & Machine Learning Specialist",
          "startDate": "2022-01-01",
          "url": "https://pollinations.ai/"
+      },
+      {
+         "location": "Berlin, Germany",
+         "category": "work",
+         "company": "Deel II GmbH",
+         "position": "Software Developer",
+         "startDate": "2025-09-01",
+         "endDate": "2026-08-31"
       },
       {
          "location":"Berlin, Germany · Remote",

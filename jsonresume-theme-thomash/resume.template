@@ -160,7 +160,7 @@
 									<div class="content-text">
 										<div class="justified">
 											{{{markdown (t summary)}}}
-										</divs>
+										</div>
 									</div>
 								</div>
 							</section>
