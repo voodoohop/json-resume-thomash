@@ -1,45 +1,63 @@
-{   
-    "basics":{
-       "email":"thomash@pollinations.ai",
-       "phone":"+49 (0)175 4863246",   
-       "profiles":[
-        {
-            "network":"LinkedIn",
-            "username":"thomashaferlach",
-            "url":"https://linkedin.com/in/thomashaferlach/h"
+{
+   "basics": {
+      "email": "thomash@pollinations.ai",
+      "phone": "+49 (0)175 4863246",
+      "profiles": [
+         {
+            "network": "LinkedIn",
+            "username": "thomashaferlach",
+            "url": "https://linkedin.com/in/thomashaferlach/h"
          },
          {
-           "network":"GitHub",
-           "url":"https://github.com/pollinations/pollinations"
-        },    
-          {
-            "network":"Artist Page",
-            "url":"https://voodoohop.com/thomash"
+            "network": "GitHub",
+            "url": "https://github.com/pollinations/pollinations"
+         },
+         {
+            "network": "Artist Page",
+            "url": "https://voodoohop.com/thomash"
          }
-       ],
-       "summary":"AI researcher and entrepreneur with expertise in generative AI and LLMs, including developing and training models. Founder of Pollinations.AI, an open-source platform for generative AI. Experienced in developing and scaling AI platforms, APIs, and community building.",
-       "location":{
-          "address": "Koepenicker Chaussee 26",
-          "postalCode": "10317",
-          "city": "Berlin",
-          "countryCode": "DE"
-       },
-       "category":"basics",
-       "name":"Thomas Haferlach",
-       "label_disabled":"Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art"
-    },
-    "publications":[
-       {
-          "url":"http://journals.sagepub.com/doi/abs/10.1177/1059712307082080",
-          "category":"publications",
-          "authors":"T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",     
-          "name":"Evolving a Neural Model of Insect Path Integration",
-          "summary":"Developed a neural model of insect path integration using a genetic algorithm, and implemented it on a robot.",
-          "publisher":"Adaptive Behaviour 15(3)",
-          "releaseDate":"2007-03-31"
-       }
-    ],
-    "work":[
+      ],
+      "summary": "AI researcher and entrepreneur with expertise in generative AI and LLMs, including developing and training models. Founder of Pollinations.AI, an open-source platform for generative AI. Experienced in developing and scaling AI platforms, APIs, and community building.",
+      "location": {
+         "address": "Koepenicker Chaussee 26",
+         "postalCode": "10317",
+         "city": "Berlin",
+         "countryCode": "DE"
+      },
+      "category": "basics",
+      "name": "Thomas Haferlach",
+      "label_disabled": "Machine Learning, Interactive Installations, Computer Science, Audio/Visual Art"
+   },
+   "publications": [
+      {
+         "url": "http://journals.sagepub.com/doi/abs/10.1177/1059712307082080",
+         "category": "publications",
+         "authors": "T. Haferlach, J. Wessnitzer, M. Mangan & B. Webb",
+         "name": "Evolving a Neural Model of Insect Path Integration",
+         "summary": "Developed a neural model of insect path integration using a genetic algorithm, and implemented it on a robot.",
+         "publisher": "Adaptive Behaviour 15(3)",
+         "releaseDate": "2007-03-31"
+      }
+   ],
+   "work": [
+      {
+         "location": "Berlin, Germany",
+         "category": "work",
+         "company": "Deel II GmbH, for Myceli AI",
+         "position": "Software Developer",
+         "startDate": "2025-09-01",
+         "endDate": "2026-08-31"
+      },
+      {
+         "location": "Berlin, Germany · Remote",
+         "category": "work",
+         "company": "PIXELYNX",
+         "summary": "Led development of the generative AI platform Korus, focusing on audio and video. Implemented APIs and optimized machine learning models for real-time performance, including efficient inference.",
+         "position": "Senior Machine Learning Specialist",
+         "startDate": "2023-03-01",
+         "endDate": "2024-08-28",
+         "url": "https://pixelynx.io/"
+      },
       {
          "location": "Berlin, Germany",
          "category": "work",
@@ -51,146 +69,168 @@
          "url": "https://pollinations.ai/"
       },
       {
+         "location": "Berlin, Germany & Amsterdam, Netherlands",
+         "category": "work",
+         "company": "Cultural Institutions",
+         "summary": "Developed AI-driven future visualization projects for the Humboldt Forum and Amsterdam Dance Event.",
+         "position": "AI Visualization Specialist",
+         "startDate": "2020-01-01",
+         "endDate": "2022-12-31"
+      },
+      {
          "location": "Berlin, Germany",
          "category": "work",
-         "company": "Deel II GmbH",
-         "position": "Software Developer",
-         "startDate": "2025-09-01",
-         "endDate": "2026-08-31"
+         "company": "Pixtunes",
+         "summary": "Machine Learning Lead for the Pixtunes orchestra, an AI-based music production system. Secured €1.2 million in EU research funding.",
+         "position": "Machine Learning Specialist",
+         "startDate": "2019-06-01",
+         "endDate": "2022-01-31",
+         "url": "https://pixtunes.com/"
       },
       {
-         "location":"Berlin, Germany · Remote",
-         "category":"work",
-         "company":"PIXELYNX",
-         "summary":"Led development of the generative AI platform Korus, focusing on audio and video. Implemented APIs and optimized machine learning models for real-time performance, including efficient inference.",
-         "position":"Senior Machine Learning Specialist",
-         "startDate":"2023-03-01",
-         "endDate":"2024-08-28",
-         "url":"https://pixelynx.io/"
+         "location": "Remote",
+         "category": "work",
+         "company": "Envisioning",
+         "summary": "Researched future trends of AI and technologies impacting sustainability. Led development of AI-driven future visualization projects.",
+         "position": "Foresight Researcher & AI Visualization Specialist",
+         "startDate": "2018-09-01",
+         "url": "https://envisioning.io/"
       },
       {
-         "location":"Berlin, Germany",
-         "category":"work",
-         "company":"Pixtunes",
-         "summary":"Machine Learning Lead for the Pixtunes orchestra, an AI-based music production system. Secured €1.2 million in EU research funding.",
-         "position":"Machine Learning Specialist",
-         "startDate":"2019-06-01",
-         "endDate":"2022-01-31",
-         "url":"https://pixtunes.com/"
+         "location": "Montreal, Canada & Berlin, Germany",
+         "category": "work",
+         "company": "MUTEK, Frontière IA & transmediale",
+         "summary": "Presented on AI in art and performed a musical piece using smartphones to create musical swarm intelligence.",
+         "position": "AI and Art Presenter & Performer",
+         "startDate": "2018-03-31",
+         "endDate": "2018-06-30"
       },
       {
-          "location":"Remote",
-          "category":"work",
-          "company":"Envisioning",
-          "summary":"Researched future trends of AI and technologies impacting sustainability. Led development of AI-driven future visualization projects.",
-          "position":"Foresight Researcher & AI Visualization Specialist",
-          "startDate":"2018-09-01",
-          "url":"https://envisioning.io/"
-       },
-       {
-          "location":"Berlin, Germany & Amsterdam, Netherlands",
-          "category":"work",
-          "company":"Cultural Institutions",
-          "summary":"Developed AI-driven future visualization projects for the Humboldt Forum and Amsterdam Dance Event.",
-          "position":"AI Visualization Specialist",
-          "startDate":"2020-01-01",
-          "endDate":"2022-12-31"
-       },
-       {
-          "location":"Montreal, Canada & Berlin, Germany",
-          "category":"work",
-          "company":"MUTEK, Frontière IA & transmediale",
-          "summary":"Presented on AI in art and performed a musical piece using smartphones to create musical swarm intelligence.",
-          "position":"AI and Art Presenter & Performer",
-          "startDate":"2018-03-31",
-          "endDate":"2018-06-30"
-       },
-       {
-          "location":"Brazil",
-          "category":"work",
-          "company":"Various Companies",
-          "summary":"Developed interactive installations using machine learning, computer vision, and data visualization.",
-          "position":"Freelance Developer", 
-          "startDate":"2008-03-31",
-          "endDate":"2016-03-31"
-       },
-       {
-          "location":"Edinburgh, United Kingdom",
-          "category":"work",
-          "company":"Amazon Development Centre Scotland",
-          "summary":"Agile development of backend tooling, A/B testing and data mining for sales optimization.",
-          "position":"Software Engineer",
-          "startDate":"2006-10-31",
-          "endDate":"2007-02-28",
-          "url":"https://www.amazondc.com/"
-       }
-    ],
-    "education":[
-       {
-          "category":"education",
-          "institution":"The University of Edinburgh",
-          "studyType":"Bachelor of Science",
-          "area":"Artificial Intelligence and Computer Science",
-          "summary":"Thesis: [Evolving Neural Models of Path Integration](https://journals.sagepub.com/doi/abs/10.1177/1059712307082080)",
-          "startDate":"2001-01-31",
-          "endDate":"2006-01-31",
-          "gpa":"<i>First class honors</i>"
-       }
-    ],
-    "languages":[
-       {
-          "category":"languages",
-          "language":"English",
-          "fluency":"Native speaker"
-       },
-       {
-          "category":"languages",
-          "language":"German",
-          "fluency":"Native speaker"
-       },
-       {
-          "category":"languages",
-          "language":"Portuguese",
-          "fluency":"Full professional"
-       },
-       {
-          "category":"languages",
-          "language":"French",
-          "fluency":"Basic conversational"
-       }
-    ],
-    "awards":[
+         "location": "Brazil",
+         "category": "work",
+         "company": "Various Companies",
+         "summary": "Developed interactive installations using machine learning, computer vision, and data visualization.",
+         "position": "Freelance Developer",
+         "startDate": "2008-03-31",
+         "endDate": "2016-03-31"
+      },
       {
-        "title": "AI-Generated Art and Music Installations",
-        "summary": "Led several AI-driven art and music projects showcasing advanced AI techniques in creative contexts, including 'Marvin's Dream' (AI-generated narrative with spatial sound design), 'Cohabitation' (AI-enhanced urban planning visualization), and 'Traverse' (a project by Google featuring a VR experience with AI-generated soundscape)."
+         "location": "Edinburgh, United Kingdom",
+         "category": "work",
+         "company": "Amazon Development Centre Scotland",
+         "summary": "Agile development of backend tooling, A/B testing and data mining for sales optimization.",
+         "position": "Software Engineer",
+         "startDate": "2006-10-31",
+         "endDate": "2007-02-28",
+         "url": "https://www.amazondc.com/"
       }
-    ],
-    "references": [
-        {
-            "name": "Dr Jan Wessnitzer\nFounder & Head of Research\n*[Machines with Vision Ltd](https://www.machineswithvision.com/)*",
-            "reference": "**Phone**: +44 7481 245 147\n **E-Mail**: jan.wessnitzer@machineswithvision.com"
-        },
-        {
-            "name": "Thiara Cadavadas\nHead of Research\n*[Envisioning](http://envisioning.io)*",
-            "reference": "**Phone**: +55 11 992234994\n**E-Mail**: thiara@envisioning.io "
-        }
-    ],
-    "skills":[
-        { 
-            "name" : "Software Engineering",
-            "keywords": ["Distributed Computing", "Full Stack Development", "API Development", "Python", "JavaScript", "TypeScript", "Node.js", "Git", "Docker", "Kubernetes"]
-        },
-        { 
-            "name" : "Machine Learning",
-            "keywords": ["Deep Learning", "Generative AI", "Large Language Models (LLMs)", "Diffusion Models", "Computer Vision", "Natural Language Processing", "PyTorch", "TensorFlow", "Prompt Engineering", "Fine-tuning", "Model Serving", "API Development", "Data Processing Pipelines", "Data Visualization"]
-        },
-        { 
-            "name" : "Cloud Computing & AI Platforms",
-            "keywords": ["AWS", "Google Cloud", "Microsoft Azure", "OpenAI API", "Hugging Face", "Replicate"]
-        },
-        { 
-            "name" : "Soft Skills",
-            "keywords": ["Open Source Project Management", "Community Building", "Technical Leadership", "Cross-functional Collaboration", "Problem Solving", "Communication with Technical and Non-technical Audiences"]
-        }
-    ]
+   ],
+   "education": [
+      {
+         "category": "education",
+         "institution": "The University of Edinburgh",
+         "studyType": "Bachelor of Science",
+         "area": "Artificial Intelligence and Computer Science",
+         "summary": "Thesis: [Evolving Neural Models of Path Integration](https://journals.sagepub.com/doi/abs/10.1177/1059712307082080)",
+         "startDate": "2001-01-31",
+         "endDate": "2006-01-31",
+         "gpa": "<i>First class honors</i>"
+      }
+   ],
+   "languages": [
+      {
+         "category": "languages",
+         "language": "English",
+         "fluency": "Native speaker"
+      },
+      {
+         "category": "languages",
+         "language": "German",
+         "fluency": "Native speaker"
+      },
+      {
+         "category": "languages",
+         "language": "Portuguese",
+         "fluency": "Full professional"
+      },
+      {
+         "category": "languages",
+         "language": "French",
+         "fluency": "Basic conversational"
+      }
+   ],
+   "awards": [
+      {
+         "title": "AI-Generated Art and Music Installations",
+         "summary": "Led several AI-driven art and music projects showcasing advanced AI techniques in creative contexts, including 'Marvin's Dream' (AI-generated narrative with spatial sound design), 'Cohabitation' (AI-enhanced urban planning visualization), and 'Traverse' (a project by Google featuring a VR experience with AI-generated soundscape)."
+      }
+   ],
+   "references": [
+      {
+         "name": "Dr Jan Wessnitzer\nFounder & Head of Research\n*[Machines with Vision Ltd](https://www.machineswithvision.com/)*",
+         "reference": "**Phone**: +44 7481 245 147\n **E-Mail**: jan.wessnitzer@machineswithvision.com"
+      },
+      {
+         "name": "Thiara Cadavadas\nHead of Research\n*[Envisioning](http://envisioning.io)*",
+         "reference": "**Phone**: +55 11 992234994\n**E-Mail**: thiara@envisioning.io "
+      }
+   ],
+   "skills": [
+      {
+         "name": "Software Engineering",
+         "keywords": [
+            "Distributed Computing",
+            "Full Stack Development",
+            "API Development",
+            "Python",
+            "JavaScript",
+            "TypeScript",
+            "Node.js",
+            "Git",
+            "Docker",
+            "Kubernetes"
+         ]
+      },
+      {
+         "name": "Machine Learning",
+         "keywords": [
+            "Deep Learning",
+            "Generative AI",
+            "Large Language Models (LLMs)",
+            "Diffusion Models",
+            "Computer Vision",
+            "Natural Language Processing",
+            "PyTorch",
+            "TensorFlow",
+            "Prompt Engineering",
+            "Fine-tuning",
+            "Model Serving",
+            "API Development",
+            "Data Processing Pipelines",
+            "Data Visualization"
+         ]
+      },
+      {
+         "name": "Cloud Computing & AI Platforms",
+         "keywords": [
+            "AWS",
+            "Google Cloud",
+            "Microsoft Azure",
+            "OpenAI API",
+            "Hugging Face",
+            "Replicate"
+         ]
+      },
+      {
+         "name": "Soft Skills",
+         "keywords": [
+            "Open Source Project Management",
+            "Community Building",
+            "Technical Leadership",
+            "Cross-functional Collaboration",
+            "Problem Solving",
+            "Communication with Technical and Non-technical Audiences"
+         ]
+      }
+   ]
 }
