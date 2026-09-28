@@ -41,13 +41,13 @@
     ],
     "work":[
       {
-         "location":"Berlin, Germany",
-         "category":"work",
-         "company":"Pollinations.AI",
-         "summary":"Founded and developed Pollinations.ai, an open-source generative AI platform serving 70,000+ monthly users. Led development of AI models, APIs, and a 12,000+ member discord community.",
-         "position":"Founder & Machine Learning Specialist",
-         "startDate":"2022-01-01",
-         "url":"https://pollinations.ai/"
+         "location": "Berlin, Germany",
+         "category": "work",
+         "company": "Pollinations.AI",
+         "summary": "Founded the open generative AI platform, serving 3M+ monthly users. Recent highlights include:\n- Keynote speaker at ai/teens worldwide conference (March 2025)\n- Launched new LLM fine-tuning service\n- Grew community to 50k+ members",
+         "position": "Founder & Machine Learning Specialist",
+         "startDate": "2022-01-01",
+         "url": "https://pollinations.ai/"
       },
       {
          "location":"Berlin, Germany · Remote",
